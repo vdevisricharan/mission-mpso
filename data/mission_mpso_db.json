@@ -1,0 +1,2626 @@
+{
+  "users": {
+    "student_default": {
+      "id": "student_default",
+      "email": "student@mission-mpso.internal",
+      "role": "student",
+      "createdAt": "2026-11-01T16:16:34.066Z",
+      "studentPreferences": {
+        "displayName": "రమ్య",
+        "language": "te",
+        "educationBackground": "B.Sc. (Statistics)",
+        "statisticsFamiliarity": "intermediate",
+        "dailyStudyMinutes": 120,
+        "preferredStudyWindow": "morning",
+        "targetExam": "TGPSC MPSO / ASO 2026-2027",
+        "enableVoice": true,
+        "textSize": "normal",
+        "hasCompletedOnboarding": false,
+        "hasCompletedDiagnostic": false
+      }
+    },
+    "admin_default": {
+      "id": "admin_default",
+      "email": "admin@mission-mpso.internal",
+      "role": "admin",
+      "createdAt": "2026-11-01T16:16:34.066Z"
+    }
+  },
+  "examConfig": {
+    "notificationNumber": "07/G/ES/2026",
+    "notificationDate": "2026-10-28",
+    "recruitmentNameTe": "మండల్ ప్లానింగ్ & స్టాటిస్టికల్ ఆఫీసర్స్ / అసిస్టెంట్ స్టాటిస్టికల్ ఆఫీసర్స్",
+    "recruitmentNameEn": "Mandal Planning and Statistical Officers / Assistant Statistical Officers",
+    "authority": "TGPSC (Telangana Public Service Commission)",
+    "onlineApplicationStart": "2026-10-30",
+    "onlineApplicationEnd": "2026-11-27T17:00:00+05:30",
+    "tentativeExamMonth": "January 2027",
+    "confirmedExamDate": null,
+    "examMode": "UNKNOWN",
+    "papers": [
+      {
+        "id": "paper_1",
+        "nameTe": "పేపర్ I: జనరల్ స్టడీస్ & జనరల్ ఎబిలిటీస్",
+        "nameEn": "Paper-I: General Studies and General Abilities",
+        "totalQuestions": 150,
+        "durationMinutes": 150,
+        "totalMarks": 150,
+        "marksPerQuestion": 1,
+        "language": "bilingual",
+        "syllabusUnitsCount": 13
+      },
+      {
+        "id": "paper_2",
+        "nameTe": "పేపర్ II: స్టాటిస్టిక్స్ (డిగ్రీ స్థాయి - అందరికీ కామన్)",
+        "nameEn": "Paper-II: Statistics (Common for all) (Degree Level)",
+        "totalQuestions": 150,
+        "durationMinutes": 150,
+        "totalMarks": 150,
+        "marksPerQuestion": 1,
+        "language": "bilingual",
+        "syllabusUnitsCount": 8
+      }
+    ],
+    "totalQuestions": 300,
+    "totalMarks": 300,
+    "negativeMarkingPolicy": "unconfirmed",
+    "negativeMarkingPenalty": 0,
+    "negativeMarkingNoteTe": "నోటిఫికేషన్ 07/G/ES/2026 లో నెగెటివ్ మార్కింగ్ నియమం స్పష్టంగా పేర్కొనబడలేదు. టిజిపిఎస్సి వెబ్ నోట్ లేదా హాల్ టికెట్ నిబంధనలు అధికారికంగా ధృవీకరించబడేవరకు నెగెటివ్ మార్కింగ్ అన్-కన్ఫర్మ్‌డ్‌గా పరిగణించబడుతుంది.",
+    "negativeMarkingNoteEn": "Negative marking is not explicitly specified in Notification 07/G/ES/2026. Until officially confirmed via TGPSC Web Note or Hall Ticket, it is marked as unconfirmed.",
+    "qualifyingMarks": {
+      "ocAndEws": 40,
+      "bc": 35,
+      "scStPh": 30
+    },
+    "officialSourceUrl": "https://websitenew.tgpsc.gov.in/",
+    "verificationStatus": "verified",
+    "lastVerifiedAt": "2026-10-30T10:00:00Z",
+    "configVersion": "1.0.0"
+  },
+  "syllabusTopics": [
+    {
+      "id": "p1_current_affairs",
+      "paperId": "paper_1",
+      "unitNumber": 1,
+      "unitTitleTe": "యూనిట్ 1: వర్తమాన వ్యవహారాలు",
+      "unitTitleEn": "Unit 1: Current Affairs",
+      "topicNumber": 1,
+      "titleTe": "వర్తమాన వ్యవహారాలు – ప్రాంతీయ, జాతీయ, అంతర్జాతీయ",
+      "titleEn": "Current Affairs – Regional, National and International",
+      "descriptionTe": "తెలంగాణ పథకాలు, కేంద్ర ప్రభుత్వ నిర్ణయాలు, ప్రముఖ నియామకాలు మరియు అంతర్జాతీయ పరిణామాలు.",
+      "descriptionEn": "Current developments in Telangana, national policies, major appointments, and international events.",
+      "officialWordingEn": "Current Affairs – Regional, National and International",
+      "subtopics": [
+        {
+          "id": "p1_ca_telangana",
+          "titleTe": "తెలంగాణ ప్రాంతీయ పరిణామాలు",
+          "titleEn": "Telangana Regional Events"
+        },
+        {
+          "id": "p1_ca_national",
+          "titleTe": "భారత జాతీయ వర్తమాన అంశాలు",
+          "titleEn": "National Current Affairs"
+        },
+        {
+          "id": "p1_ca_international",
+          "titleTe": "అంతర్జాతీయ సదస్సులు & కూటములు",
+          "titleEn": "International Summits & Summits"
+        }
+      ],
+      "difficulty": "medium",
+      "estimatedStudyHours": 25,
+      "weightageEstimatedQuestions": 15,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p1_international_relations",
+      "paperId": "paper_1",
+      "unitNumber": 2,
+      "unitTitleTe": "యూనిట్ 2: అంతర్జాతీయ సంబంధాలు",
+      "unitTitleEn": "Unit 2: International Relations",
+      "topicNumber": 2,
+      "titleTe": "అంతర్జాతీయ సంబంధాలు మరియు సంఘటనలు",
+      "titleEn": "International Relations and Events",
+      "descriptionTe": "భారత విదేశాంగ విధానం, పొరుగు దేశాలతో సంబంధాలు, UNO, G20, బ్రిక్స్ తదితర అంతర్జాతీయ సంస్థలు.",
+      "descriptionEn": "India's foreign policy, bilateral relations, UN, G20, BRICS and global developments.",
+      "officialWordingEn": "International Relations and Events.",
+      "subtopics": [
+        {
+          "id": "p1_ir_treaties",
+          "titleTe": "ద్వైపాక్షిక ఒప్పందాలు & విదేశాంగ విధానం",
+          "titleEn": "Bilateral Treaties & Foreign Policy"
+        },
+        {
+          "id": "p1_ir_orgs",
+          "titleTe": "ప్రపంచ సంస్థలు (UN, WHO, WTO)",
+          "titleEn": "Global Organizations"
+        }
+      ],
+      "difficulty": "medium",
+      "estimatedStudyHours": 15,
+      "weightageEstimatedQuestions": 10,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p1_general_science",
+      "paperId": "paper_1",
+      "unitNumber": 3,
+      "unitTitleTe": "యూనిట్ 3: సామాన్య శాస్త్రం & సాంకేతికత",
+      "unitTitleEn": "Unit 3: General Science & Technology",
+      "topicNumber": 3,
+      "titleTe": "సామాన్య శాస్త్రం; సైన్స్ & టెక్నాలజీలో భారతదేశ సాధించిన విజయాలు",
+      "titleEn": "General Science; India's achievements in Science and Technology",
+      "descriptionTe": "నిత్యజీవితంలో విజ్ఞానశాస్త్రం, ఇస్రో (ISRO) అంతరిక్ష ప్రయోగాలు, DRDO రక్షణ రంగ విజయాలు, బయోటెక్నాలజీ.",
+      "descriptionEn": "Everyday science, ISRO space missions, DRDO achievements, biotechnology and health.",
+      "officialWordingEn": "General Science; India’s achievements in Science and Technology",
+      "subtopics": [
+        {
+          "id": "p1_sci_everyday",
+          "titleTe": "నిత్యజీవితంలో భౌతిక, రసాయన, జీవ శాస్త్రాలు",
+          "titleEn": "Everyday Physics, Chemistry & Biology"
+        },
+        {
+          "id": "p1_sci_isro_drdo",
+          "titleTe": "భారత అంతరిక్ష & రక్షణ పరిశోధనలు (ISRO, DRDO)",
+          "titleEn": "Indian Space & Defence Technologies"
+        },
+        {
+          "id": "p1_sci_ai_it",
+          "titleTe": "కంప్యూటర్ & కృత్రిమ మేధా ఆవిష్కరణలు",
+          "titleEn": "Emerging Technologies (AI, IT, Biotech)"
+        }
+      ],
+      "difficulty": "medium",
+      "estimatedStudyHours": 20,
+      "weightageEstimatedQuestions": 12,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p1_environment_disaster",
+      "paperId": "paper_1",
+      "unitNumber": 4,
+      "unitTitleTe": "యూనిట్ 4: పర్యావరణం & విపత్తు నిర్వహణ",
+      "unitTitleEn": "Unit 4: Environment & Disaster Management",
+      "topicNumber": 4,
+      "titleTe": "పర్యావరణ సమస్యలు మరియు విపత్తు నిర్వహణ",
+      "titleEn": "Environmental issues and Disaster Management",
+      "descriptionTe": "వాతావరణ మార్పు, జీవవైవిధ్య సంరక్షణ, కాలుష్యం, వరదలు, తుఫానుల నిర్వహణ మరియు NDMA మార్గదర్శకాలు.",
+      "descriptionEn": "Climate change, biodiversity conservation, pollution, disaster response frameworks (NDMA).",
+      "officialWordingEn": "Environmental issues and Disaster Management",
+      "subtopics": [
+        {
+          "id": "p1_env_climate",
+          "titleTe": "వాతావరణ మార్పు & గ్రీన్‌హౌస్ ప్రభావం",
+          "titleEn": "Climate Change & Global Warming"
+        },
+        {
+          "id": "p1_env_disaster_prep",
+          "titleTe": "విపత్తుల వర్గీకరణ & ముందస్తు హెచ్చరికలు",
+          "titleEn": "Disaster Preparedness & Mitigation"
+        }
+      ],
+      "difficulty": "medium",
+      "estimatedStudyHours": 15,
+      "weightageEstimatedQuestions": 10,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p1_economy_india_telangana",
+      "paperId": "paper_1",
+      "unitNumber": 5,
+      "unitTitleTe": "యూనిట్ 5: భారత & తెలంగాణ ఆర్థిక వ్యవస్థ",
+      "unitTitleEn": "Unit 5: Economy of India and Telangana",
+      "topicNumber": 5,
+      "titleTe": "భారత మరియు తెలంగాణ ఆర్థిక వ్యవస్థ",
+      "titleEn": "Economy of India and Telangana",
+      "descriptionTe": "జాతీయ ఆదాయం, ద్రవ్యోల్బణం, బడ్జెట్, నీతి ఆయోగ్, తెలంగాణ ఆర్థిక సర్వే, పారిశ్రామిక అభివృద్ధి, వ్యవసాయం.",
+      "descriptionEn": "National income, inflation, fiscal policy, NITI Aayog, Telangana Socio-Economic Outlook, agriculture & industry.",
+      "officialWordingEn": "Economy of India and Telangana",
+      "subtopics": [
+        {
+          "id": "p1_eco_national",
+          "titleTe": "భారత ఆర్థిక వ్యవస్థ సూచీలు (GDP, ద్రవ్యోల్బణం)",
+          "titleEn": "Indian Economic Indicators"
+        },
+        {
+          "id": "p1_eco_telangana",
+          "titleTe": "తెలంగాణ సామాజిక ఆర్థిక ముఖచిత్రం (Socio-Economic Outlook)",
+          "titleEn": "Telangana Socio-Economic Profile"
+        },
+        {
+          "id": "p1_eco_schemes",
+          "titleTe": "వ్యవసాయం, సంక్షేమ మరియు అభివృద్ధి రంగాలు",
+          "titleEn": "Agriculture, Welfare & Sectoral Growth"
+        }
+      ],
+      "difficulty": "hard",
+      "estimatedStudyHours": 25,
+      "weightageEstimatedQuestions": 15,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p1_geography_india_telangana",
+      "paperId": "paper_1",
+      "unitNumber": 6,
+      "unitTitleTe": "యూనిట్ 6: భౌగోళిక శాస్త్రం (భారతదేశం & తెలంగాణ)",
+      "unitTitleEn": "Unit 6: Geography of India with focus on Telangana",
+      "topicNumber": 6,
+      "titleTe": "భారత భౌగోళిక స్వరూపం (తెలంగాణ ప్రత్యేక దృష్టితో)",
+      "titleEn": "Geography of India with a focus on Telangana",
+      "descriptionTe": "నదులు, ప్రాజెక్టులు, అడవులు, ఖనిజ వనరులు, నేలలు, వాతావరణం, తెలంగాణ సరిహద్దులు మరియు నూతన జిల్లాలు.",
+      "descriptionEn": "Rivers, irrigation projects, forest wealth, minerals, climate, Telangana district borders.",
+      "officialWordingEn": "Geography of India with a focus on Telangana",
+      "subtopics": [
+        {
+          "id": "p1_geo_telangana_rivers",
+          "titleTe": "గోదావరి, కృష్ణా నదీ పరివాహకాలు & ప్రాజెక్టులు",
+          "titleEn": "Godavari, Krishna Basins & Irrigation"
+        },
+        {
+          "id": "p1_geo_resources",
+          "titleTe": "తెలంగాణ ఖనిజాలు, అటవీ విస్తీర్ణం & వాతావరణం",
+          "titleEn": "Telangana Resources, Forests & Climate"
+        }
+      ],
+      "difficulty": "medium",
+      "estimatedStudyHours": 20,
+      "weightageEstimatedQuestions": 12,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p1_polity_local_governance",
+      "paperId": "paper_1",
+      "unitNumber": 7,
+      "unitTitleTe": "యూనిట్ 7: భారత రాజ్యాంగం & స్థానిక పాలన",
+      "unitTitleEn": "Unit 7: Indian Constitution & Local Governance",
+      "topicNumber": 7,
+      "titleTe": "భారత రాజ్యాంగం, రాజకీయ వ్యవస్థ (స్థానిక స్వపరిపాలన దృష్టితో)",
+      "titleEn": "Indian Constitution and Polity with a focus on local self-Government",
+      "descriptionTe": "ప్రాథమిక హక్కులు, ఆదేశిక సూత్రాలు, పార్లమెంట్, 73 మరియు 74వ రాజ్యాంగ సవరణలు (పంచాయతీరాజ్, మునిసిపాలిటీలు).",
+      "descriptionEn": "Fundamental rights, DPSP, Parliament, Judiciary, 73rd and 74th Amendments, PRIs & Municipalities.",
+      "officialWordingEn": "Indian Constitution and Polity with a focus on local self-Government",
+      "subtopics": [
+        {
+          "id": "p1_pol_preamble_rights",
+          "titleTe": "రాజ్యాంగ పీఠిక, ప్రాథమిక హక్కులు & విధులు",
+          "titleEn": "Preamble, Fundamental Rights & Duties"
+        },
+        {
+          "id": "p1_pol_local_bodies",
+          "titleTe": "73, 74వ సవరణలు: పంచాయతీరాజ్ & పురపాలక వ్యవస్థలు",
+          "titleEn": "73rd & 74th Amendments: Panchayati Raj & Municipalities"
+        },
+        {
+          "id": "p1_pol_governance",
+          "titleTe": "కేంద్ర-రాష్ట్ర సంబంధాలు & ఎన్నికల సంఘం",
+          "titleEn": "Centre-State Relations & Election Commission"
+        }
+      ],
+      "difficulty": "hard",
+      "estimatedStudyHours": 25,
+      "weightageEstimatedQuestions": 15,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p1_telangana_society_culture",
+      "paperId": "paper_1",
+      "unitNumber": 8,
+      "unitTitleTe": "యూనిట్ 8: తెలంగాణ సమాజం, సంస్కృతి & సాహిత్యం",
+      "unitTitleEn": "Unit 8: Society, Culture, Heritage & Literature of Telangana",
+      "topicNumber": 8,
+      "titleTe": "తెలంగాణ సమాజం, సంస్కృతి, వారసత్వం, కళలు మరియు సాహిత్యం",
+      "titleEn": "Society, Culture, Heritage, Arts and Literature of Telangana",
+      "descriptionTe": "సమ్మక్క-సారలమ్మ జాతర, బోనాలు, బతుకమ్మ, రామప్ప, చార్మినార్, తెలంగాణ కవులు, వాగ్గేయకారులు, జానపద కళలు.",
+      "descriptionEn": "Fairs and festivals (Bonalu, Bathukamma, Medaram), monuments, literature, poets and folk arts.",
+      "officialWordingEn": "Society, Culture, Heritage, Arts and Literature of Telangana",
+      "subtopics": [
+        {
+          "id": "p1_cul_festivals",
+          "titleTe": "బతుకమ్మ, బోనాలు & గిరిజన జాతరలు",
+          "titleEn": "Bathukamma, Bonalu & Tribal Jataras"
+        },
+        {
+          "id": "p1_cul_literature",
+          "titleTe": "తెలంగాణ ప్రాచీన, ఆధునిక కవులు & రచనలు",
+          "titleEn": "Telangana Poets, Writers & Literature"
+        },
+        {
+          "id": "p1_cul_arts",
+          "titleTe": "కళారూపాలు, చేనేత & చారిత్రక కట్టడాలు",
+          "titleEn": "Art Forms, Handlooms & Monuments"
+        }
+      ],
+      "difficulty": "medium",
+      "estimatedStudyHours": 20,
+      "weightageEstimatedQuestions": 12,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p1_telangana_policies",
+      "paperId": "paper_1",
+      "unitNumber": 9,
+      "unitTitleTe": "యూనిట్ 9: తెలంగాణ ప్రభుత్వ విధానాలు",
+      "unitTitleEn": "Unit 9: Policies of Telangana State",
+      "topicNumber": 9,
+      "titleTe": "తెలంగాణ రాష్ట్ర ప్రభుత్వ విధానాలు మరియు సంక్షేమ పథకాలు",
+      "titleEn": "Policies of Telangana State",
+      "descriptionTe": "మహిళా సంక్షేమం, రైతు సంక్షేమం, గృహజ్యోతి, మహాలక్ష్మి, విద్యా పథకాలు, యువవికాసం మరియు పారిశ్రామిక విధానం.",
+      "descriptionEn": "Telangana welfare guarantees, Mahalakshmi, Gruha Jyothi, Rythu welfare, industrial policies.",
+      "officialWordingEn": "Policies of Telangana State",
+      "subtopics": [
+        {
+          "id": "p1_pol_welfare",
+          "titleTe": "ప్రజాపాలన & గ్యారెంటీ పథకాలు",
+          "titleEn": "Praja Palana & Guarantee Schemes"
+        },
+        {
+          "id": "p1_pol_industrial",
+          "titleTe": "తెలంగాణ పారిశ్రామిక, ఐటీ విధానాలు",
+          "titleEn": "Telangana Industrial & IT Policies"
+        }
+      ],
+      "difficulty": "easy",
+      "estimatedStudyHours": 15,
+      "weightageEstimatedQuestions": 12,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p1_history_modern_india",
+      "paperId": "paper_1",
+      "unitNumber": 10,
+      "unitTitleTe": "యూనిట్ 10: ఆధునిక భారతదేశ చరిత్ర",
+      "unitTitleEn": "Unit 10: History of Modern India",
+      "topicNumber": 10,
+      "titleTe": "ఆధునిక భారత చరిత్ర (జాతీయోద్యమంపై ప్రత్యేక దృష్టితో)",
+      "titleEn": "History of Modern India with a focus on Indian National Movement",
+      "descriptionTe": "1857 తిరుగుబాటు, భారత జాతీయ కాంగ్రెస్, గాంధేయ యుగం, విప్లవ ఉద్యమాలు, భారత స్వాతంత్ర్య చట్టం 1947.",
+      "descriptionEn": "Revolt of 1857, Indian National Congress, Gandhian era, revolutionary movements, partition and independence.",
+      "officialWordingEn": "History of Modern India with a focus on Indian National Movement",
+      "subtopics": [
+        {
+          "id": "p1_his_early_phase",
+          "titleTe": "బ్రిటిష్ పాలన విస్తరణ & 1857 తిరుగుబాటు",
+          "titleEn": "British Expansion & 1857 Revolt"
+        },
+        {
+          "id": "p1_his_freedom_struggle",
+          "titleTe": "గాంధీజీ యుగం, శాసనోల్లంఘన & క్విట్ ఇండియా",
+          "titleEn": "Gandhian Era, Civil Disobedience & Quit India"
+        }
+      ],
+      "difficulty": "medium",
+      "estimatedStudyHours": 20,
+      "weightageEstimatedQuestions": 10,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p1_history_telangana_statehood",
+      "paperId": "paper_1",
+      "unitNumber": 11,
+      "unitTitleTe": "యూనిట్ 11: తెలంగాణ చరిత్ర & ప్రత్యేక రాష్ట్ర ఉద్యమం",
+      "unitTitleEn": "Unit 11: History of Telangana & Statehood Movement",
+      "topicNumber": 11,
+      "titleTe": "తెలంగాణ చరిత్ర మరియు ప్రత్యేక తెలంగాణ రాష్ట్ర ఉద్యమం",
+      "titleEn": "History of Telangana with special emphasis on Movement for Telangana Statehood",
+      "descriptionTe": "శాతవాహనులు, కాకతీయులు, కుతుబ్‌షాహీలు, అసఫ్‌జాహీలు, 1948 విలీనం, 1969 ముల్కీ ఉద్యమం, మలిదశ పోరాటం, 2014 పునర్విభజన.",
+      "descriptionEn": "Kakatiyas, Qutb Shahis, Asaf Jahis, 1948 integration, 1969 Mulki movement, final phase agitation, 2014 AP Reorganisation Act.",
+      "officialWordingEn": "History of Telangana with special emphasis on Movement for Telangana Statehood",
+      "subtopics": [
+        {
+          "id": "p1_tg_dynasties",
+          "titleTe": "కాకతీయులు, కుతుబ్‌షాహీలు & నిజాం పాలన",
+          "titleEn": "Kakatiyas, Qutb Shahis & Nizam Rule"
+        },
+        {
+          "id": "p1_tg_1969_movement",
+          "titleTe": "హైదరాబాద్ విలీనం, ముల్కీ నిబంధనలు & 1969 ఉద్యమం",
+          "titleEn": "Hyderabad Annexation, Mulki Rules & 1969 Agitation"
+        },
+        {
+          "id": "p1_tg_final_phase",
+          "titleTe": "మలిదశ ఉద్యమం (2001-2014) & రాష్ట్ర ఏర్పాటు",
+          "titleEn": "Final Phase Movement (2001-2014) & State Formation"
+        }
+      ],
+      "difficulty": "hard",
+      "estimatedStudyHours": 25,
+      "weightageEstimatedQuestions": 15,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p1_logical_reasoning_data_interpretation",
+      "paperId": "paper_1",
+      "unitNumber": 12,
+      "unitTitleTe": "యూనిట్ 12: లాజికల్ రీజనింగ్ & డేటా విశ్లేషణ",
+      "unitTitleEn": "Unit 12: Logical Reasoning, Analytical Ability and Data Interpretation",
+      "topicNumber": 12,
+      "titleTe": "లాజికల్ రీజనింగ్, ఎనలిటికల్ ఎబిలిటీ మరియు డేటా ఇంటర్‌ప్రిటేషన్",
+      "titleEn": "Logical Reasoning, Analytical Ability and Data Interpretation",
+      "descriptionTe": "శ్రేణులు, రక్త సంబంధాలు, దిశలు, కోడింగ్-డీకోడింగ్, బార్ గ్రాఫ్‌లు, పై చార్ట్‌లు, పట్టికల విశ్లేషణ.",
+      "descriptionEn": "Number series, blood relations, coding-decoding, syllogisms, bar charts, pie charts, tables.",
+      "officialWordingEn": "Logical Reasoning, Analytical Ability and Data Interpretation",
+      "subtopics": [
+        {
+          "id": "p1_lr_verbal_reasoning",
+          "titleTe": "శ్రేణులు, సిలాజిజమ్స్ & కోడింగ్",
+          "titleEn": "Series, Syllogisms & Coding-Decoding"
+        },
+        {
+          "id": "p1_lr_data_interpretation",
+          "titleTe": "పై చార్టులు, బార్ గ్రాఫ్‌లు & పట్టికలు",
+          "titleEn": "Data Interpretation (Pie, Bar, Tables)"
+        }
+      ],
+      "difficulty": "medium",
+      "estimatedStudyHours": 20,
+      "weightageEstimatedQuestions": 12,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p1_basic_english",
+      "paperId": "paper_1",
+      "unitNumber": 13,
+      "unitTitleTe": "యూనిట్ 13: ప్రాథమిక ఆంగ్ల భాష",
+      "unitTitleEn": "Unit 13: Basic English",
+      "topicNumber": 13,
+      "titleTe": "ప్రాథమిక ఇంగ్లీష్ (టెన్త్ క్లాస్ స్థాయి)",
+      "titleEn": "Basic English (10th Standard)",
+      "descriptionTe": "గ్రామర్, టెన్సెస్, ఆర్టికల్స్, ప్రిపొజిషన్స్, సినానిమ్స్, యాంటానిమ్స్, కాంప్రహెన్షన్ ప్యాసేజ్.",
+      "descriptionEn": "Grammar, tenses, articles, prepositions, vocabulary, idioms, reading comprehension.",
+      "officialWordingEn": "Basic English",
+      "subtopics": [
+        {
+          "id": "p1_eng_grammar",
+          "titleTe": "Tenses, Articles, Prepositions & Error Spotting",
+          "titleEn": "Grammar, Articles & Prepositions"
+        },
+        {
+          "id": "p1_eng_vocabulary",
+          "titleTe": "Synonyms, Antonyms, Idioms & Phrases",
+          "titleEn": "Vocabulary & Comprehension"
+        }
+      ],
+      "difficulty": "easy",
+      "estimatedStudyHours": 15,
+      "weightageEstimatedQuestions": 10,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p2_intro_statistics",
+      "paperId": "paper_2",
+      "unitNumber": 1,
+      "unitTitleTe": "యూనిట్ I: సాంఖ్యకశాస్త్ర పరిచయం",
+      "unitTitleEn": "Unit I: Introduction to Statistics",
+      "topicNumber": 1,
+      "titleTe": "సాంఖ్యకశాస్త్ర పరిచయం, దత్తాంశ సేకరణ & సమర్పణ",
+      "titleEn": "Introduction to Statistics, Data Collection & Presentation",
+      "descriptionTe": "సాంఖ్యకశాస్త్రం అర్థం, ప్రాముఖ్యత, పరిమితులు; ప్రాథమిక, ద్వితీయ దత్తాంశం; యాదృచ్ఛిక, అయాదృచ్ఛిక నమూనాకరణ; జనాభా లెక్కలు; ప్రశ్నావళి; పౌనఃపున్య విభాజనం; పట్టికీకరణ; రేఖాచిత్ర సమర్పణ.",
+      "descriptionEn": "Meaning, importance and limitations; Collection of primary and secondary data; Random & non-random sampling; Census, schedule and questionnaire; Frequency distribution; Tabulation; Diagrams & graphs.",
+      "officialWordingEn": "Meaning, importance and limitations of statistics - Collection of data - Primary and Secondary data. Sampling (Random, Non-Random) - Census - Schedule and questionnaire – Frequency distribution - Tabulation - Diagrammatic and graphic presentation of data.",
+      "subtopics": [
+        {
+          "id": "p2_stat_intro_basics",
+          "titleTe": "సాంఖ్యకశాస్త్ర పరిధి & ప్రాథమిక భావనలు",
+          "titleEn": "Scope & Nature of Statistics"
+        },
+        {
+          "id": "p2_stat_intro_collection",
+          "titleTe": "ప్రాథమిక & ద్వితీయ దత్తాంశ సేకరణ పద్ధతులు",
+          "titleEn": "Primary & Secondary Data Collection Methods"
+        },
+        {
+          "id": "p2_stat_intro_presentation",
+          "titleTe": "పట్టికీకరణ, హిస్టోగ్రామ్, ఓజివ్ వక్రాలు",
+          "titleEn": "Tabulation, Frequency Distribution, Histogram & Ogives"
+        }
+      ],
+      "difficulty": "easy",
+      "estimatedStudyHours": 20,
+      "weightageEstimatedQuestions": 15,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p2_central_tendency_dispersion",
+      "paperId": "paper_2",
+      "unitNumber": 2,
+      "unitTitleTe": "యూనిట్ II: కేంద్రీయ ప్రవృత్తి, విస్తరణ, అసౌష్ఠవత & కకుదత",
+      "unitTitleEn": "Unit II: Measures of Central Tendency, Dispersion, Skewness & Kurtosis",
+      "topicNumber": 2,
+      "titleTe": "కేంద్రీయ ప్రవృత్తి కొలతలు, విస్తరణ కొలతలు, అసౌష్ఠవత మరియు కకుదత",
+      "titleEn": "Measures of Central Tendency, Dispersion, Skewness and Kurtosis",
+      "descriptionTe": "సగటులు (AM, GM, HM, మధ్యగతం, బాహుళకం), దశాంశాలు, శతాంశాలు, వ్యాప్తి (Range), చతుర్థాంశ విచలనం (QD), మధ్యమ విచలనం (MD), ప్రామాణిక విచలనం (SD), విచలన గుణకం (CV), కార్ల్ పియర్సన్ & బౌలే అసౌష్ఠవతా కొలతలు.",
+      "descriptionEn": "Arithmetic Mean, Geometric Mean, Harmonic Mean, Median, Mode, Deciles, Percentiles. Range, QD, MD, Standard Deviation, Coefficient of Variation. Skewness and Kurtosis measures.",
+      "officialWordingEn": "Meaning, objectives and characteristics of measures of central tendency - Types of Averages: Arithmetic Mean, Geometric Mean, Harmonic Mean, Median, Mode, Deciles, Percentiles - Properties of averages and their applications. Dispersion: Meaning and properties - Types: Range, Quartile Deviation, Mean Deviation, Standard Deviation, Coefficient of Variation. Skewness: Meaning - Karl Pearson’s and Bowley’s Measures of Skewness and Kurtosis.",
+      "subtopics": [
+        {
+          "id": "p2_stat_central_averages",
+          "titleTe": "అంకమధ్యమం, గుణమధ్యమం, హరమధ్యమం, మధ్యగతం, బాహుళకం",
+          "titleEn": "Arithmetic, Geometric, Harmonic Means, Median & Mode"
+        },
+        {
+          "id": "p2_stat_dispersion_sd_cv",
+          "titleTe": "ప్రామాణిక విచలనం (SD), చతుర్థాంశ విచలనం & విచలన గుణకం (CV)",
+          "titleEn": "Standard Deviation, Quartile Deviation & Coefficient of Variation"
+        },
+        {
+          "id": "p2_stat_skewness_kurtosis",
+          "titleTe": "కార్ల్ పియర్సన్, బౌలే అసౌష్ఠవత మరియు కకుదత",
+          "titleEn": "Karl Pearson & Bowley's Skewness, Kurtosis"
+        }
+      ],
+      "difficulty": "medium",
+      "estimatedStudyHours": 25,
+      "weightageEstimatedQuestions": 22,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p2_probability",
+      "paperId": "paper_2",
+      "unitNumber": 3,
+      "unitTitleTe": "యూనిట్ III: సంభావ్యత",
+      "unitTitleEn": "Unit III: Probability",
+      "topicNumber": 3,
+      "titleTe": "సంభావ్యత సిద్ధాంతాలు, షరతులతో కూడిన సంభావ్యత & బేయెస్ సిద్ధాంతం",
+      "titleEn": "Probability, Theorems, Conditional Probability & Bayes' Theorem",
+      "descriptionTe": "యాదృచ్ఛిక ప్రయోగం, శాంపిల్ ఆవరణం, ఘటనలు, సంభావ్యత ప్రాథమిక సిద్ధాంతాలు, సంకలన-గుణకార సిద్ధాంతాలు, స్వతంత్ర ఘటనలు, బేయెస్ సిద్ధాంతం మరియు అనువర్తనాలు.",
+      "descriptionEn": "Random experiment, sample space, event algebra, discrete sample space, addition & multiplication theorems, conditional probability, independent events, Bayes' theorem.",
+      "officialWordingEn": "Random experiment, sample space, event, algebra of events, probability on a discrete sample space, basic theorems of probability and simple examples based on theorems, conditional, probability of an event, independent events, Baye’s theorem and its applications.",
+      "subtopics": [
+        {
+          "id": "p2_prob_basics_events",
+          "titleTe": "శాంపిల్ ఆవరణం & సంకలన-గుణకార సిద్ధాంతాలు",
+          "titleEn": "Sample Space, Addition & Multiplication Theorems"
+        },
+        {
+          "id": "p2_prob_conditional_independent",
+          "titleTe": "షరతులతో కూడిన సంభావ్యత & స్వతంత్ర ఘటనలు",
+          "titleEn": "Conditional Probability & Independence"
+        },
+        {
+          "id": "p2_prob_bayes_theorem",
+          "titleTe": "బేయెస్ సిద్ధాంతం (Bayes' Theorem) & లెక్కలు",
+          "titleEn": "Bayes' Theorem & Applications"
+        }
+      ],
+      "difficulty": "hard",
+      "estimatedStudyHours": 25,
+      "weightageEstimatedQuestions": 20,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p2_random_variables_distributions",
+      "paperId": "paper_2",
+      "unitNumber": 4,
+      "unitTitleTe": "యూనిట్ IV: యాదృచ్ఛిక చలరాశులు & విభాజనాలు",
+      "unitTitleEn": "Unit IV: Concept of Random Variable & Distributions",
+      "topicNumber": 4,
+      "titleTe": "యాదృచ్ఛిక చలరాశులు, సంభావ్యతా విభాజనాలు & పరికల్పనా పరీక్షలు",
+      "titleEn": "Random Variables, Distributions & Statistical Inference",
+      "descriptionTe": "విచ్ఛిన్న మరియు అవిచ్ఛిన్న చలరాశులు; బెర్నౌలీ, ద్విపద (Binomial), పాయిజన్ (Poisson), సాధారణ (Normal) విభాజనాలు; నిష్పాక్షిక అంచనాదారు (Unbiased estimator), స్థిరత్వం, సామర్థ్యం, పర్యాప్తత; పెద్ద, చిన్న శాంపిల్ పరీక్షలు (t, F, Chi-square, Z); శూన్య మరియు ప్రత్యామ్నాయ పరికల్పనలు.",
+      "descriptionEn": "Discrete & Continuous; Bernoulli, Binomial, Poisson and Normal distributions. Unbiased estimator, consistency, efficiency, sufficiency; large and small sample tests; Null and Alternative Hypothesis.",
+      "officialWordingEn": "Discrete and Continuous, Bernouli, Binominal and Poisson distributions, Normal distribution and its applications and uses. Concept of Un biased estimator, consistency, efficiency and sufficiency, large and small sample tests. Concept of null and alternative hypothesis,",
+      "subtopics": [
+        {
+          "id": "p2_dist_discrete_binomial_poisson",
+          "titleTe": "ద్విపద (Binomial) & పాయిజన్ (Poisson) విభాజనాలు",
+          "titleEn": "Binomial & Poisson Distributions"
+        },
+        {
+          "id": "p2_dist_continuous_normal",
+          "titleTe": "సాధారణ విభాజనం (Normal Distribution) ధర్మాలు",
+          "titleEn": "Normal Distribution & Applications"
+        },
+        {
+          "id": "p2_dist_estimation_properties",
+          "titleTe": "నిష్పాక్షికత, స్థిరత్వం, సమర్థత, పర్యాప్తత (Estimators)",
+          "titleEn": "Unbiasedness, Consistency, Efficiency, Sufficiency"
+        },
+        {
+          "id": "p2_dist_hypothesis_tests",
+          "titleTe": "శూన్య పరికల్పన, Z-పరీక్ష, t-పరీక్ష & శాంపిల్ పరీక్షలు",
+          "titleEn": "Hypothesis Testing, Large & Small Sample Tests"
+        }
+      ],
+      "difficulty": "hard",
+      "estimatedStudyHours": 30,
+      "weightageEstimatedQuestions": 24,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p2_correlation_regression",
+      "paperId": "paper_2",
+      "unitNumber": 5,
+      "unitTitleTe": "యూనిట్ V: సహసంబంధం & ప్రతిగమనం",
+      "unitTitleEn": "Unit V: Correlation and Regression",
+      "topicNumber": 5,
+      "titleTe": "సహసంబంధం మరియు ప్రతిగమన విశ్లేషణ",
+      "titleEn": "Correlation and Regression Analysis",
+      "descriptionTe": "సహసంబంధ రకాలు, కార్ల్ పియర్సన్ సహసంబంధ గుణకం (r), స్పియర్‌మ్యాన్ కోటి సహసంబంధం (Rank correlation), సంభావ్య దోషం (Probable error); ప్రతిగమన సమీకరణాలు (Regression lines), ప్రతిగమన గుణకాల పోలిక మరియు అర్థ వివరణ.",
+      "descriptionEn": "Types of correlation, Karl Pearson coefficient, Spearman's rank correlation, Probable error. Regression lines, regression equations, comparison and interpretation of coefficients.",
+      "officialWordingEn": "Correlation: Meaning and uses - Types of correlation - Karlpearson’s correlation coefficient - Spearman’s Rank correlation - Probable error. Regression analysis: Meaning and utility - Comparison between Correlation and Regression - Regression Equations - Interpretation of Regression Coefficient.",
+      "subtopics": [
+        {
+          "id": "p2_cor_pearson_spearman",
+          "titleTe": "కార్ల్ పియర్సన్ & స్పియర్‌మ్యాన్ కోటి సహసంబంధం",
+          "titleEn": "Karl Pearson & Spearman's Rank Correlation"
+        },
+        {
+          "id": "p2_cor_probable_error",
+          "titleTe": "సంభావ్య దోషం (Probable Error) & పరిమితులు",
+          "titleEn": "Probable Error & Standard Error of Correlation"
+        },
+        {
+          "id": "p2_reg_lines_equations",
+          "titleTe": "ప్రతిగమన సమీకరణాలు & గుణకాల ధర్మాలు (byx, bxy)",
+          "titleEn": "Regression Equations & Properties of Coefficients"
+        }
+      ],
+      "difficulty": "medium",
+      "estimatedStudyHours": 25,
+      "weightageEstimatedQuestions": 20,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p2_time_series_index_numbers",
+      "paperId": "paper_2",
+      "unitNumber": 6,
+      "unitTitleTe": "యూనిట్ VI: కాలశ్రేణులు & సూచీ సంఖ్యలు",
+      "unitTitleEn": "Unit VI: Analysis of Time Series and Index Numbers",
+      "topicNumber": 6,
+      "titleTe": "కాలశ్రేణుల విశ్లేషణ మరియు సూచీ సంఖ్యలు",
+      "titleEn": "Time Series Analysis and Index Numbers",
+      "descriptionTe": "కాలశ్రేణి భాగాలు (ధోరణి, ఋతుకాలిక, చక్రీయ, క్రమరహిత విచలనాలు), ధోరణి కొలిచే పద్ధతులు (కదిలే సగటులు, కనిష్ట వర్గాల పద్ధతి); ధర & పరిమాణ సూచీ సంఖ్యలు (లాస్‌పియర్, పాషే, ఫిషర్ ఆదర్శ సూచీ), కాల విపర్యయ & కారక విపర్యయ పరీక్షలు, జీవన వ్యయ సూచీ.",
+      "descriptionEn": "Components of time series, measurement of trend, moving averages, least squares. Index numbers: Laspeyres, Paasche, Fisher's ideal index, Time Reversal & Factor Reversal tests, Cost of living index, deflating.",
+      "officialWordingEn": "Time Series Analysis: Meaning and utility - Components of time series - Measurement of trend and seasonal variations - Utility of decomposition of time series - Decentralization of data. Index Numbers: Meaning and importance - Methods of construction of index numbers: Price Index Numbers, Quantity Index Numbers - Tests of Adequacy of Index Numbers - Deflating Index Numbers - Cost of living Index Numbers - Limitation of Index Numbers.",
+      "subtopics": [
+        {
+          "id": "p2_ts_components_trend",
+          "titleTe": "కాలశ్రేణి భాగాలు & ధోరణి నిర్ధారణ పద్ధతులు",
+          "titleEn": "Components of Time Series & Trend Measurement"
+        },
+        {
+          "id": "p2_idx_laspeyre_paasche_fisher",
+          "titleTe": "లాస్‌పియర్, పాషే & ఫిషర్ ఆదర్శ సూచీలు",
+          "titleEn": "Laspeyres, Paasche & Fisher's Ideal Index"
+        },
+        {
+          "id": "p2_idx_tests_adequacy",
+          "titleTe": "కాల విపర్యయ (TRT) & కారక విపర్యయ (FRT) పరీక్షలు",
+          "titleEn": "Time Reversal & Factor Reversal Tests, Cost of Living Index"
+        }
+      ],
+      "difficulty": "medium",
+      "estimatedStudyHours": 25,
+      "weightageEstimatedQuestions": 20,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p2_sampling_techniques",
+      "paperId": "paper_2",
+      "unitNumber": 7,
+      "unitTitleTe": "యూనిట్ VII: శాంప్లింగ్ పద్ధతులు",
+      "unitTitleEn": "Unit VII: Sampling Techniques",
+      "topicNumber": 7,
+      "titleTe": "శాంప్లింగ్ పద్ధతులు (నమూనా సేకరణ విధానాలు)",
+      "titleEn": "Sampling Techniques (SRS, Stratified & Systematic)",
+      "descriptionTe": "సమగ్ర గణన (Census) వర్సెస్ శాంప్లింగ్, శాంపిల్ పరిమాణం నిర్ణయం, సరళ యాదృచ్ఛిక శాంప్లింగ్ (SRS with/without replacement), స్తరీకృత యాదృచ్ఛిక శాంప్లింగ్ (Stratified Sampling), క్రమబద్ధ శాంప్లింగ్ (Systematic Sampling), శాంప్లింగ్ దోషాలు.",
+      "descriptionEn": "Complete enumeration vs. sampling; Sample size estimation; Simple Random Sampling (SRSWR, SRSWOR); Stratified Random Sampling; Systematic Random Sampling; Sampling & Non-sampling errors.",
+      "officialWordingEn": "Complete enumeration vs. Sampling, estimation of Sample size and Simple, Stratified and Systematic Random Sampling.",
+      "subtopics": [
+        {
+          "id": "p2_samp_census_vs_sample",
+          "titleTe": "సమగ్ర గణన vs శాంప్లింగ్ & దోషాలు",
+          "titleEn": "Census vs. Sampling, Sampling Errors"
+        },
+        {
+          "id": "p2_samp_srs_methods",
+          "titleTe": "సరళ యాదృచ్ఛిక శాంప్లింగ్ (SRSWR & SRSWOR)",
+          "titleEn": "Simple Random Sampling (With & Without Replacement)"
+        },
+        {
+          "id": "p2_samp_stratified_systematic",
+          "titleTe": "స్తరీకృత (Stratified) & క్రమబద్ధ (Systematic) శాంప్లింగ్",
+          "titleEn": "Stratified & Systematic Sampling Comparison"
+        }
+      ],
+      "difficulty": "medium",
+      "estimatedStudyHours": 20,
+      "weightageEstimatedQuestions": 17,
+      "isVerifiedOfficial": true
+    },
+    {
+      "id": "p2_basics_of_computers",
+      "paperId": "paper_2",
+      "unitNumber": 8,
+      "unitTitleTe": "యూనిట్ VIII: కంప్యూటర్ ప్రాథమికాంశాలు",
+      "unitTitleEn": "Unit VIII: Basics of Computers",
+      "topicNumber": 8,
+      "titleTe": "కంప్యూటర్ ప్రాథమికాంశాలు, సంఖ్యా వ్యవస్థలు & MS-ఆఫీస్",
+      "titleEn": "Basics of Computers, Number Systems & MS-Office",
+      "descriptionTe": "బైనరీ, ఆక్టల్, హెక్సాడెసిమల్ సంఖ్యా వ్యవస్థల మార్పిడి; బిట్స్, బైట్స్, వర్డ్స్; కంప్యూటర్ మెమరీ (RAM, ROM); లాజికల్ ఆపరేటర్లు (AND, OR, XOR, NOT, Shift/Rotate); అల్గారిథమ్స్, ఫ్లోచార్ట్స్; MS-Word, MS-Excel, MS-PowerPoint.",
+      "descriptionEn": "Binary, octal, hexadecimal conversion. Bits, bytes, words, computer memory. AND, OR, XOR, NOT, Shift/Rotate operators. Algorithms and flowcharts. MS-Office (Word, Excel, PowerPoint).",
+      "officialWordingEn": "Binary system, Octal and Hexadecimal systems. Conversion to and from Decimal systems. Codes, Bits, Bytes and Words. Memory of a computer, Arithmetic and Logical operations on numbers. Precision. AND, OR, XOR, NOT and Shit/Rotate operators, Algorithms and Flow charts, MS-Office.",
+      "subtopics": [
+        {
+          "id": "p2_comp_number_systems",
+          "titleTe": "బైనరీ, ఆక్టల్, హెక్సాడెసిమల్ సంఖ్యా వ్యవస్థల రూపాంతరం",
+          "titleEn": "Binary, Octal, Hexadecimal & Decimal Conversions"
+        },
+        {
+          "id": "p2_comp_logic_operators",
+          "titleTe": "లాజిక్ గేట్లు (AND, OR, XOR, NOT, Shift/Rotate)",
+          "titleEn": "Logic Operators, Bits, Bytes & Precision"
+        },
+        {
+          "id": "p2_comp_flowcharts_office",
+          "titleTe": "అల్గారిథమ్స్, ఫ్లోచార్ట్‌లు & MS-Excel/Word",
+          "titleEn": "Algorithms, Flowcharts & MS-Office Applications"
+        }
+      ],
+      "difficulty": "easy",
+      "estimatedStudyHours": 20,
+      "weightageEstimatedQuestions": 20,
+      "isVerifiedOfficial": true
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson_p2_central_tendency_mean",
+      "topicId": "p2_central_tendency_dispersion",
+      "subtopicId": "p2_stat_central_averages",
+      "titleTe": "కేంద్రీయ ప్రవృత్తి కొలతలు: అంకమధ్యమం, మధ్యగతం, బాహుళకం",
+      "titleEn": "Measures of Central Tendency: Mean, Median and Mode",
+      "estimatedMinutes": 35,
+      "overviewTe": "ఒక దత్తాంశంలో విలువలన్నీ ఏ కేంద్రీయ విలువ చుట్టూ కేంద్రీకృతమై ఉన్నాయో తెలిపే విలువను 'కేంద్రీయ ప్రవృత్తి కొలత' (Measure of Central Tendency) లేదా సగటు అంటారు. ఇందులో అంకమధ్యమం (Arithmetic Mean), మధ్యగతం (Median), బాహుళకం (Mode) అత్యంత ముఖ్యమైనవి.",
+      "overviewEn": "A measure of central tendency is a single representative value that describes the center point of a given dataset. The most prominent measures are Arithmetic Mean, Median, and Mode.",
+      "keyConceptsTe": [
+        {
+          "concept": "అంకమధ్యమం (Arithmetic Mean - AM)",
+          "englishTerm": "Arithmetic Mean",
+          "explanation": "దత్తాంశంలోని పరిశీలనల మొత్తాన్ని, ఆ పరిశీలనల సంఖ్యతో భాగించగా వచ్చే విలువను అంకమధ్యమం అంటారు. ఇది అత్యంత ప్రాచుర్యం పొందిన సగటు. అన్ని విలువలపై ఆధారపడుతుంది."
+        },
+        {
+          "concept": "మధ్యగతం (Median - M)",
+          "englishTerm": "Median",
+          "explanation": "దత్తాంశంలోని అంశాలను ఆరోహణ లేదా అవరోహణ క్రమంలో అమర్చినప్పుడు సరిగ్గా మధ్యలో ఉండే విలువను మధ్యగతం అంటారు. ఇది స్థాన సగటు (Positional Average). తీవ్ర విలువల (Extreme values/Outliers) ప్రభావానికి గురికాదు."
+        },
+        {
+          "concept": "బాహుళకం (Mode - Z)",
+          "englishTerm": "Mode",
+          "explanation": "దత్తాంశంలో అత్యధిక పర్యాయాలు పునరావృతమైన (గరిష్ట పౌనఃపున్యం గల) విలువను బాహుళకం అంటారు. వ్యాపార రంగంలో (ఉదా: చెప్పుల లేదా చొక్కాల సైజుల డిమాండ్) దీనిని ఎక్కువగా వాడతారు."
+        },
+        {
+          "concept": "ఆనుభావిక సంబంధం (Empirical Relationship)",
+          "englishTerm": "Empirical Relationship",
+          "explanation": "మితమైన అసౌష్ఠవ పౌనఃపున్య విభాజనంలో (Moderately Skewed Distribution), బాహుళకం, మధ్యగతం, అంకమధ్యమాల మధ్య సంబంధం: Mode = 3(Median) - 2(Mean). ఇది పరీక్షల్లో తరచూ అడిగే ప్రశ్న."
+        }
+      ],
+      "formulas": [
+        {
+          "id": "formula_am_ungrouped",
+          "nameTe": "అవర్గీకృత దత్తాంశ అంకమధ్యమం",
+          "nameEn": "Arithmetic Mean for Ungrouped Data",
+          "latex": "\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}",
+          "symbolExplanationsTe": [
+            {
+              "symbol": "\\bar{x}",
+              "explanation": "అంకమధ్యమం (Mean)"
+            },
+            {
+              "symbol": "\\sum x_i",
+              "explanation": "అన్ని పరిశీలనా విలువల మొత్తం (Sum of observations)"
+            },
+            {
+              "symbol": "n",
+              "explanation": "మొత్తం పరిశీలనల సంఖ్య (Number of observations)"
+            }
+          ],
+          "usageTe": "సాధారణ సంఖ్యల సగటు కనుగొనుటకు వాడుతారు.",
+          "sampleCalculationTe": "విలువలు 10, 15, 20, 25, 30 అయితే, మొత్తం = 100, n = 5, కావున \\bar{x} = 100 / 5 = 20."
+        },
+        {
+          "id": "formula_empirical_relation",
+          "nameTe": "సగటుల మధ్య ఆనుభావిక సంబంధం",
+          "nameEn": "Empirical Relationship between Mean, Median & Mode",
+          "latex": "\\text{Mode} = 3(\\text{Median}) - 2(\\text{Mean})",
+          "symbolExplanationsTe": [
+            {
+              "symbol": "\\text{Mode}",
+              "explanation": "బాహుళకం (Z)"
+            },
+            {
+              "symbol": "\\text{Median}",
+              "explanation": "మధ్యగతం (M)"
+            },
+            {
+              "symbol": "\\text{Mean}",
+              "explanation": "అంకమధ్యమం (\\bar{x})"
+            }
+          ],
+          "usageTe": "రెండు విలువల సహాయంతో మూడవ విలువను లెక్కించడానికి ఉపయోగపడుతుంది.",
+          "sampleCalculationTe": "Mean = 25, Median = 28 అయితే, Mode = 3(28) - 2(25) = 84 - 50 = 34."
+        },
+        {
+          "id": "formula_standard_deviation",
+          "nameTe": "ప్రామాణిక విచలనం (Standard Deviation)",
+          "nameEn": "Standard Deviation (Population / Sample)",
+          "latex": "\\sigma = \\sqrt{\\frac{\\sum (x_i - \\bar{x})^2}{n}}",
+          "symbolExplanationsTe": [
+            {
+              "symbol": "\\sigma",
+              "explanation": "ప్రామాణిక విచలనం (Standard Deviation)"
+            },
+            {
+              "symbol": "(x_i - \\bar{x})",
+              "explanation": "అంకమధ్యమం నుండి విచలనాలు (Deviations from Mean)"
+            },
+            {
+              "symbol": "n",
+              "explanation": "పరిశీలనల సంఖ్య"
+            }
+          ],
+          "usageTe": "విస్తరణను కచ్చితంగా కొలవడానికి కార్ల్ పియర్సన్ ప్రతిపాదించిన ఉత్తమ కొలత."
+        },
+        {
+          "id": "formula_coefficient_variation",
+          "nameTe": "విచలన గుణకం (Coefficient of Variation - CV)",
+          "nameEn": "Coefficient of Variation",
+          "latex": "CV = \\frac{\\sigma}{\\bar{x}} \\times 100",
+          "symbolExplanationsTe": [
+            {
+              "symbol": "CV",
+              "explanation": "విచలన గుణకం శాతం రూపంలో"
+            },
+            {
+              "symbol": "\\sigma",
+              "explanation": "ప్రామాణిక విచలనం"
+            },
+            {
+              "symbol": "\\bar{x}",
+              "explanation": "అంకమధ్యమం"
+            }
+          ],
+          "usageTe": "రెండు శ్రేణుల స్థిరత్వాన్ని (Consistency/Variability) పోల్చడానికి వాడుతారు. CV తక్కువగా ఉంటే ఎక్కువ స్థిరత్వం ఉంటుంది."
+        }
+      ],
+      "workedExamples": [
+        {
+          "id": "we_mean_01",
+          "titleTe": "ఉదాహరణ 1: సగటు మరియు విచలన గుణకం లెక్కించుట",
+          "titleEn": "Example 1: Calculating Mean and Coefficient of Variation",
+          "problemTe": "ఒక పరిశ్రమలోని కార్మికుల రోజువారీ వేతనాలు (రూపాయల్లో): 120, 150, 180, 210, 240. సగటు వేతనం, ప్రామాణిక విచలనం మరియు విచలన గుణకాన్ని లెక్కించండి.",
+          "givenDataTe": [
+            "పరిశీలనలు (x): 120, 150, 180, 210, 240",
+            "పరిశీలనల సంఖ్య n = 5"
+          ],
+          "stepByStepSolutionTe": [
+            {
+              "stepNumber": 1,
+              "description": "అంకమధ్యమం \\bar{x} లెక్కించడం: మొత్తం విలువల కూడిక / పరిశీలనల సంఖ్య",
+              "mathLatex": "\\bar{x} = \\frac{120 + 150 + 180 + 210 + 240}{5} = \\frac{900}{5} = 180"
+            },
+            {
+              "stepNumber": 2,
+              "description": "సగటు నుండి విచలనాలు (x_i - \\bar{x}) మరియు వాటి వర్గాలు కనుగొనడం",
+              "mathLatex": "(120-180)^2 = 3600, \\ (150-180)^2 = 900, \\ (180-180)^2 = 0, \\ (210-180)^2 = 900, \\ (240-180)^2 = 3600"
+            },
+            {
+              "stepNumber": 3,
+              "description": "వర్గాల మొత్తం: 3600 + 900 + 0 + 900 + 3600 = 9000. విస్తృతి (Variance) = 9000 / 5 = 1800",
+              "mathLatex": "\\sigma^2 = \\frac{9000}{5} = 1800"
+            },
+            {
+              "stepNumber": 4,
+              "description": "ప్రామాణిక విచలనం \\sigma = \\sqrt{1800} \\approx 42.43",
+              "mathLatex": "\\sigma = \\sqrt{1800} \\approx 42.43"
+            },
+            {
+              "stepNumber": 5,
+              "description": "విచలన గుణకం CV = (\\sigma / \\bar{x}) \\times 100",
+              "mathLatex": "CV = \\frac{42.43}{180} \\times 100 \\approx 23.57\\%"
+            }
+          ],
+          "finalAnswerTe": "సగటు = రూ. 180, ప్రామాణిక విచలనం \\approx 42.43, విచలన గుణకం \\approx 23.57%",
+          "keyTakeawayTe": "విచలన గుణకం శాతం రూపంలో ఉంటుంది. ఏ గ్రూపు యొక్క CV తక్కువగా ఉంటుందో ఆ గ్రూపు ఎక్కువ స్థిరమైనది (more consistent)."
+        }
+      ],
+      "commonMistakesTe": [
+        {
+          "mistake": "తీవ్ర విలువలు (Extreme Outliers) ఉన్నప్పుడు అంకమధ్యమాన్ని ఉత్తమ సగటుగా భావించడం.",
+          "correction": "తీవ్ర విలువలు ఉన్నప్పుడు మధ్యగతం (Median) ఉత్తమ సగటు అవుతుంది.",
+          "why": "అంకమధ్యమం ప్రతీ విలువతో మారుతుంది; మధ్యగతం స్థానంపై ఆధారపడుతుంది కాబట్టి తీవ్ర విలువల ప్రభావం పడదు."
+        },
+        {
+          "mistake": "ఆనుభావిక సూత్రంలో సంఖ్యలను తారుమారు చేయడం (Mode = 2Mean - 3Median అని రాయడం).",
+          "correction": "గుర్తుంచుకోవడానికి సులభ మార్గం: Mode = 3(Median) - 2(Mean). పెద్ద పదానికి (Median 3 అక్షరాలు) 3, చిన్న పదానికి (Mean) 2 వస్తాయి.",
+          "why": "ఇది మితమైన అసౌష్ఠవ విభాజనాలకు మాత్రమే వర్తిస్తుంది."
+        }
+      ],
+      "summaryPointsTe": [
+        "కేంద్రీయ ప్రవృత్తి కొలతలలో అంకమధ్యమం మాత్రమే బీజీయ ప్రక్రియలకు (Algebraic treatment) అనువైనది.",
+        "సగటు నుండి తీసుకున్న విచలనాల మొత్తం ఎల్లప్పుడూ సున్నా అవుతుంది: \\sum (x_i - \\bar{x}) = 0.",
+        "సగటు నుండి తీసుకున్న విచలనాల వర్గాల మొత్తం కనిష్టం అవుతుంది: \\sum (x_i - A)^2 is minimum when A = \\bar{x}.",
+        "గుణాత్మక దత్తాంశానికి (Qualitative data - ఉదా: తెలివితేటలు, అందం) మధ్యగతం ఉత్తమ సగటు.",
+        "ఓపెన్-ఎండ్ తరగతులకు (Open-ended classes) మధ్యగతం లేదా బాహుళకం అనువైనవి."
+      ],
+      "officialSyllabusMapping": "Paper II: Unit II - Measures of Central Tendency & Dispersion",
+      "sourceReferences": [
+        "TGPSC Notification 07/G/ES/2026 Annexure-II",
+        "Degree Statistics Paper II Syllabus"
+      ],
+      "lastVerifiedDate": "2026-10-30"
+    },
+    {
+      "id": "lesson_p2_probability_bayes",
+      "topicId": "p2_probability",
+      "subtopicId": "p2_prob_bayes_theorem",
+      "titleTe": "సంభావ్యత ప్రాథమిక సూత్రాలు మరియు బేయెస్ సిద్ధాంతం",
+      "titleEn": "Probability Fundamentals, Conditional Probability & Bayes' Theorem",
+      "estimatedMinutes": 40,
+      "overviewTe": "ఒక అనిశ్చిత పరిస్థితులలో ఒక సంఘటన జరిగే అవకాశాన్ని సంఖ్యాపరంగా కొలవడాన్ని 'సంభావ్యత' (Probability) అంటారు. డిగ్రీ స్థాయిలో సంకలన సిద్ధాంతం, గుణకార సిద్ధాంతం, షరతులతో కూడిన సంభావ్యత మరియు బేయెస్ సిద్ధాంతం అత్యంత ప్రధానమైన అంశాలు.",
+      "overviewEn": "Probability measures the likelihood of an event occurring in a random experiment. In the degree standard exam, addition theorem, multiplication theorem, conditional probability, and Bayes' theorem form the core.",
+      "keyConceptsTe": [
+        {
+          "concept": "యాదృచ్ఛిక ప్రయోగం & శాంపిల్ ఆవరణం (Sample Space)",
+          "englishTerm": "Sample Space",
+          "explanation": "సాధ్యమయ్యే అన్ని పర్యవసానాల సమితిని శాంపిల్ ఆవరణం (S) అంటారు. ఉదాహరణకు నాణేన్ని ఎగురవేస్తే S = {H, T}, పాచికను దొర్లిస్తే S = {1, 2, 3, 4, 5, 6}."
+        },
+        {
+          "concept": "పరస్పర వివర్జిత ఘటనలు (Mutually Exclusive Events)",
+          "englishTerm": "Mutually Exclusive Events",
+          "explanation": "రెండు ఘటనలు ఒకేసారి సంభవించడానికి వీలులేకపోతే వాటిని పరస్పర వివర్జిత ఘటనలు అంటారు. అనగా A \\cap B = \\emptyset, P(A \\cap B) = 0."
+        },
+        {
+          "concept": "స్వతంత్ర ఘటనలు (Independent Events)",
+          "englishTerm": "Independent Events",
+          "explanation": "ఒక ఘటన సంభవించడం లేదా సంభవించకపోవడం రెండవ ఘటన సంభావ్యతను ప్రభావితం చేయకపోతే వాటిని స్వతంత్ర ఘటనలు అంటారు. అప్పుడు P(A \\cap B) = P(A) \\cdot P(B)."
+        },
+        {
+          "concept": "బేయెస్ సిద్ధాంతం (Bayes' Theorem)",
+          "englishTerm": "Bayes' Theorem (Inverse Probability)",
+          "explanation": "ఒక ఫలితం సంభవించిన తర్వాత, ఆ ఫలితం ఒక నిర్దిష్ట కారణం (Cause/Hypothesis) వల్ల సంభవించి ఉండటానికి గల పశ్చాత్ సంభావ్యతను (Posterior Probability) లెక్కించడానికి బేయెస్ సిద్ధాంతం ఉపయోగిస్తారు."
+        }
+      ],
+      "formulas": [
+        {
+          "id": "formula_prob_addition",
+          "nameTe": "సంభావ్యత సంకలన సిద్ధాంతం (ఏవైనా రెండు ఘటనలకు)",
+          "nameEn": "Addition Theorem of Probability",
+          "latex": "P(A \\cup B) = P(A) + P(B) - P(A \\cap B)",
+          "symbolExplanationsTe": [
+            {
+              "symbol": "P(A \\cup B)",
+              "explanation": "A లేదా B సంభవించే సంభావ్యత"
+            },
+            {
+              "symbol": "P(A \\cap B)",
+              "explanation": "A మరియు B రెండూ కలిసి సంభవించే సంభావ్యత"
+            }
+          ],
+          "usageTe": "A, B పరస్పర వివర్జితాలైతే P(A \\cap B) = 0 అయి, P(A \\cup B) = P(A) + P(B) అవుతుంది."
+        },
+        {
+          "id": "formula_conditional_prob",
+          "nameTe": "షరతులతో కూడిన సంభావ్యత (Conditional Probability)",
+          "nameEn": "Conditional Probability",
+          "latex": "P(A|B) = \\frac{P(A \\cap B)}{P(B)}, \\quad P(B) > 0",
+          "symbolExplanationsTe": [
+            {
+              "symbol": "P(A|B)",
+              "explanation": "B ఘటన ఇప్పటికే జరిగినప్పుడు, A సంభవించే సంభావ్యత"
+            },
+            {
+              "symbol": "P(A \\cap B)",
+              "explanation": "ఉమ్మడి సంభావ్యత"
+            },
+            {
+              "symbol": "P(B)",
+              "explanation": "షరతు విధించబడిన ఘటన సంభావ్యత"
+            }
+          ],
+          "usageTe": "ఒక ఘటన పూర్వానుభవం తెలిసినప్పుడు రెండవ ఘటన అంచనా వేయడానికి."
+        },
+        {
+          "id": "formula_bayes_theorem",
+          "nameTe": "బేయెస్ సిద్ధాంత సూత్రం",
+          "nameEn": "Bayes' Theorem Formula",
+          "latex": "P(E_i|A) = \\frac{P(E_i) \\cdot P(A|E_i)}{\\sum_{j=1}^{k} P(E_j) \\cdot P(A|E_j)}",
+          "symbolExplanationsTe": [
+            {
+              "symbol": "P(E_i)",
+              "explanation": "పూర్వ సంభావ్యత (Prior Probability)"
+            },
+            {
+              "symbol": "P(A|E_i)",
+              "explanation": "సంభావ్యత అవకాశం (Likelihood)"
+            },
+            {
+              "symbol": "P(E_i|A)",
+              "explanation": "పశ్చాత్ సంభావ్యత (Posterior Probability)"
+            }
+          ],
+          "usageTe": "వైద్య పరీక్షల ఫలితాలు, యంత్రాల లోపాలు తదితర విశ్లేషణల్లో విస్తృతంగా వాడుతారు."
+        }
+      ],
+      "workedExamples": [
+        {
+          "id": "we_prob_01",
+          "titleTe": "ఉదాహరణ: సంకలన సిద్ధాంతం వర్తింపు",
+          "titleEn": "Example: Applying Addition Theorem",
+          "problemTe": "బాగా కలిపిన 52 పేకముక్కల కట్ట నుండి యాదృచ్ఛికంగా ఒక కార్డు తీస్తే, అది రాజా (King) లేదా ఆసు (Ace) అవ్వడానికి సంభావ్యత ఎంత?",
+          "givenDataTe": [
+            "మొత్తం కార్డులు n(S) = 52",
+            "రాజా కార్డుల సంఖ్య n(A) = 4, కావున P(A) = 4/52",
+            "ఆసు కార్డుల సంఖ్య n(B) = 4, కావున P(B) = 4/52",
+            "ఒకే కార్డు ఒకే సమయంలో రాజా మరియు ఆసు కాలేదు కాబట్టి ఇవి పరస్పర వివర్జితాలు: P(A \\cap B) = 0"
+          ],
+          "stepByStepSolutionTe": [
+            {
+              "stepNumber": 1,
+              "description": "సంకలన సిద్ధాంతాన్ని ఉపయోగించడం: P(A \\cup B) = P(A) + P(B) - P(A \\cap B)",
+              "mathLatex": "P(A \\cup B) = \\frac{4}{52} + \\frac{4}{52} - 0"
+            },
+            {
+              "stepNumber": 2,
+              "description": "భిన్నాల కూడిక చేయడం",
+              "mathLatex": "P(A \\cup B) = \\frac{8}{52} = \\frac{2}{13}"
+            }
+          ],
+          "finalAnswerTe": "కావలసిన సంభావ్యత = 2/13 (సుమారు 0.1538)",
+          "keyTakeawayTe": "ఘటనలు పరస్పర వివర్జితాలైతే (Mutually Exclusive), ఉమ్మడి సంభావ్యత 0 అవుతుంది."
+        }
+      ],
+      "commonMistakesTe": [
+        {
+          "mistake": "స్వతంత్ర ఘటనలను పరస్పర వివర్జిత ఘటనలుగా భావించి గందరగోళపడటం.",
+          "correction": "పరస్పర వివర్జితం అంటే P(A \\cap B) = 0 (ఒకేసారి జరగవు). స్వతంత్ర ఘటనలు అంటే P(A \\cap B) = P(A) \\cdot P(B) (ఒకదానితో ఒకటి సంబంధం లేదు).",
+          "why": "సున్నా సంభావ్యత లేని రెండు ఘటనలు ఒకే సమయంలో పరస్పర వివర్జితాలు మరియు స్వతంత్రాలు కాజాలవు."
+        }
+      ],
+      "summaryPointsTe": [
+        "సంభావ్యత ఎల్లప్పుడూ 0 మరియు 1 మధ్య ఉంటుంది: 0 \\le P(A) \\le 1.",
+        "అసంభవ ఘటన సంభావ్యత = 0; ఖచ్చిత ఘటన సంభావ్యత = 1.",
+        "పూరక ఘటన సంభావ్యత: P(A') = 1 - P(A).",
+        "బేయెస్ సిద్ధాంతం 'కారణాల సంభావ్యత' (Probability of Causes) ను నిర్ణయిస్తుంది."
+      ],
+      "officialSyllabusMapping": "Paper II: Unit III - Probability & Bayes' Theorem",
+      "sourceReferences": [
+        "TGPSC Notification 07/G/ES/2026 Annexure-II",
+        "Fundamentals of Mathematical Statistics - Gupta & Kapoor"
+      ],
+      "lastVerifiedDate": "2026-10-30"
+    },
+    {
+      "id": "lesson_p2_correlation_regression",
+      "topicId": "p2_correlation_regression",
+      "subtopicId": "p2_cor_pearson_spearman",
+      "titleTe": "సహసంబంధం మరియు ప్రతిగమన విశ్లేషణ",
+      "titleEn": "Correlation and Regression Analysis",
+      "estimatedMinutes": 40,
+      "overviewTe": "రెండు లేదా అంతకంటే ఎక్కువ చలరాశుల మధ్య గల పరస్పర సంబంధాన్ని అధ్యయనం చేయడాన్ని 'సహసంబంధం' (Correlation) అంటారు. ఒక చలరాశి తెలిసినప్పుడు మరొక చలరాశి విలువను అంచనా వేసే గణిత సమీకరణాన్ని 'ప్రతిగమనం' (Regression) అంటారు.",
+      "overviewEn": "Correlation studies the degree and direction of linear association between two variables. Regression provides mathematical equations to predict the value of a dependent variable from an independent variable.",
+      "keyConceptsTe": [
+        {
+          "concept": "కార్ల్ పియర్సన్ సహసంబంధ గుణకం (r)",
+          "englishTerm": "Karl Pearson's Coefficient (r)",
+          "explanation": "రెండు చలరాశుల మధ్య సరళ సహసంబంధ తీవ్రతను కొలిచే సంఖ్యా రూపం. r విలువ ఎల్లప్పుడూ -1 నుండి +1 మధ్య ఉంటుంది (-1 \\le r \\le +1). ఇది మూల బిందువు మార్పు మరియు స్కేలు మార్పుల నుండి స్వతంత్రమైనది (Independent of origin and scale)."
+        },
+        {
+          "concept": "ప్రతిగమన గుణకాలు (byx మరియు bxy)",
+          "englishTerm": "Regression Coefficients",
+          "explanation": "Y పై X ప్రతిగమన గుణకం byx, X పై Y ప్రతిగమన గుణకం bxy. ఈ రెండు గుణకాల గుణకార మధ్యమం సహసంబంధ గుణకం అవుతుంది: r = \\pm \\sqrt{b_{yx} \\cdot b_{xy}}. రెండు గుణకాల గుర్తులు (Signs) ఒకేలా ఉంటాయి."
+        },
+        {
+          "concept": "సంభావ్య దోషం (Probable Error - PE)",
+          "englishTerm": "Probable Error",
+          "explanation": "సహసంబంధ గుణకం యొక్క విశ్వసనీయతను పరీక్షించడానికి సంభావ్య దోషం వాడుతారు. PE = 0.6745 \\times \\frac{1 - r^2}{\\sqrt{n}}. r విలువ 6 PE కంటే ఎక్కువగా ఉంటే సహసంబంధం గణనీయమైనది (Significant)."
+        }
+      ],
+      "formulas": [
+        {
+          "id": "formula_pearson_r",
+          "nameTe": "కార్ల్ పియర్సన్ సహసంబంధ గుణకం సూత్రం",
+          "nameEn": "Karl Pearson's Correlation Coefficient",
+          "latex": "r = \\frac{\\text{Cov}(X, Y)}{\\sigma_x \\sigma_y} = \\frac{\\sum (x - \\bar{x})(y - \\bar{y})}{\\sqrt{\\sum (x - \\bar{x})^2 \\sum (y - \\bar{y})^2}}",
+          "symbolExplanationsTe": [
+            {
+              "symbol": "r",
+              "explanation": "సహసంబంధ గుణకం (-1 నుండి +1)"
+            },
+            {
+              "symbol": "\\text{Cov}(X, Y)",
+              "explanation": "సహవిస్తృతి (Covariance)"
+            },
+            {
+              "symbol": "\\sigma_x, \\sigma_y",
+              "explanation": "X మరియు Y ల ప్రామాణిక విచలనాలు"
+            }
+          ],
+          "usageTe": "రెండు పరిమాణాత్మక చలరాశుల మధ్య సరళ సంబంధాన్ని కొలవడానికి."
+        },
+        {
+          "id": "formula_regression_relation",
+          "nameTe": "సహసంబంధం మరియు ప్రతిగమన గుణకాల సంబంధం",
+          "nameEn": "Relation between r and regression coefficients",
+          "latex": "r = \\pm \\sqrt{b_{yx} \\times b_{xy}}",
+          "symbolExplanationsTe": [
+            {
+              "symbol": "b_{yx}",
+              "explanation": "Y on X ప్రతిగమన గుణకం: r \\frac{\\sigma_y}{\\sigma_x}"
+            },
+            {
+              "symbol": "b_{xy}",
+              "explanation": "X on Y ప్రతిగమన గుణకం: r \\frac{\\sigma_x}{\\sigma_y}"
+            }
+          ],
+          "usageTe": "ప్రతిగమన సమీకరణాల వాలు నుండి r ను కనుగొనడానికి."
+        }
+      ],
+      "workedExamples": [
+        {
+          "id": "we_reg_01",
+          "titleTe": "ఉదాహరణ: ప్రతిగమన గుణకాల నుండి r మరియు భేదాలు కనుగొనుట",
+          "titleEn": "Example: Finding r from Regression Coefficients",
+          "problemTe": "రెండు ప్రతిగమన గుణకాలు b_{yx} = 0.8 మరియు b_{xy} = 0.45 అయితే, సహసంబంధ గుణకం r విలువ ఎంత?",
+          "givenDataTe": [
+            "b_{yx} = 0.8 (ధనాత్మకం)",
+            "b_{xy} = 0.45 (ధనాత్మకం)"
+          ],
+          "stepByStepSolutionTe": [
+            {
+              "stepNumber": 1,
+              "description": "సూత్రాన్ని గుర్తించడం: r = \\sqrt{b_{yx} \\cdot b_{xy}} (రెండు గుణకాలు ధనాత్మకం కాబట్టి r కూడా ధనాత్మకం)",
+              "mathLatex": "r = + \\sqrt{0.8 \\times 0.45}"
+            },
+            {
+              "stepNumber": 2,
+              "description": "గుణకారం చేయడం: 0.8 \\times 0.45 = 0.36",
+              "mathLatex": "r = \\sqrt{0.36} = 0.6"
+            }
+          ],
+          "finalAnswerTe": "సహసంబంధ గుణకం r = 0.6 (ధనాత్మక మిత సహసంబంధం)",
+          "keyTakeawayTe": "b_{yx} మరియు b_{xy} ల గుర్తులు ఒకేలా ఉండాలి. రెండూ రుణాత్మకమైతే r కూడా రుణాత్మకమే అవుతుంది."
+        }
+      ],
+      "commonMistakesTe": [
+        {
+          "mistake": "ఒక గుణకం 1 కంటే పెద్దదిగా ఉన్నప్పుడు లెక్క తప్పని భావించడం.",
+          "correction": "రెండు గుణకాలలో ఒకటి 1 కంటే ఎక్కువ ఉండవచ్చు, కానీ రెండింటి గుణకారం (r^2) తప్పనిసరిగా 1 లేదా అంతకంటే తక్కువ ఉండాలి.",
+          "why": "ఎందుకంటే r^2 \\le 1."
+        }
+      ],
+      "summaryPointsTe": [
+        "సహసంబంధ గుణకం స్వతంత్రమైనది (రెండు దిశల్లోనూ r_{xy} = r_{yx}). కానీ ప్రతిగమన గుణకాలు సమానం కానక్కర్లేదు (b_{yx} \\ne b_{xy}).",
+        "రెండు ప్రతిగమన రేఖలు ఒకదానికొకటి వాటి సగటుల బిందువు (\\bar{x}, \\bar{y}) వద్ద ఖండించుకుంటాయి.",
+        "r = 0 అయితే రెండు ప్రతిగమన రేఖలు ఒకదానికొకటి లంబంగా (90 డిగ్రీలు) ఉంటాయి.",
+        "r = \\pm 1 అయితే రెండు ప్రతిగమన రేఖలు ఏకీభవిస్తాయి (Coincide)."
+      ],
+      "officialSyllabusMapping": "Paper II: Unit V - Correlation and Regression",
+      "sourceReferences": [
+        "TGPSC Notification 07/G/ES/2026 Annexure-II"
+      ],
+      "lastVerifiedDate": "2026-10-30"
+    },
+    {
+      "id": "lesson_p1_telangana_history_statehood",
+      "topicId": "p1_history_telangana_statehood",
+      "subtopicId": "p1_tg_1969_movement",
+      "titleTe": "హైదరాబాద్ విలీనం, ముల్కీ నిబంధనలు మరియు 1969 ఉద్యమం",
+      "titleEn": "Hyderabad Annexation, Mulki Rules and 1969 Agitation",
+      "estimatedMinutes": 30,
+      "overviewTe": "1948 సెప్టెంబర్ ఆపరేషన్ పోలో ద్వారా హైదరాబాద్ సంస్థానం భారత యూనియన్‌లో విలీనమైనది. ఆ తర్వాత ముల్కీ నిబంధనల ఉల్లంఘనలు, ఆంధ్రప్రదేశ్ అవతరణ ఒప్పందాల ఉల్లంఘనకు వ్యతిరేకంగా 1969లో విద్యార్థులు చేపట్టిన తొలిదశ ప్రత్యేక తెలంగాణ ఉద్యమం చారిత్రాత్మకమైనది.",
+      "overviewEn": "Operation Polo in September 1948 integrated Hyderabad State into India. Subsequent violations of Gentlemen's Agreement and Mulki rules triggered the historic 1969 first-phase Telangana movement led by students.",
+      "keyConceptsTe": [
+        {
+          "concept": "ఆపరేషన్ పోలో (Operation Polo)",
+          "englishTerm": "Police Action (Operation Polo)",
+          "explanation": "1948 సెప్టెంబర్ 13 నుండి 17 వరకు జరిగిన సైనిక చర్య. మేజర్ జనరల్ జె.ఎన్. చౌదరి నేతృత్వంలో నిజాం సైన్యం లొంగిపోయింది. సెప్టెంబర్ 17న హైదరాబాద్ విలీనం పూర్తయింది."
+        },
+        {
+          "concept": "పెద్దమనుషుల ఒప్పందం (Gentlemen's Agreement)",
+          "englishTerm": "Gentlemen's Agreement (1956)",
+          "explanation": "1956 ఫిబ్రవరి 20న ఢిల్లీలోని హైదరాబాద్ హౌస్‌లో కుదిరిన ఒప్పందం. తెలంగాణ, ఆంధ్ర ప్రాంతాల నేతలు సంతకాలు చేశారు. తెలంగాణ ప్రాంతీయ కమిటీ (Regional Committee) ఏర్పాటు, ఉద్యోగాల్లో ముల్కీ రక్షణలు దీనిలోని ముఖ్య అంశాలు."
+        },
+        {
+          "concept": "1969 ప్రత్యేక తెలంగాణ ఉద్యమం",
+          "englishTerm": "1969 Telangana Agitation",
+          "explanation": "పాల్వంచ థర్మల్ పవర్ స్టేషన్‌లో స్థానికేతరుల నియామకాలకు వ్యతిరేకంగా జనవరి 1969లో ఉద్యమం ప్రారంభమైంది. రవీంద్రనాథ్ ఆమరణ నిరాహారదీక్ష, ఉస్మానియా విద్యార్థుల పోరాటం, 369 మంది అమరుల త్యాగాలు ఈ ఉద్యమంలో కీలక ఘట్టాలు."
+        }
+      ],
+      "summaryPointsTe": [
+        "హైదరాబాద్ రాజ్య చివరి ప్రధాని మీర్ లాయక్ అలీ; నిజాం మీర్ ఉస్మాన్ అలీ ఖాన్.",
+        "1952లో సిటీ కాలేజీ ఘటన మరియు తొలిసారి 'గైర్ ముల్కీ గో బ్యాక్' నినాదాలు వచ్చాయి.",
+        "1969 ఉద్యమ సమయంలో ప్రధానమంత్రి ఇందిరా గాంధీ ఎనిమిది సూత్రాల పథకాన్ని (8-Point Formula) ఏప్రిల్ 1969లో ప్రకటించారు.",
+        "1972 జై ఆంధ్ర ఉద్యమం తర్వాత 1973లో ఆరు సూత్రాల పథకం (6-Point Formula) మరియు 371-D రాజ్యాంగ అధికరణం అమల్లోకి వచ్చాయి."
+      ],
+      "officialSyllabusMapping": "Paper I: Unit 11 - History of Telangana with special emphasis on Movement for Telangana Statehood",
+      "sourceReferences": [
+        "Telangana History & Culture - Telugu Akademi",
+        "TGPSC Official Syllabus 07/G/ES/2026"
+      ],
+      "lastVerifiedDate": "2026-10-30"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_p2_001",
+      "paperId": "paper_2",
+      "topicId": "p2_central_tendency_dispersion",
+      "subtopicId": "p2_stat_central_averages",
+      "questionNumber": 1,
+      "questionTextTe": "మితమైన అసౌష్ఠవ పౌనఃపున్య విభాజనంలో (Moderately skewed distribution) అంకమధ్యమం 30 మరియు మధ్యగతం 32 అయితే, బాహుళకం (Mode) విలువ ఎంత?",
+      "questionTextEn": "In a moderately skewed distribution, if the Mean is 30 and the Median is 32, what is the value of the Mode?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "34",
+          "textEn": "34"
+        },
+        {
+          "id": "B",
+          "textTe": "36",
+          "textEn": "36"
+        },
+        {
+          "id": "C",
+          "textTe": "31",
+          "textEn": "31"
+        },
+        {
+          "id": "D",
+          "textTe": "28",
+          "textEn": "28"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "ఆనుభావిక సూత్రం ప్రకారం: Mode = 3(Median) - 2(Mean). ఇచ్చట Median = 32 మరియు Mean = 30. కావున Mode = 3(32) - 2(30) = 96 - 60 = 36.",
+      "explanationEn": "Using the empirical relationship: Mode = 3(Median) - 2(Mean) = 3(32) - 2(30) = 96 - 60 = 36.",
+      "relevantFormulaLatex": "\\text{Mode} = 3(\\text{Median}) - 2(\\text{Mean})",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 45,
+      "sourceType": "standard_degree_textbook",
+      "sourceReference": "Degree Statistics Paper II - Central Tendency",
+      "numericalMetadata": {
+        "isNumerical": true,
+        "formulaUsed": "Mode = 3*Median - 2*Mean",
+        "calculatedValue": 36,
+        "tolerance": 0.01,
+        "independentValidationPassed": true
+      },
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_002",
+      "paperId": "paper_2",
+      "topicId": "p2_central_tendency_dispersion",
+      "subtopicId": "p2_stat_central_averages",
+      "questionNumber": 2,
+      "questionTextTe": "ఒక దత్తాంశంలో తీవ్ర విలువలు (Extreme Values / Outliers) ఉన్నప్పుడు, కేంద్రీయ ప్రవృత్తిని కొలవడానికి క్రింది వాటిలో అత్యంత అనువైన సగటు ఏది?",
+      "questionTextEn": "Which of the following is the most suitable measure of central tendency when extreme values (outliers) are present in the dataset?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "అంకమధ్యమం (Arithmetic Mean)",
+          "textEn": "Arithmetic Mean"
+        },
+        {
+          "id": "B",
+          "textTe": "మధ్యగతం (Median)",
+          "textEn": "Median"
+        },
+        {
+          "id": "C",
+          "textTe": "గుణమధ్యమం (Geometric Mean)",
+          "textEn": "Geometric Mean"
+        },
+        {
+          "id": "D",
+          "textTe": "హరమధ్యమం (Harmonic Mean)",
+          "textEn": "Harmonic Mean"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "మధ్యగతం (Median) అనేది స్థాన సగటు (Positional average). ఇది పరిశీలనల శ్రేణిలో మధ్య స్థానాన్ని మాత్రమే సూచిస్తుంది కాబట్టి తీవ్ర లేదా విపరీత విలువల (Outliers) ప్రభావానికి గురికాదు. అంకమధ్యమం తీవ్ర విలువల వల్ల తీవ్రంగా ప్రభావితమవుతుంది.",
+      "explanationEn": "Median is a positional average and is not affected by extreme values or outliers, unlike the arithmetic mean which utilizes all observations.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 30,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Degree Statistics - Properties of Averages",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_003",
+      "paperId": "paper_2",
+      "topicId": "p2_central_tendency_dispersion",
+      "subtopicId": "p2_stat_dispersion_sd_cv",
+      "questionNumber": 3,
+      "questionTextTe": "ఒక పంపిణీ యొక్క అంకమధ్యమం 50 మరియు ప్రామాణిక విచలనం (Standard Deviation) 10 అయితే, దాని విచలన గుణకం (Coefficient of Variation - CV) ఎంత?",
+      "questionTextEn": "If the arithmetic mean of a distribution is 50 and the standard deviation is 10, what is the coefficient of variation (CV)?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "5%",
+          "textEn": "5%"
+        },
+        {
+          "id": "B",
+          "textTe": "20%",
+          "textEn": "20%"
+        },
+        {
+          "id": "C",
+          "textTe": "25%",
+          "textEn": "25%"
+        },
+        {
+          "id": "D",
+          "textTe": "50%",
+          "textEn": "50%"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "విచలన గుణకం సూత్రం: CV = (\\sigma / \\bar{x}) \\times 100. ఇచ్చట \\sigma = 10 మరియు \\bar{x} = 50. కావున CV = (10 / 50) \\times 100 = 0.2 \\times 100 = 20%.",
+      "explanationEn": "Formula: CV = (sigma / mean) * 100 = (10 / 50) * 100 = 20%.",
+      "relevantFormulaLatex": "CV = \\frac{\\sigma}{\\bar{x}} \\times 100",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 40,
+      "sourceType": "standard_degree_textbook",
+      "sourceReference": "Measures of Dispersion - Karl Pearson",
+      "numericalMetadata": {
+        "isNumerical": true,
+        "formulaUsed": "(10/50)*100",
+        "calculatedValue": 20,
+        "tolerance": 0.01,
+        "independentValidationPassed": true
+      },
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_004",
+      "paperId": "paper_2",
+      "topicId": "p2_central_tendency_dispersion",
+      "subtopicId": "p2_stat_dispersion_sd_cv",
+      "questionNumber": 4,
+      "questionTextTe": "ప్రతి పరిశీలన విలువకు స్థిర సంఖ్య 5 ని కూడితే, కొత్త దత్తాంశం యొక్క ప్రామాణిక విచలనం (Standard Deviation) ఏమవుతుంది?",
+      "questionTextEn": "If a constant value of 5 is added to every observation in a dataset, what happens to the standard deviation of the new dataset?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "5 పెరుగుతుంది",
+          "textEn": "Increases by 5"
+        },
+        {
+          "id": "B",
+          "textTe": "5 తగ్గుతుంది",
+          "textEn": "Decreases by 5"
+        },
+        {
+          "id": "C",
+          "textTe": "ఎలాంటి మార్పు ఉండదు (స్థిరంగా ఉంటుంది)",
+          "textEn": "Remains unchanged"
+        },
+        {
+          "id": "D",
+          "textTe": "5 రెట్లు అవుతుంది",
+          "textEn": "Becomes 5 times"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationTe": "ప్రామాణిక విచలనం మూల బిందువు మార్పు (Change of Origin) నుండి స్వతంత్రమైనది. అనగా ప్రతి పరిశీలనకు ఒక స్థిర సంఖ్యను కూడినా లేదా తీసివేసినా విస్తరణ (SD) మారదు. కేవలం స్కేలు మారినప్పుడు (గుణకారం లేదా భాగహారం చేసినప్పుడు) మాత్రమే మారుతుంది.",
+      "explanationEn": "Standard deviation is independent of change of origin. Adding or subtracting a constant to all observations does not alter the dispersion.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 30,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Properties of Standard Deviation",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_005",
+      "paperId": "paper_2",
+      "topicId": "p2_probability",
+      "subtopicId": "p2_prob_basics_events",
+      "questionNumber": 5,
+      "questionTextTe": "రెండు నిష్పాక్షిక నాణేలను ఏకకాలంలో ఎగురవేసినప్పుడు కనీసం ఒక బొమ్మ (At least one Head) పడే సంభావ్యత ఎంత?",
+      "questionTextEn": "When two unbiased coins are tossed simultaneously, what is the probability of getting at least one Head?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "1/4",
+          "textEn": "1/4"
+        },
+        {
+          "id": "B",
+          "textTe": "1/2",
+          "textEn": "1/2"
+        },
+        {
+          "id": "C",
+          "textTe": "3/4",
+          "textEn": "3/4"
+        },
+        {
+          "id": "D",
+          "textTe": "1",
+          "textEn": "1"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationTe": "శాంపిల్ ఆవరణం S = {HH, HT, TH, TT}, మొత్తం పర్యవసానాలు n(S) = 4. కనీసం ఒక బొమ్మ పడే అనుకూల పర్యవసానాలు E = {HH, HT, TH}, n(E) = 3. కావున సంభావ్యత P(E) = n(E)/n(S) = 3/4. (లేదా: 1 - P(బొమ్మలు లేకపోవడం) = 1 - 1/4 = 3/4).",
+      "explanationEn": "Sample space S = {HH, HT, TH, TT}, total = 4. Favorable outcomes for at least one head: {HH, HT, TH} = 3. Probability = 3/4.",
+      "relevantFormulaLatex": "P(\\text{At least one H}) = 1 - P(\\text{No H}) = 1 - \\frac{1}{4} = \\frac{3}{4}",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 30,
+      "sourceType": "standard_degree_textbook",
+      "sourceReference": "Elementary Probability Theory",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_006",
+      "paperId": "paper_2",
+      "topicId": "p2_probability",
+      "subtopicId": "p2_prob_conditional_independent",
+      "questionNumber": 6,
+      "questionTextTe": "A మరియు B లు రెండు స్వతంత్ర ఘటనలు (Independent Events) అయి, P(A) = 0.4 మరియు P(B) = 0.5 అయితే, P(A \\cup B) విలువ ఎంత?",
+      "questionTextEn": "If A and B are two independent events with P(A) = 0.4 and P(B) = 0.5, what is the value of P(A U B)?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "0.90",
+          "textEn": "0.90"
+        },
+        {
+          "id": "B",
+          "textTe": "0.70",
+          "textEn": "0.70"
+        },
+        {
+          "id": "C",
+          "textTe": "0.20",
+          "textEn": "0.20"
+        },
+        {
+          "id": "D",
+          "textTe": "0.60",
+          "textEn": "0.60"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "A, B లు స్వతంత్ర ఘటనలు కాబట్టి P(A \\cap B) = P(A) \\times P(B) = 0.4 \\times 0.5 = 0.20. సంకలన సూత్రం ప్రకారం: P(A \\cup B) = P(A) + P(B) - P(A \\cap B) = 0.4 + 0.5 - 0.20 = 0.70.",
+      "explanationEn": "Since A and B are independent, P(A ∩ B) = P(A) * P(B) = 0.4 * 0.5 = 0.20. By addition theorem, P(A ∪ B) = 0.4 + 0.5 - 0.20 = 0.70.",
+      "relevantFormulaLatex": "P(A \\cup B) = P(A) + P(B) - P(A)P(B)",
+      "difficulty": "medium",
+      "estimatedSolveSeconds": 45,
+      "sourceType": "standard_degree_textbook",
+      "sourceReference": "Theorems of Probability",
+      "numericalMetadata": {
+        "isNumerical": true,
+        "formulaUsed": "0.4 + 0.5 - (0.4*0.5)",
+        "calculatedValue": 0.7,
+        "tolerance": 0.01,
+        "independentValidationPassed": true
+      },
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_007",
+      "paperId": "paper_2",
+      "topicId": "p2_random_variables_distributions",
+      "subtopicId": "p2_dist_discrete_binomial_poisson",
+      "questionNumber": 7,
+      "questionTextTe": "ఒక ద్విపద విభాజనం (Binomial Distribution) యొక్క అంకమధ్యమం 4 మరియు విస్తృతి (Variance) 3 అయితే, పరామితులు n మరియు p ల విలువలు వరుసగా:",
+      "questionTextEn": "For a Binomial distribution, if the mean is 4 and variance is 3, what are the parameters n and p respectively?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "n = 16, p = 1/4",
+          "textEn": "n = 16, p = 1/4"
+        },
+        {
+          "id": "B",
+          "textTe": "n = 12, p = 1/3",
+          "textEn": "n = 12, p = 1/3"
+        },
+        {
+          "id": "C",
+          "textTe": "n = 16, p = 3/4",
+          "textEn": "n = 16, p = 3/4"
+        },
+        {
+          "id": "D",
+          "textTe": "n = 8, p = 1/2",
+          "textEn": "n = 8, p = 1/2"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationTe": "ద్విపద విభాజనంలో Mean = np = 4, Variance = npq = 3. కావున q = Variance / Mean = 3 / 4. విజయ సంభావ్యత p = 1 - q = 1 - 3/4 = 1/4. ఇప్పుడు np = 4 కావున n(1/4) = 4 \\implies n = 16.",
+      "explanationEn": "Mean = np = 4, Variance = npq = 3. Therefore q = 3/4, p = 1 - 3/4 = 1/4. Then n*(1/4) = 4 => n = 16.",
+      "relevantFormulaLatex": "E(X) = np, \\quad V(X) = npq",
+      "difficulty": "medium",
+      "estimatedSolveSeconds": 50,
+      "sourceType": "standard_degree_textbook",
+      "sourceReference": "Binomial Distribution Properties",
+      "numericalMetadata": {
+        "isNumerical": true,
+        "formulaUsed": "q=3/4, p=1/4, n=16",
+        "calculatedValue": 16,
+        "tolerance": 0.01,
+        "independentValidationPassed": true
+      },
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_008",
+      "paperId": "paper_2",
+      "topicId": "p2_random_variables_distributions",
+      "subtopicId": "p2_dist_discrete_binomial_poisson",
+      "questionNumber": 8,
+      "questionTextTe": "క్రింది ఏ సంభావ్యతా విభాజనంలో అంకమధ్యమం మరియు విస్తృతి సమానంగా ఉంటాయి?",
+      "questionTextEn": "In which of the following probability distributions are the mean and variance equal?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "ద్విపద విభాజనం (Binomial)",
+          "textEn": "Binomial Distribution"
+        },
+        {
+          "id": "B",
+          "textTe": "పాయిజన్ విభాజనం (Poisson)",
+          "textEn": "Poisson Distribution"
+        },
+        {
+          "id": "C",
+          "textTe": "సాధారణ విభాజనం (Normal)",
+          "textEn": "Normal Distribution"
+        },
+        {
+          "id": "D",
+          "textTe": "రేఖాగణిత విభాజనం (Geometric)",
+          "textEn": "Geometric Distribution"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "పాయిజన్ విభాజనంలో (Poisson Distribution) అంకమధ్యమం E(X) = \\lambda మరియు విస్తృతి V(X) = \\lambda సమానంగా ఉంటాయి. ద్విపద విభాజనంలో విస్తృతి ఎల్లప్పుడూ సగటు కంటే తక్కువగా ఉంటుంది (npq < np).",
+      "explanationEn": "For a Poisson distribution, both the mean and variance are equal to parameter lambda.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 25,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Theoretical Distributions",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_009",
+      "paperId": "paper_2",
+      "topicId": "p2_correlation_regression",
+      "subtopicId": "p2_reg_lines_equations",
+      "questionNumber": 9,
+      "questionTextTe": "రెండు ప్రతిగమన గుణకాలు (Regression Coefficients) b_{yx} = 0.8 మరియు b_{xy} = 0.45 అయితే, కార్ల్ పియర్సన్ సహసంబంధ గుణకం (r) విలువ ఎంత?",
+      "questionTextEn": "If the two regression coefficients are byx = 0.8 and bxy = 0.45, what is the value of Karl Pearson's correlation coefficient r?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "0.36",
+          "textEn": "0.36"
+        },
+        {
+          "id": "B",
+          "textTe": "0.60",
+          "textEn": "0.60"
+        },
+        {
+          "id": "C",
+          "textTe": "0.625",
+          "textEn": "0.625"
+        },
+        {
+          "id": "D",
+          "textTe": "0.40",
+          "textEn": "0.40"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "సూత్రం: r = \\pm \\sqrt{b_{yx} \\times b_{xy}}. ఇక్కడ రెండు గుణకాలు ధనాత్మకం కాబట్టి r కూడా ధనాత్మకం. r = \\sqrt{0.8 \\times 0.45} = \\sqrt{0.36} = 0.60.",
+      "explanationEn": "Formula: r = sqrt(byx * bxy) = sqrt(0.8 * 0.45) = sqrt(0.36) = 0.60.",
+      "relevantFormulaLatex": "r = \\sqrt{b_{yx} \\cdot b_{xy}}",
+      "difficulty": "medium",
+      "estimatedSolveSeconds": 40,
+      "sourceType": "standard_degree_textbook",
+      "sourceReference": "Correlation and Regression Equations",
+      "numericalMetadata": {
+        "isNumerical": true,
+        "formulaUsed": "sqrt(0.8 * 0.45)",
+        "calculatedValue": 0.6,
+        "tolerance": 0.01,
+        "independentValidationPassed": true
+      },
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_010",
+      "paperId": "paper_2",
+      "topicId": "p2_correlation_regression",
+      "subtopicId": "p2_cor_pearson_spearman",
+      "questionNumber": 10,
+      "questionTextTe": "రెండు చలరాశుల మధ్య సహసంబంధ గుణకం r = 0 అయితే, ఆ రెండు ప్రతిగమన రేఖలు (Regression lines) ఒకదానితో ఒకటి చేసే కోణం ఎంత?",
+      "questionTextEn": "If the correlation coefficient between two variables is r = 0, what is the angle between the two regression lines?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "0° (ఏకీభవిస్తాయి)",
+          "textEn": "0° (Coincident)"
+        },
+        {
+          "id": "B",
+          "textTe": "45°",
+          "textEn": "45°"
+        },
+        {
+          "id": "C",
+          "textTe": "90° (లంబంగా ఉంటాయి)",
+          "textEn": "90° (Perpendicular)"
+        },
+        {
+          "id": "D",
+          "textTe": "180°",
+          "textEn": "180°"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationTe": "రెండు ప్రతిగమన రేఖల మధ్య కోణం \\tan \\theta = \\frac{1 - r^2}{r} (\\frac{\\sigma_x \\sigma_y}{\\sigma_x^2 + \\sigma_y^2}). r = 0 అయినప్పుడు \\tan \\theta = \\infty, అనగా \\theta = 90°. కాబట్టి r = 0 అయితే రెండు రేఖలు ఒకదానికొకటి లంబంగా ఉంటాయి.",
+      "explanationEn": "When r = 0, tan theta = infinity, which gives theta = 90°. Hence the regression lines are mutually perpendicular.",
+      "difficulty": "medium",
+      "estimatedSolveSeconds": 35,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Angle between Regression Lines",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_011",
+      "paperId": "paper_2",
+      "topicId": "p2_time_series_index_numbers",
+      "subtopicId": "p2_idx_laspeyre_paasche_fisher",
+      "questionNumber": 11,
+      "questionTextTe": "లాస్‌పియర్ సూచీ సంఖ్య (Laspeyres Index) 121 మరియు పాషే సూచీ సంఖ్య (Paasche Index) 100 అయితే, ఫిషర్ ఆదర్శ సూచీ సంఖ్య (Fisher's Ideal Index) విలువ ఎంత?",
+      "questionTextEn": "If Laspeyres index number is 121 and Paasche index number is 100, what is Fisher's ideal index number?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "110.5",
+          "textEn": "110.5"
+        },
+        {
+          "id": "B",
+          "textTe": "110",
+          "textEn": "110"
+        },
+        {
+          "id": "C",
+          "textTe": "121",
+          "textEn": "121"
+        },
+        {
+          "id": "D",
+          "textTe": "105",
+          "textEn": "105"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "ఫిషర్ ఆదర్శ సూచీ సంఖ్య అనేది లాస్‌పియర్ మరియు పాషే సూచీల గుణకార మధ్యమం (Geometric Mean): F = \\sqrt{L \\times P}. ఇక్కడ L = 121, P = 100. కావున F = \\sqrt{121 \\times 100} = \\sqrt{12100} = 110.",
+      "explanationEn": "Fisher's Ideal Index is the geometric mean of Laspeyres and Paasche indices: F = sqrt(L * P) = sqrt(121 * 100) = 110.",
+      "relevantFormulaLatex": "F = \\sqrt{L \\times P}",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 30,
+      "sourceType": "standard_degree_textbook",
+      "sourceReference": "Fisher's Ideal Index Properties",
+      "numericalMetadata": {
+        "isNumerical": true,
+        "formulaUsed": "sqrt(121 * 100)",
+        "calculatedValue": 110,
+        "tolerance": 0.01,
+        "independentValidationPassed": true
+      },
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_012",
+      "paperId": "paper_2",
+      "topicId": "p2_time_series_index_numbers",
+      "subtopicId": "p2_idx_tests_adequacy",
+      "questionNumber": 12,
+      "questionTextTe": "కాల విపర్యయ పరీక్ష (Time Reversal Test - TRT) మరియు కారక విపర్యయ పరీక్ష (Factor Reversal Test - FRT) రెండింటినీ సంతృప్తి పరిచే సూచీ ఏది?",
+      "questionTextEn": "Which index number satisfies both the Time Reversal Test (TRT) and Factor Reversal Test (FRT)?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "లాస్‌పియర్ సూచీ (Laspeyres)",
+          "textEn": "Laspeyres Index"
+        },
+        {
+          "id": "B",
+          "textTe": "పాషే సూచీ (Paasche)",
+          "textEn": "Paasche Index"
+        },
+        {
+          "id": "C",
+          "textTe": "ఫిషర్ ఆదర్శ సూచీ (Fisher's Ideal Index)",
+          "textEn": "Fisher's Ideal Index"
+        },
+        {
+          "id": "D",
+          "textTe": "మార్షల్-ఎడ్జ్‌వర్త్ సూచీ (Marshall-Edgeworth)",
+          "textEn": "Marshall-Edgeworth Index"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationTe": "ఫిషర్ సూచీ సంఖ్య మాత్రమే TRT (P_{01} \\times P_{10} = 1) మరియు FRT (P_{01} \\times Q_{01} = V_{01}) రెండింటినీ సంతృప్తి పరుస్తుంది. అందుకే దీనిని 'ఆదర్శ సూచీ' (Ideal Index) అంటారు.",
+      "explanationEn": "Fisher's Ideal Index is the only index that satisfies both Time Reversal and Factor Reversal tests.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 30,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Tests of Adequacy of Index Numbers",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_013",
+      "paperId": "paper_2",
+      "topicId": "p2_sampling_techniques",
+      "subtopicId": "p2_samp_srs_methods",
+      "questionNumber": 13,
+      "questionTextTe": "పరిమిత జనాభా పరిమాణం N = 5 నుండి n = 2 పరిమాణం గల శాంపిల్‌ను తిరిగేయని పద్ధతిలో (SRSWOR) ఎంపిక చేస్తే, సాధ్యమయ్యే మొత్తం శాంపిల్స్ సంఖ్య ఎంత?",
+      "questionTextEn": "From a finite population of size N = 5, if a sample of size n = 2 is drawn without replacement (SRSWOR), what is the total number of possible samples?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "25",
+          "textEn": "25"
+        },
+        {
+          "id": "B",
+          "textTe": "10",
+          "textEn": "10"
+        },
+        {
+          "id": "C",
+          "textTe": "20",
+          "textEn": "20"
+        },
+        {
+          "id": "D",
+          "textTe": "5",
+          "textEn": "5"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "తిరిగేయని సరళ యాదృచ్ఛిక శాంప్లింగ్‌లో (SRSWOR) సాధ్యమయ్యే శాంపిల్స్ సంఖ్య = \\binom{N}{n} = \\binom{5}{2} = \\frac{5 \\times 4}{2 \\times 1} = 10. (తిరిగేసే పద్ధతి SRSWR అయితే N^n = 5^2 = 25 అయ్యేది).",
+      "explanationEn": "For SRSWOR, total possible samples = N_C_n = 5_C_2 = 10. For SRSWR, it would be N^n = 5^2 = 25.",
+      "relevantFormulaLatex": "\\binom{N}{n} = \\frac{N!}{n!(N-n)!}",
+      "difficulty": "medium",
+      "estimatedSolveSeconds": 40,
+      "sourceType": "standard_degree_textbook",
+      "sourceReference": "Sampling Techniques - Cochran / Sukhatme",
+      "numericalMetadata": {
+        "isNumerical": true,
+        "formulaUsed": "5_C_2 = 10",
+        "calculatedValue": 10,
+        "tolerance": 0.01,
+        "independentValidationPassed": true
+      },
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_014",
+      "paperId": "paper_2",
+      "topicId": "p2_basics_of_computers",
+      "subtopicId": "p2_comp_number_systems",
+      "questionNumber": 14,
+      "questionTextTe": "దశాంశ సంఖ్య 25 (Decimal 25) యొక్క సమానమైన బైనరీ రూపం (Binary representation) ఏది?",
+      "questionTextEn": "What is the equivalent binary representation of the decimal number 25?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "11001",
+          "textEn": "11001"
+        },
+        {
+          "id": "B",
+          "textTe": "10101",
+          "textEn": "10101"
+        },
+        {
+          "id": "C",
+          "textTe": "11100",
+          "textEn": "11100"
+        },
+        {
+          "id": "D",
+          "textTe": "10011",
+          "textEn": "10011"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationTe": "25 ని 2 చే భాగించగా: 25 = 16 + 8 + 1 = 2^4 + 2^3 + 2^0. కావున స్థాన విలువలు (16, 8, 4, 2, 1) వరుసగా 1, 1, 0, 0, 1 అవుతాయి. కాబట్టి 25_{10} = 11001_2.",
+      "explanationEn": "25 = 16 + 8 + 1 = 1*2^4 + 1*2^3 + 0*2^2 + 0*2^1 + 1*2^0 = (11001)_2.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 35,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Basics of Computers - Number Systems",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p2_015",
+      "paperId": "paper_2",
+      "topicId": "p2_basics_of_computers",
+      "subtopicId": "p2_comp_logic_operators",
+      "questionNumber": 15,
+      "questionTextTe": "రెండు ఇన్‌పుట్‌లు A మరియు B లు సమానమైన విలువలను (రెండూ 0 లేదా రెండూ 1) కలిగి ఉన్నప్పుడు అవుట్‌పుట్ 0 వచ్చే లాజిక్ ఆపరేటర్ ఏది?",
+      "questionTextEn": "Which logic operator produces an output of 0 when both inputs A and B are identical (both 0 or both 1)?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "AND",
+          "textEn": "AND"
+        },
+        {
+          "id": "B",
+          "textTe": "OR",
+          "textEn": "OR"
+        },
+        {
+          "id": "C",
+          "textTe": "XOR (Exclusive OR)",
+          "textEn": "XOR"
+        },
+        {
+          "id": "D",
+          "textTe": "NOT",
+          "textEn": "NOT"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationTe": "XOR (Exclusive OR) గేట్ లక్షణం ప్రకారం: రెండు ఇన్‌పుట్‌లు వేర్వేరుగా ఉన్నప్పుడు మాత్రమే (0,1 లేదా 1,0) అవుట్‌పుట్ 1 వస్తుంది. రెండు ఇన్‌పుట్‌లు సమానంగా ఉంటే (0,0 లేదా 1,1) అవుట్‌పుట్ 0 అవుతుంది.",
+      "explanationEn": "XOR (Exclusive OR) outputs 1 if and only if the inputs are different; if inputs are identical, the output is 0.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 25,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Basics of Computers - Logic Gates",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p1_001",
+      "paperId": "paper_1",
+      "topicId": "p1_history_telangana_statehood",
+      "subtopicId": "p1_tg_1969_movement",
+      "questionNumber": 16,
+      "questionTextTe": "1956 ఫిబ్రవరి 20న ఢిల్లీలోని హైదరాబాద్ హౌస్‌లో కుదిరిన 'పెద్దమనుషుల ఒప్పందం' (Gentlemen's Agreement) లో తెలంగాణ ప్రాంతం తరఫున సంతకం చేసిన ముఖ్య నాయకులలో క్రింది వారిలో ఎవరు లేరు?",
+      "questionTextEn": "Who among the following leaders from Telangana was NOT a signatory to the Gentlemen's Agreement signed on 20th February 1956?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "బూర్గుల రామకృష్ణారావు",
+          "textEn": "Burgula Ramakrishna Rao"
+        },
+        {
+          "id": "B",
+          "textTe": "కె.వి. రంగారెడ్డి",
+          "textEn": "K.V. Ranga Reddy"
+        },
+        {
+          "id": "C",
+          "textTe": "మర్రి చెన్నారెడ్డి",
+          "textEn": "Marri Chenna Reddy"
+        },
+        {
+          "id": "D",
+          "textTe": "రవీంద్రనాథ్",
+          "textEn": "Ravindranath"
+        }
+      ],
+      "correctOptionId": "D",
+      "explanationTe": "పెద్దమనుషుల ఒప్పందంపై తెలంగాణ తరఫున నలుగురు ప్రముఖులు సంతకాలు చేశారు: 1. బూర్గుల రామకృష్ణారావు, 2. కె.వి. రంగారెడ్డి, 3. డాక్టర్ మర్రి చెన్నారెడ్డి, 4. జె.వి. నర్సింగరావు. రవీంద్రనాథ్ 1969 తెలంగాణ ఉద్యమంలో నిరాహారదీక్ష చేసిన విద్యార్థి నాయకుడు.",
+      "explanationEn": "The 4 Telangana signatories were Burgula Ramakrishna Rao, K.V. Ranga Reddy, Marri Chenna Reddy, and J.V. Narsinga Rao. Ravindranath was a hunger-strike leader in the 1969 movement.",
+      "difficulty": "medium",
+      "estimatedSolveSeconds": 40,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Telangana History & Movement - Telugu Akademi",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p1_002",
+      "paperId": "paper_1",
+      "topicId": "p1_telangana_society_culture",
+      "subtopicId": "p1_cul_festivals",
+      "questionNumber": 17,
+      "questionTextTe": "ఆసియాలోనే అతిపెద్ద గిరిజన జాతరగా ప్రసిద్ధి చెందిన 'సమ్మక్క-సారలమ్మ జాతర' (మేడారం జాతర) తెలంగాణలోని ఏ జిల్లాలో జరుగుతుంది?",
+      "questionTextEn": "Sammakka-Sarakka Jatara (Medaram Jatara), known as Asia's largest tribal fair, takes place in which district of Telangana?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "జయశంకర్ భూపాలపల్లి",
+          "textEn": "Jayashankar Bhupalpally"
+        },
+        {
+          "id": "B",
+          "textTe": "ములుగు",
+          "textEn": "Mulugu"
+        },
+        {
+          "id": "C",
+          "textTe": "భద్రాద్రి కొత్తగూడెం",
+          "textEn": "Bhadradri Kothagudem"
+        },
+        {
+          "id": "D",
+          "textTe": "మహబూబాబాద్",
+          "textEn": "Mahabubabad"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "సమ్మక్క-సారలమ్మ జాతర ములుగు జిల్లాలోని తాడ్వాయి మండలం మేడారం గ్రామంలో ప్రతి రెండేళ్లకు ఒకసారి మాఘశుద్ధ పౌర్ణమి రోజుల్లో ఘనంగా జరుగుతుంది.",
+      "explanationEn": "Medaram Jatara takes place in Medaram village, Tadvai Mandal of Mulugu district, Telangana.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 25,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Telangana Culture and Heritage",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p1_003",
+      "paperId": "paper_1",
+      "topicId": "p1_polity_local_governance",
+      "subtopicId": "p1_pol_local_bodies",
+      "questionNumber": 18,
+      "questionTextTe": "భారత రాజ్యాంగంలోని 73వ రాజ్యాంగ సవరణ చట్టం (1992) ద్వారా పంచాయతీరాజ్ సంస్థలకు చేర్చబడిన అంశాలు రాజ్యాంగంలోని ఏ షెడ్యూల్‌లో ఉన్నాయి?",
+      "questionTextEn": "Under the 73rd Constitutional Amendment Act (1992), which schedule of the Indian Constitution lists the 29 functional items allocated to Panchayati Raj institutions?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "10వ షెడ్యూల్",
+          "textEn": "10th Schedule"
+        },
+        {
+          "id": "B",
+          "textTe": "11వ షెడ్యూల్",
+          "textEn": "11th Schedule"
+        },
+        {
+          "id": "C",
+          "textTe": "12వ షెడ్యూల్",
+          "textEn": "12th Schedule"
+        },
+        {
+          "id": "D",
+          "textTe": "7వ షెడ్యూల్",
+          "textEn": "7th Schedule"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "73వ సవరణ ద్వారా 11వ షెడ్యూల్‌ను చేర్చి పంచాయతీలకు 29 అధికార విధులను కేటాయించారు. 74వ సవరణ ద్వారా మునిసిపాలిటీలకు 12వ షెడ్యూల్‌లో 18 విధులను కేటాయించారు.",
+      "explanationEn": "The 73rd Amendment added the 11th Schedule containing 29 subjects for Panchayats. The 12th schedule applies to Municipalities (74th Amendment).",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 30,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Indian Constitution & Polity",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p1_004",
+      "paperId": "paper_1",
+      "topicId": "p1_geography_india_telangana",
+      "subtopicId": "p1_geo_telangana_rivers",
+      "questionNumber": 19,
+      "questionTextTe": "తెలంగాణ రాష్ట్రంలో గోదావరి నది మొదటగా ఏ జిల్లాలో ప్రవేశిస్తుంది?",
+      "questionTextEn": "In which district does the Godavari River first enter the state of Telangana?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "నిజామాబాద్ (కందకుర్తి)",
+          "textEn": "Nizamabad (Kandakurthi)"
+        },
+        {
+          "id": "B",
+          "textTe": "నిర్మల్ (బాసర)",
+          "textEn": "Nirmal (Basara)"
+        },
+        {
+          "id": "C",
+          "textTe": "ఆదిలాబాద్",
+          "textEn": "Adilabad"
+        },
+        {
+          "id": "D",
+          "textTe": "మంచిర్యాల",
+          "textEn": "Mancherial"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationTe": "గోదావరి నది మహారాష్ట్రలోని త్రయంబకేశ్వర్ వద్ద జన్మించి, తెలంగాణలోని నిజామాబాద్ జిల్లాలోని కందకుర్తి వద్ద మొదటగా ప్రవేశిస్తుంది. ఇక్కడ గోదావరి, మాంజ్రా, హరిద్ర నదుల త్రివేణి సంగమం ఉంది.",
+      "explanationEn": "Godavari enters Telangana at Kandakurthi in Nizamabad district, forming a Triveni Sangam with Manjira and Haridra rivers.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 25,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Geography of Telangana",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p1_005",
+      "paperId": "paper_1",
+      "topicId": "p1_telangana_policies",
+      "subtopicId": "p1_pol_welfare",
+      "questionNumber": 20,
+      "questionTextTe": "తెలంగాణ రాష్ట్రంలో మహిళలకు ఆర్టీసీ బస్సులలో ఉచిత ప్రయాణాన్ని కల్పించే పథకం పేరు ఏమిటి?",
+      "questionTextEn": "What is the name of the scheme launched in Telangana offering free bus travel for women in TSRTC buses?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "మహాలక్ష్మి పథకం",
+          "textEn": "Mahalakshmi Scheme"
+        },
+        {
+          "id": "B",
+          "textTe": "గృహజ్యోతి పథకం",
+          "textEn": "Gruha Jyothi Scheme"
+        },
+        {
+          "id": "C",
+          "textTe": "చేయూత పథకం",
+          "textEn": "Cheyutha Scheme"
+        },
+        {
+          "id": "D",
+          "textTe": "ఇందిరమ్మ ఇండ్లు",
+          "textEn": "Indiramma Indlu"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationTe": "తెలంగాణ ప్రభుత్వం 6 గ్యారెంటీలలో భాగంగా 'మహాలక్ష్మి' పథకం కింద రాష్ట్రంలోని బాలికలు, మహిళలు, ట్రాన్స్‌జెండర్లకు పల్లె వెలుగు, ఎక్స్‌ప్రెస్ బస్సులలో ఉచిత ప్రయాణ సౌకర్యాన్ని ప్రారంభించింది.",
+      "explanationEn": "Under the 6 Guarantees, the Mahalakshmi scheme provides free bus travel for women, girls, and transgender persons in TSRTC Palle Velugu and Express buses.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 20,
+      "sourceType": "current_affairs_editorial",
+      "sourceReference": "Telangana State Welfare Policies 2024-2026",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p1_006",
+      "paperId": "paper_1",
+      "topicId": "p1_economy_india_telangana",
+      "subtopicId": "p1_eco_national",
+      "questionNumber": 21,
+      "questionTextTe": "భారతదేశంలో 'జాతీయ గణాంకాల దినోత్సవం' (National Statistics Day) ప్రొఫెసర్ పి.సి. మహలనోబిస్ జయంతి సందర్భంగా ఏ రోజున జరుపుకుంటారు?",
+      "questionTextEn": "On which date is National Statistics Day celebrated in India to commemorate the birth anniversary of Prof. P.C. Mahalanobis?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "జూన్ 29",
+          "textEn": "June 29"
+        },
+        {
+          "id": "B",
+          "textTe": "అక్టోబర్ 20",
+          "textEn": "October 20"
+        },
+        {
+          "id": "C",
+          "textTe": "డిసెంబర్ 22",
+          "textEn": "December 22"
+        },
+        {
+          "id": "D",
+          "textTe": "మార్చి 15",
+          "textEn": "March 15"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationTe": "భారత గణాంక పితామహుడు ప్రొఫెసర్ ప్రశాంత చంద్ర మహలనోబిస్ జయంతి అయిన జూన్ 29న ప్రతి సంవత్సరం భారతదేశంలో 'జాతీయ గణాంకాల దినోత్సవం' జరుపుకుంటారు. (అక్టోబర్ 20 ప్రపంచ గణాంకాల దినోత్సవం).",
+      "explanationEn": "National Statistics Day is celebrated on June 29 every year in honor of Prof. P.C. Mahalanobis. World Statistics Day is celebrated on October 20.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 20,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Indian Statistical System",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p1_007",
+      "paperId": "paper_1",
+      "topicId": "p1_general_science",
+      "subtopicId": "p1_sci_isro_drdo",
+      "questionNumber": 22,
+      "questionTextTe": "భారత అంతరిక్ష పరిశోధనా సంస్థ (ISRO) చంద్రుని దక్షిణ ధ్రువంపై విజయవంతంగా ల్యాండ్ చేసిన చారిత్రాత్మక మిషన్ ఏది?",
+      "questionTextEn": "Which historic mission was successfully landed on the south polar region of the Moon by ISRO?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "చంద్రయాన్-1",
+          "textEn": "Chandrayaan-1"
+        },
+        {
+          "id": "B",
+          "textTe": "చంద్రయాన్-2",
+          "textEn": "Chandrayaan-2"
+        },
+        {
+          "id": "C",
+          "textTe": "చంద్రయాన్-3",
+          "textEn": "Chandrayaan-3"
+        },
+        {
+          "id": "D",
+          "textTe": "ఆదిత్య-L1",
+          "textEn": "Aditya-L1"
+        }
+      ],
+      "correctOptionId": "C",
+      "explanationTe": "2023 ఆగస్టు 23న చంద్రయాన్-3 యొక్క విక్రమ్ ల్యాండర్ చంద్రుని దక్షిణ ధ్రువ ప్రాంతంలో విజయవంతంగా అడుగుపెట్టింది. ఆ రోజును భారత ప్రభుత్వం 'జాతీయ అంతరిక్ష దినోత్సవం' (National Space Day) గా ప్రకటించింది.",
+      "explanationEn": "Chandrayaan-3 landed Vikram on the lunar south polar region on August 23, 2023, declared as National Space Day.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 20,
+      "sourceType": "current_affairs_editorial",
+      "sourceReference": "ISRO Achievements & Science and Technology",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p1_008",
+      "paperId": "paper_1",
+      "topicId": "p1_logical_reasoning_data_interpretation",
+      "subtopicId": "p1_lr_verbal_reasoning",
+      "questionNumber": 23,
+      "questionTextTe": "క్రింది సంఖ్యా శ్రేణిలో తర్వాతి సంఖ్య ఏది?  2, 6, 12, 20, 30, ?",
+      "questionTextEn": "What is the next number in the given series?  2, 6, 12, 20, 30, ?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "40",
+          "textEn": "40"
+        },
+        {
+          "id": "B",
+          "textTe": "42",
+          "textEn": "42"
+        },
+        {
+          "id": "C",
+          "textTe": "44",
+          "textEn": "44"
+        },
+        {
+          "id": "D",
+          "textTe": "36",
+          "textEn": "36"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "తేడాలను గమనించండి: 6 - 2 = 4, 12 - 6 = 6, 20 - 12 = 8, 30 - 20 = 10. తేడాలు వరుసగా 4, 6, 8, 10 గా పెరుగుతున్నాయి. తదుపరి తేడా 12 కావాలి. కాబట్టి 30 + 12 = 42. (లేదా: 1*2, 2*3, 3*4, 4*5, 5*6, 6*7 = 42).",
+      "explanationEn": "Differences are 4, 6, 8, 10, next is 12: 30 + 12 = 42. Alternatively, n*(n+1) gives 6*7 = 42.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 30,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Logical Reasoning - Number Series",
+      "numericalMetadata": {
+        "isNumerical": true,
+        "formulaUsed": "30 + 12 = 42",
+        "calculatedValue": 42,
+        "tolerance": 0.01,
+        "independentValidationPassed": true
+      },
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p1_009",
+      "paperId": "paper_1",
+      "topicId": "p1_basic_english",
+      "subtopicId": "p1_eng_grammar",
+      "questionNumber": 24,
+      "questionTextTe": "క్రింది వాక్యంలో ఖాళీని సరైన ప్రిపొజిషన్ తో పూరించండి: 'She has been studying for the MPSO exam ______ three months.'",
+      "questionTextEn": "Fill in the blank with the correct preposition: 'She has been studying for the MPSO exam ______ three months.'",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "since",
+          "textEn": "since"
+        },
+        {
+          "id": "B",
+          "textTe": "for",
+          "textEn": "for"
+        },
+        {
+          "id": "C",
+          "textTe": "from",
+          "textEn": "from"
+        },
+        {
+          "id": "D",
+          "textTe": "in",
+          "textEn": "in"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "కాల వ్యవధిని (Period of Time - ఉదాహరణకు 3 నెలలు, 2 గంటలు) సూచించేటప్పుడు 'for' ను వాడతాము. కచ్చితమైన సమయ బిందువును (Point of Time - ఉదాహరణకు 2024 నుండి, ఉదయం నుండి) సూచించేటప్పుడు 'since' ను వాడతాము.",
+      "explanationEn": "'for' is used to denote a period/duration of time (three months), whereas 'since' denotes a specific point in time.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 25,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Basic English Grammar - Prepositions",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "q_p1_010",
+      "paperId": "paper_1",
+      "topicId": "p1_environment_disaster",
+      "subtopicId": "p1_env_climate",
+      "questionNumber": 25,
+      "questionTextTe": "భూతాపోన్నతికి (Global Warming) మరియు గ్రీన్‌హౌస్ ప్రభావానికి క్రింది వాయువులలో ప్రధాన కారణమైన వాయువు ఏది?",
+      "questionTextEn": "Which among the following gases is the primary contributor to the enhanced greenhouse effect and global warming?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "కార్బన్ డయాక్సైడ్ (CO2)",
+          "textEn": "Carbon Dioxide (CO2)"
+        },
+        {
+          "id": "B",
+          "textTe": "ఆక్సిజన్ (O2)",
+          "textEn": "Oxygen (O2)"
+        },
+        {
+          "id": "C",
+          "textTe": "నైట్రోజన్ (N2)",
+          "textEn": "Nitrogen (N2)"
+        },
+        {
+          "id": "D",
+          "textTe": "ఆర్గాన్ (Ar)",
+          "textEn": "Argon (Ar)"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationTe": "శిలాజ ఇంధనాల దహనం వల్ల వాతావరణంలోకి వెలువడే కార్బన్ డయాక్సైడ్ (CO2), మీథేన్ (CH4) లు ప్రధాన గ్రీన్‌హౌస్ వాయువులు. ఇవి భూమి విడుదల చేసే పరారుణ వికిరణాలను గ్రహించి ఉష్ణోగ్రత పెరగడానికి కారణమవుతాయి.",
+      "explanationEn": "Carbon dioxide (CO2) is the primary greenhouse gas emitted through human activities contributing to global warming.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 20,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Environmental Science & Climate",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "diag_p2_016",
+      "paperId": "paper_2",
+      "topicId": "p2_intro_statistics",
+      "subtopicId": "p2_stat_intro_basics",
+      "questionNumber": 26,
+      "questionTextTe": "పరిశోధకుడు నేరుగా క్షేత్రస్థాయి నుండి సేకరించిన ప్రాథమిక సమాచారాన్ని ఏమంటారు?",
+      "questionTextEn": "Data collected directly from the original field source by the investigator is known as:",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "ప్రాథమిక దత్తాంశం (Primary Data)",
+          "textEn": "Primary Data"
+        },
+        {
+          "id": "B",
+          "textTe": "ద్వితీయ దత్తాంశం (Secondary Data)",
+          "textEn": "Secondary Data"
+        },
+        {
+          "id": "C",
+          "textTe": "నిరంతర దత్తాంశం (Continuous Data)",
+          "textEn": "Continuous Data"
+        },
+        {
+          "id": "D",
+          "textTe": "సంచిత దత్తాంశం (Cumulative Data)",
+          "textEn": "Cumulative Data"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationTe": "పరిశోధకుడు ప్రత్యక్షంగా సేకరించిన తొలి సమాచారాన్ని ప్రాథమిక దత్తాంశం అంటారు. ప్రభుత్వ గెజిట్లు లేదా పత్రికల నుండి తీసుకున్న సమాచారాన్ని ద్వితీయ దత్తాంశం అంటారు.",
+      "explanationEn": "Data collected directly for the first time by the investigator is primary data.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 20,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Introduction to Statistics - Collection of Data",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "diag_p2_017",
+      "paperId": "paper_2",
+      "topicId": "p2_central_tendency_dispersion",
+      "subtopicId": "p2_stat_central_averages",
+      "questionNumber": 27,
+      "questionTextTe": "సంఖ్యలు 4, 8, 16 ల యొక్క గుణమధ్యమం (Geometric Mean) ఎంత?",
+      "questionTextEn": "What is the Geometric Mean of the numbers 4, 8, 16?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "8",
+          "textEn": "8"
+        },
+        {
+          "id": "B",
+          "textTe": "9.33",
+          "textEn": "9.33"
+        },
+        {
+          "id": "C",
+          "textTe": "6",
+          "textEn": "6"
+        },
+        {
+          "id": "D",
+          "textTe": "12",
+          "textEn": "12"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationTe": "గుణమధ్యమం GM = \\sqrt[3]{4 \\times 8 \\times 16} = \\sqrt[3]{512} = 8.",
+      "explanationEn": "Geometric Mean GM = (4 * 8 * 16)^(1/3) = (512)^(1/3) = 8.",
+      "relevantFormulaLatex": "GM = \\sqrt[n]{x_1 \\cdot x_2 \\cdots x_n}",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 30,
+      "sourceType": "standard_degree_textbook",
+      "sourceReference": "Geometric Mean Properties",
+      "numericalMetadata": {
+        "isNumerical": true,
+        "formulaUsed": "(4*8*16)**(1/3)",
+        "calculatedValue": 8,
+        "tolerance": 0.01,
+        "independentValidationPassed": true
+      },
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "diag_p2_018",
+      "paperId": "paper_2",
+      "topicId": "p2_central_tendency_dispersion",
+      "subtopicId": "p2_stat_skewness_kurtosis",
+      "questionNumber": 28,
+      "questionTextTe": "ఒక సౌష్ఠవ విభాజనంలో (Symmetric Distribution) అసౌష్ఠవతా గుణకం (Coefficient of Skewness) విలువ ఎంత?",
+      "questionTextEn": "In a perfectly symmetrical distribution, what is the value of the coefficient of skewness?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "0",
+          "textEn": "0"
+        },
+        {
+          "id": "B",
+          "textTe": "+1",
+          "textEn": "+1"
+        },
+        {
+          "id": "C",
+          "textTe": "-1",
+          "textEn": "-1"
+        },
+        {
+          "id": "D",
+          "textTe": "3",
+          "textEn": "3"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationTe": "సౌష్ఠవ విభాజనంలో Mean = Median = Mode అవుతుంది. అందువల్ల Mean - Mode = 0 అయి, అసౌష్ఠవతా గుణకం ఎల్లప్పుడూ సున్నా (0) అవుతుంది.",
+      "explanationEn": "For a symmetric distribution, Mean = Median = Mode, hence skewness is 0.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 20,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Measures of Skewness",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "diag_p1_019",
+      "paperId": "paper_1",
+      "topicId": "p1_history_modern_india",
+      "subtopicId": "p1_his_freedom_struggle",
+      "questionNumber": 29,
+      "questionTextTe": "1930లో మహాత్మా గాంధీ చేపట్టిన 'దండి యాత్ర' (ఉప్పు సత్యాగ్రహం) ఏ ఉద్యమానికి నాంది పలికింది?",
+      "questionTextEn": "The Salt Satyagraha (Dandi March) launched by Mahatma Gandhi in 1930 marked the commencement of which movement?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "సహాయ నిరాకరణ ఉద్యమం",
+          "textEn": "Non-Cooperation Movement"
+        },
+        {
+          "id": "B",
+          "textTe": "శాసనోల్లంఘన ఉద్యమం",
+          "textEn": "Civil Disobedience Movement"
+        },
+        {
+          "id": "C",
+          "textTe": "క్విట్ ఇండియా ఉద్యమం",
+          "textEn": "Quit India Movement"
+        },
+        {
+          "id": "D",
+          "textTe": "ఖిలాఫత్ ఉద్యమం",
+          "textEn": "Khilafat Movement"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "1930 మార్చి 12 నుండి ఏప్రిల్ 6 వరకు సబర్మతి ఆశ్రమం నుండి దండి వరకు సాగిన ఉప్పు సత్యాగ్రహంతో 'శాసనోల్లంఘన ఉద్యమం' (Civil Disobedience Movement) ప్రారంభమైంది.",
+      "explanationEn": "Dandi March in 1930 inaugurated the Civil Disobedience Movement.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 25,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Modern Indian History",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "diag_p1_020",
+      "paperId": "paper_1",
+      "topicId": "p1_telangana_society_culture",
+      "subtopicId": "p1_cul_arts",
+      "questionNumber": 30,
+      "questionTextTe": "యునెస్కో (UNESCO) ప్రపంచ వారసత్వ సంపదగా గుర్తింపు పొందిన తెలంగాణలోని 'రామప్ప దేవాలయం' ఏ రాజవంశం కాలంలో నిర్మించబడింది?",
+      "questionTextEn": "Ramappa Temple, recognized as a UNESCO World Heritage Site, was constructed during the reign of which dynasty?",
+      "options": [
+        {
+          "id": "A",
+          "textTe": "కాకతీయులు",
+          "textEn": "Kakatiyas"
+        },
+        {
+          "id": "B",
+          "textTe": "శాతవాహనులు",
+          "textEn": "Satavahanas"
+        },
+        {
+          "id": "C",
+          "textTe": "కుతుబ్‌షాహీలు",
+          "textEn": "Qutb Shahis"
+        },
+        {
+          "id": "D",
+          "textTe": "చాళుక్యులు",
+          "textEn": "Chalukyas"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationTe": "ములుగు జిల్లా పాలంపేట వద్ద ఉన్న రామప్ప దేవాలయాన్ని (రుద్రేశ్వర ఆలయం) క్రీ.శ. 1213లో కాకతీయ గణపతిదేవుని సేనాని రేచర్ల రుద్రుడు నిర్మించాడు. దీని శిల్పి రామప్ప.",
+      "explanationEn": "Ramappa Temple was built in 1213 AD during the reign of Kakatiya ruler Ganapati Deva by general Recharla Rudra.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 20,
+      "sourceType": "tgpsc_standard_model",
+      "sourceReference": "Kakatiya Architecture & Heritage",
+      "validationStatus": "approved",
+      "createdAt": "2026-10-30T10:00:00Z",
+      "updatedAt": "2026-10-30T10:00:00Z"
+    }
+  ],
+  "practiceSessions": {},
+  "mockSessions": {},
+  "mistakeBook": {},
+  "revisionQueue": {},
+  "studyPlans": {
+    "student_default_2026-11-01": {
+      "id": "plan_student_default_2026-11-01",
+      "userId": "student_default",
+      "date": "2026-11-01",
+      "dayGreetingTe": "శుభోదయం! ఈరోజు మీ లక్ష్య సాధనకు మరో అడుగు వేద్దాం.",
+      "summaryMessageTe": "మీ లక్ష్యం: రోజుకు 120 నిమిషాలు. ఈరోజు 2 ముఖ్యమైన పాఠాలు, ప్రాక్టీస్ మరియు పునశ్చరణ సిద్ధంగా ఉన్నాయి.",
+      "tasks": [
+        {
+          "id": "task_stat_2026-11-01",
+          "taskType": "learn_statistics",
+          "titleTe": "పేపర్ II: కేంద్రీయ ప్రవృత్తి & ప్రామాణిక విచలనం",
+          "titleEn": "Paper-II: Central Tendency & Standard Deviation",
+          "topicId": "p2_central_tendency_dispersion",
+          "paperId": "paper_2",
+          "durationMinutes": 48,
+          "isCompleted": false,
+          "priority": "high",
+          "reasonTe": "డిగ్రీ స్టాటిస్టిక్స్ పేపర్‌లో ఎక్కువ వెయిటేజీ ఉన్న ముఖ్యమైన అంశం.",
+          "actionUrl": "/learn/p2_central_tendency_dispersion"
+        },
+        {
+          "id": "task_gs_2026-11-01",
+          "taskType": "learn_general_studies",
+          "titleTe": "పేపర్ I: తెలంగాణ చరిత్ర & ప్రత్యేక రాష్ట్ర ఉద్యమం",
+          "titleEn": "Paper-I: Telangana History & Movement",
+          "topicId": "p1_history_telangana_statehood",
+          "paperId": "paper_1",
+          "durationMinutes": 36,
+          "isCompleted": false,
+          "priority": "medium",
+          "reasonTe": "తెలంగాణ ఉద్యమ చరిత్రపై 15 ప్రశ్నలు వచ్చే అవకాశం ఉంది.",
+          "actionUrl": "/learn/p1_history_telangana_statehood"
+        },
+        {
+          "id": "task_practice_2026-11-01",
+          "taskType": "practice_questions",
+          "titleTe": "నేటి ప్రాక్టీస్ క్విజ్ (10 ప్రశ్నలు)",
+          "titleEn": "Daily Practice Quiz (10 Questions)",
+          "durationMinutes": 18,
+          "isCompleted": false,
+          "priority": "high",
+          "reasonTe": "నేర్చుకున్న సూత్రాలు మరియు కాన్సెప్టులను పరీక్షించుకోవడానికి.",
+          "actionUrl": "/practice"
+        },
+        {
+          "id": "task_rev_2026-11-01",
+          "taskType": "revision_spaced",
+          "titleTe": "స్పేస్డ్ రివిజన్",
+          "titleEn": "Mistake Book Review & Spaced Repetition",
+          "durationMinutes": 18,
+          "isCompleted": false,
+          "priority": "high",
+          "reasonTe": "గతంలో తప్పు చేసిన ప్రశ్నలను మళ్లీ పరిశీలించి గుర్తుంచుకోండి.",
+          "actionUrl": "/mistakes"
+        }
+      ],
+      "totalTargetMinutes": 120,
+      "completedMinutes": 0,
+      "isRecalculated": false
+    }
+  },
+  "tutorConversations": {},
+  "auditLogs": [
+    {
+      "id": "log_init",
+      "action": "DATABASE_INITIALIZED",
+      "timestamp": "2026-11-01T16:16:34.067Z",
+      "details": {
+        "notification": "07/G/ES/2026",
+        "version": "1.0.0"
+      }
+    }
+  ]
+}

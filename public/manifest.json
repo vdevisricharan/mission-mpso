@@ -1,0 +1,17 @@
+{
+  "name": "MISSION MPSO — TGPSC MPSO / ASO Exam Prep",
+  "short_name": "MISSION MPSO",
+  "description": "Telugu-First AI Exam Preparation Platform for TGPSC MPSO/ASO",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#FAFAF7",
+  "theme_color": "#176B5B",
+  "lang": "te",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
