@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Noto_Sans_Telugu, Inter } from "next/font/google";
 import "./globals.css";
 import { TextSizeProvider } from "@/components/layout/TextSizeProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 const notoSansTelugu = Noto_Sans_Telugu({
   variable: "--font-telugu",
@@ -49,6 +50,7 @@ export default function RootLayout({
     <html lang="te" className={`${notoSansTelugu.variable} ${inter.variable}`}>
       <body className="min-h-screen flex flex-col bg-[#FAFAF7] text-[#17211E]">
         <TextSizeProvider>{children}</TextSizeProvider>
+        <Analytics />
       </body>
     </html>
   );
