@@ -30,7 +30,13 @@ export const metadata: Metadata = {
     "TGPSC Mandal Planning & Statistical Officer (MPSO / ASO) 07/G/ES/2026 పరీక్ష కోసం తెలుగు-మొదటి కృత్రిమ మేధా అభ్యాస వేదిక.",
   manifest: "/manifest.json",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 
