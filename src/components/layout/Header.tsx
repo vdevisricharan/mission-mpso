@@ -26,13 +26,13 @@ import { logoutAction } from "@/lib/auth/actions";
 interface HeaderProps {
   currentRole?: "student" | "admin";
   userName?: string;
+  /** @deprecated Role toggles have been removed in favor of dedicated authentication sessions */
   onRoleToggle?: () => void;
 }
 
 export function Header({
   currentRole = "student",
   userName = "రమ్య",
-  onRoleToggle,
 }: HeaderProps) {
   const pathname = usePathname();
   const router = useRouter();
@@ -85,43 +85,47 @@ export function Header({
 
           {/* Desktop Nav Actions */}
           <div className="hidden md:flex items-center gap-2 lg:gap-3">
-            <Link
-              href="/tutor"
-              className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-medium transition-colors ${
-                pathname === "/tutor"
-                  ? "bg-[#E8F4F0] text-[#176B5B]"
-                  : "text-[#17211E] hover:bg-[#F5F6F2]"
-              }`}
-            >
-              <Sparkles className="w-4 h-4 text-[#176B5B]" />
-              <span>{t("nav_tutor")}</span>
-            </Link>
+            {currentRole !== "admin" && (
+              <>
+                <Link
+                  href="/tutor"
+                  className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-medium transition-colors ${
+                    pathname === "/tutor"
+                      ? "bg-[#E8F4F0] text-[#176B5B]"
+                      : "text-[#17211E] hover:bg-[#F5F6F2]"
+                  }`}
+                >
+                  <Sparkles className="w-4 h-4 text-[#176B5B]" />
+                  <span>{t("nav_tutor")}</span>
+                </Link>
 
-            <Link
-              href="/mocks"
-              className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-medium transition-colors ${
-                pathname.startsWith("/mocks")
-                  ? "bg-[#E8F4F0] text-[#176B5B]"
-                  : "text-[#17211E] hover:bg-[#F5F6F2]"
-              }`}
-            >
-              <Award className="w-4 h-4 text-[#356EA0]" />
-              <span>{t("nav_mocks")}</span>
-            </Link>
+                <Link
+                  href="/mocks"
+                  className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-medium transition-colors ${
+                    pathname.startsWith("/mocks")
+                      ? "bg-[#E8F4F0] text-[#176B5B]"
+                      : "text-[#17211E] hover:bg-[#F5F6F2]"
+                  }`}
+                >
+                  <Award className="w-4 h-4 text-[#356EA0]" />
+                  <span>{t("nav_mocks")}</span>
+                </Link>
 
-            <Link
-              href="/mistakes"
-              className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-medium transition-colors ${
-                pathname === "/mistakes"
-                  ? "bg-[#E8F4F0] text-[#176B5B]"
-                  : "text-[#17211E] hover:bg-[#F5F6F2]"
-              }`}
-            >
-              <AlertTriangle className="w-4 h-4 text-[#A66A19]" />
-              <span>{t("nav_mistakes")}</span>
-            </Link>
+                <Link
+                  href="/mistakes"
+                  className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-medium transition-colors ${
+                    pathname === "/mistakes"
+                      ? "bg-[#E8F4F0] text-[#176B5B]"
+                      : "text-[#17211E] hover:bg-[#F5F6F2]"
+                  }`}
+                >
+                  <AlertTriangle className="w-4 h-4 text-[#A66A19]" />
+                  <span>{t("nav_mistakes")}</span>
+                </Link>
 
-            <div className="h-5 w-px bg-[#E5EAE5]" />
+                <div className="h-5 w-px bg-[#E5EAE5]" />
+              </>
+            )}
 
             {/* Font Size Adjuster */}
             <button
@@ -166,26 +170,20 @@ export function Header({
               </button>
             </div>
 
-            {/* Role Switcher Pill */}
-            {onRoleToggle && (
-              <button
-                onClick={onRoleToggle}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#E8F4F0] border border-[#BFE2D7] text-xs font-semibold text-[#176B5B] hover:bg-[#D5ECE5] touch-target"
-                title="Switch role"
-              >
-                {currentRole === "admin" ? (
-                  <>
-                    <Shield className="w-3.5 h-3.5 text-[#176B5B]" />
-                    <span>{t("role_admin")}</span>
-                  </>
-                ) : (
-                  <>
-                    <User className="w-3.5 h-3.5 text-[#176B5B]" />
-                    <span>{userName} ({t("role_student")})</span>
-                  </>
-                )}
-              </button>
-            )}
+            {/* User / Role Identity Indicator (Informational) */}
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-[#E5EAE5] bg-[#F5F6F2] text-xs font-semibold text-[#17211E]">
+              {currentRole === "admin" ? (
+                <>
+                  <Shield className="w-3.5 h-3.5 text-[#176B5B]" />
+                  <span className="font-bold text-[#176B5B]">{t("role_admin")}</span>
+                </>
+              ) : (
+                <>
+                  <User className="w-3.5 h-3.5 text-[#65716D]" />
+                  <span>{userName}</span>
+                </>
+              )}
+            </div>
 
             {/* Desktop Logout Button */}
             <button
@@ -260,17 +258,16 @@ export function Header({
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-[#E5EAE5] bg-white px-4 pt-3 pb-6 space-y-3">
           <div className="flex items-center justify-between pb-2 border-b border-[#E5EAE5]">
-            <span className="text-sm font-medium text-[#65716D]">
-              {userName} ({currentRole === "admin" ? t("role_admin") : t("role_student")})
-            </span>
-            {onRoleToggle && (
-              <button
-                onClick={onRoleToggle}
-                className="text-xs px-2.5 py-1 rounded-md bg-[#E8F4F0] text-[#176B5B] font-semibold"
-              >
-                {currentRole === "admin" ? t("switch_to_student") : t("switch_to_admin")}
-              </button>
-            )}
+            <div className="flex items-center gap-2">
+              {currentRole === "admin" ? (
+                <Shield className="w-4 h-4 text-[#176B5B]" />
+              ) : (
+                <User className="w-4 h-4 text-[#65716D]" />
+              )}
+              <span className="text-sm font-semibold text-[#17211E]">
+                {currentRole === "admin" ? t("role_admin") : `${userName} (${t("role_student")})`}
+              </span>
+            </div>
           </div>
 
           {/* Text Size Accessibility Controls in Drawer */}
@@ -317,59 +314,68 @@ export function Header({
           </div>
 
           <div className="grid grid-cols-2 gap-2">
-            <Link
-              href="/tutor"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2 p-3 rounded-xl bg-[#F5F6F2] text-sm font-medium text-[#17211E]"
-            >
-              <Sparkles className="w-4 h-4 text-[#176B5B]" />
-              <span>{t("nav_tutor")}</span>
-            </Link>
+            {currentRole === "admin" ? (
+              <div className="col-span-2 p-3 rounded-xl bg-[#E8F4F0] border border-[#BFE2D7] text-xs font-semibold text-[#176B5B] flex items-center gap-2">
+                <Shield className="w-4 h-4 text-[#176B5B]" />
+                <span>{isEnglish ? "Admin Management Console" : "అడ్మిన్ నిర్వహణ వేదిక"}</span>
+              </div>
+            ) : (
+              <>
+                <Link
+                  href="/tutor"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center gap-2 p-3 rounded-xl bg-[#F5F6F2] text-sm font-medium text-[#17211E]"
+                >
+                  <Sparkles className="w-4 h-4 text-[#176B5B]" />
+                  <span>{t("nav_tutor")}</span>
+                </Link>
 
-            <Link
-              href="/mocks"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2 p-3 rounded-xl bg-[#F5F6F2] text-sm font-medium text-[#17211E]"
-            >
-              <Award className="w-4 h-4 text-[#356EA0]" />
-              <span>{t("nav_mocks")}</span>
-            </Link>
+                <Link
+                  href="/mocks"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center gap-2 p-3 rounded-xl bg-[#F5F6F2] text-sm font-medium text-[#17211E]"
+                >
+                  <Award className="w-4 h-4 text-[#356EA0]" />
+                  <span>{t("nav_mocks")}</span>
+                </Link>
 
-            <Link
-              href="/mistakes"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2 p-3 rounded-xl bg-[#F5F6F2] text-sm font-medium text-[#17211E]"
-            >
-              <AlertTriangle className="w-4 h-4 text-[#A66A19]" />
-              <span>{t("nav_mistakes")}</span>
-            </Link>
+                <Link
+                  href="/mistakes"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center gap-2 p-3 rounded-xl bg-[#F5F6F2] text-sm font-medium text-[#17211E]"
+                >
+                  <AlertTriangle className="w-4 h-4 text-[#A66A19]" />
+                  <span>{t("nav_mistakes")}</span>
+                </Link>
 
-            <Link
-              href="/study-plan"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2 p-3 rounded-xl bg-[#F5F6F2] text-sm font-medium text-[#17211E]"
-            >
-              <FileText className="w-4 h-4 text-[#176B5B]" />
-              <span>{t("nav_study_plan")}</span>
-            </Link>
+                <Link
+                  href="/study-plan"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center gap-2 p-3 rounded-xl bg-[#F5F6F2] text-sm font-medium text-[#17211E]"
+                >
+                  <FileText className="w-4 h-4 text-[#176B5B]" />
+                  <span>{t("nav_study_plan")}</span>
+                </Link>
 
-            <Link
-              href="/current-affairs"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2 p-3 rounded-xl bg-[#F5F6F2] text-sm font-medium text-[#17211E]"
-            >
-              <BookOpen className="w-4 h-4 text-[#356EA0]" />
-              <span>{t("nav_current_affairs")}</span>
-            </Link>
+                <Link
+                  href="/current-affairs"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center gap-2 p-3 rounded-xl bg-[#F5F6F2] text-sm font-medium text-[#17211E]"
+                >
+                  <BookOpen className="w-4 h-4 text-[#356EA0]" />
+                  <span>{t("nav_current_affairs")}</span>
+                </Link>
 
-            <Link
-              href="/settings"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2 p-3 rounded-xl bg-[#F5F6F2] text-sm font-medium text-[#17211E]"
-            >
-              <Settings className="w-4 h-4 text-[#65716D]" />
-              <span>{t("nav_settings")}</span>
-            </Link>
+                <Link
+                  href="/settings"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center gap-2 p-3 rounded-xl bg-[#F5F6F2] text-sm font-medium text-[#17211E]"
+                >
+                  <Settings className="w-4 h-4 text-[#65716D]" />
+                  <span>{t("nav_settings")}</span>
+                </Link>
+              </>
+            )}
           </div>
 
           {/* Prominent Mobile Logout Action */}

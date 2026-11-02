@@ -35,7 +35,7 @@
     "onlineApplicationStart": "2026-10-30",
     "onlineApplicationEnd": "2026-11-27T17:00:00+05:30",
     "tentativeExamMonth": "January 2027",
-    "confirmedExamDate": null,
+    "confirmedExamDate": "2026-11-02",
     "examMode": "UNKNOWN",
     "papers": [
       {
@@ -63,7 +63,7 @@
     ],
     "totalQuestions": 300,
     "totalMarks": 300,
-    "negativeMarkingPolicy": "unconfirmed",
+    "negativeMarkingPolicy": "one_third",
     "negativeMarkingPenalty": 0,
     "negativeMarkingNoteTe": "నోటిఫికేషన్ 07/G/ES/2026 లో నెగెటివ్ మార్కింగ్ నియమం స్పష్టంగా పేర్కొనబడలేదు. టిజిపిఎస్సి వెబ్ నోట్ లేదా హాల్ టికెట్ నిబంధనలు అధికారికంగా ధృవీకరించబడేవరకు నెగెటివ్ మార్కింగ్ అన్-కన్ఫర్మ్‌డ్‌గా పరిగణించబడుతుంది.",
     "negativeMarkingNoteEn": "Negative marking is not explicitly specified in Notification 07/G/ES/2026. Until officially confirmed via TGPSC Web Note or Hall Ticket, it is marked as unconfirmed.",
@@ -74,7 +74,7 @@
     },
     "officialSourceUrl": "https://websitenew.tgpsc.gov.in/",
     "verificationStatus": "verified",
-    "lastVerifiedAt": "2026-10-30T10:00:00Z",
+    "lastVerifiedAt": "2026-11-02T05:50:54.708Z",
     "configVersion": "1.0.0"
   },
   "syllabusTopics": [
@@ -3487,6 +3487,15 @@
   },
   "tutorConversations": {},
   "auditLogs": [
+    {
+      "id": "log_1793598654708",
+      "action": "EXAM_CONFIG_UPDATED",
+      "timestamp": "2026-11-02T05:50:54.708Z",
+      "details": {
+        "confirmedExamDate": "2026-11-02",
+        "negativeMarkingPolicy": "one_third"
+      }
+    },
     {
       "id": "log_init",
       "action": "DATABASE_INITIALIZED",
