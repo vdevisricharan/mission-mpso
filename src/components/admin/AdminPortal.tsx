@@ -19,17 +19,36 @@ import {
 import { OfficialExamConfig } from "@/types/exam";
 import { SyllabusTopic } from "@/types/curriculum";
 import { Question } from "@/types/question";
+import {
+  ContentSource,
+  IngestionJob,
+  QuestionCandidate,
+  SyllabusCoverageRecord,
+  DailySyncReport,
+} from "@/types/pipeline";
 import { Badge } from "../ui/Badge";
 import { Button } from "../ui/Button";
+import { QuestionIntelligenceView } from "./QuestionIntelligenceView";
 
 interface AdminPortalProps {
   examConfig: OfficialExamConfig;
   topics: SyllabusTopic[];
   questions: Question[];
   auditLogs: any[];
+  contentSources?: ContentSource[];
+  ingestionJobs?: IngestionJob[];
+  questionCandidates?: QuestionCandidate[];
+  syllabusCoverage?: SyllabusCoverageRecord[];
+  latestSyncReport?: DailySyncReport | null;
+  dailySyncReports?: DailySyncReport[];
   onUpdateExamConfig: (config: Partial<OfficialExamConfig>) => void;
   onApproveQuestion: (qId: string) => void;
   onRejectQuestion: (qId: string) => void;
+  onRunSyncNow?: () => Promise<void>;
+  onFillCoverageGaps?: (topicId?: string) => Promise<void>;
+  onPublishCandidate?: (candidateId: string) => Promise<void>;
+  onRejectCandidate?: (candidateId: string, reason: string) => Promise<void>;
+  onToggleSource?: (sourceId: string) => Promise<void>;
 }
 
 export function AdminPortal({
@@ -37,12 +56,23 @@ export function AdminPortal({
   topics,
   questions: initialQuestions,
   auditLogs,
+  contentSources = [],
+  ingestionJobs = [],
+  questionCandidates = [],
+  syllabusCoverage = [],
+  latestSyncReport = null,
+  dailySyncReports = [],
   onUpdateExamConfig,
   onApproveQuestion,
   onRejectQuestion,
+  onRunSyncNow,
+  onFillCoverageGaps,
+  onPublishCandidate,
+  onRejectCandidate,
+  onToggleSource,
 }: AdminPortalProps) {
   const [activeTab, setActiveTab] = useState<
-    "overview" | "exam_config" | "syllabus" | "questions" | "review" | "logs"
+    "overview" | "question_intelligence" | "exam_config" | "syllabus" | "questions" | "review" | "logs"
   >("overview");
 
   const [questions, setQuestions] = useState<Question[]>(initialQuestions);
@@ -115,6 +145,7 @@ export function AdminPortal({
       <div className="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar border-b border-[#E5EAE5] scroll-smooth overscroll-x-contain">
         {[
           { id: "overview", label: "డ్యాష్‌బోర్డ్" },
+          { id: "question_intelligence", label: "ప్రశ్నల ఇంటెలిజెన్స్ (Question Engine)" },
           { id: "exam_config", label: "పరీక్ష నిబంధనలు (Exam Config)" },
           { id: "syllabus", label: "సిలబస్ & పాఠాలు" },
           { id: "questions", label: "ప్రశ్నల నిధి (Question Bank)" },
@@ -134,6 +165,23 @@ export function AdminPortal({
           </button>
         ))}
       </div>
+
+      {/* Question Intelligence Engine Tab */}
+      {activeTab === "question_intelligence" && (
+        <QuestionIntelligenceView
+          sources={contentSources}
+          jobs={ingestionJobs}
+          candidates={questionCandidates}
+          coverage={syllabusCoverage}
+          latestReport={latestSyncReport}
+          reports={dailySyncReports}
+          onRunSyncNow={onRunSyncNow || (async () => {})}
+          onFillCoverageGaps={onFillCoverageGaps || (async () => {})}
+          onPublishCandidate={onPublishCandidate || (async () => {})}
+          onRejectCandidate={onRejectCandidate || (async () => {})}
+          onToggleSource={onToggleSource || (async () => {})}
+        />
+      )}
 
       {/* Tab 1: Overview */}
       {activeTab === "overview" && (

@@ -62,6 +62,14 @@ export interface Question {
   sourceType: QuestionSourceType;
   sourceReference: string;
   year?: number;
+  isAuthenticPyq?: boolean;
+  examAuthority?: string;
+  notificationNumber?: string;
+  bookletSeries?: string;
+  originalQuestionNumber?: number;
+  answerKeyType?: string;
+  sourceUrl?: string;
+  contentVersion?: number;
   numericalMetadata?: NumericalMetadata;
   validationStatus: ValidationStatus;
   reviewedBy?: string;

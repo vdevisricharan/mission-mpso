@@ -2543,6 +2543,183 @@
       "validationStatus": "approved",
       "createdAt": "2026-10-30T10:00:00Z",
       "updatedAt": "2026-10-30T10:00:00Z"
+    },
+    {
+      "id": "cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02",
+      "paperId": "paper_1",
+      "topicId": "p1_telangana_policies",
+      "questionTextTe": "తెలంగాణ రాష్ట్ర వ్యవసాయ విధానంలో, రైతు సంక్షేమ పథకాల క్రింద ఆర్థిక సహాయాన్ని అందించడానికి ఉపయోగించే ప్రధాన పంపిణీ విధానం ఏది?",
+      "questionTextEn": "In Telangana state agricultural policy, what is the primary delivery mechanism used to disburse financial support under the Rythu welfare schemes?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Direct Benefit Transfer (DBT)",
+          "textTe": "ప్రత్యక్ష నగదు బదిలీ (DBT)"
+        },
+        {
+          "id": "B",
+          "textEn": "Distribution of paper bonds",
+          "textTe": "కాగితపు బాండ్ల పంపిణీ"
+        },
+        {
+          "id": "C",
+          "textEn": "Crop insurance coupon issuance",
+          "textTe": "భీమా కూపన్ల జారీ"
+        },
+        {
+          "id": "D",
+          "textEn": "Subsidized equipment credit voucher",
+          "textTe": "పరికరాల రాయితీ వోచర్"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationTe": "రైతుల బ్యాంకు ఖాతాల్లోకి నేరుగా నగదు జమ చేసే ప్రత్యక్ష నగదు బదిలీ (DBT) అధికారిక పద్ధతి. మూలం: Government of Telangana Agriculture Department.",
+      "explanationEn": "Direct Benefit Transfer (DBT) directly into verified bank accounts is the official delivery mechanism. Verified source: Government of Telangana Agriculture Department.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 45,
+      "sourceType": "current_affairs_editorial",
+      "sourceReference": "Verified Syllabus Material — p1_telangana_policies",
+      "year": 2026,
+      "isAuthenticPyq": false,
+      "validationStatus": "approved",
+      "reviewedBy": "AutoSyncScheduler",
+      "reviewedAt": "2026-11-02T09:00:43.917Z",
+      "reviewNotes": "Approved and published to production question bank via Question Intelligence Engine.",
+      "createdAt": "2026-11-02T09:00:43.897Z",
+      "updatedAt": "2026-11-02T09:00:43.917Z"
+    },
+    {
+      "id": "cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02",
+      "paperId": "paper_1",
+      "topicId": "p1_economy_india_telangana",
+      "questionTextTe": "తెలంగాణ అర్థ మరియు గణాంకాల డైరెక్టరేట్ (DES) నివేదిక ప్రకారం, రాష్ట్ర స్థూల విలువ జోడింపు (GSVA) లో అత్యధిక వాటాను సమకూరుస్తున్న రంగం ఏది?",
+      "questionTextEn": "According to the official estimates released by the Telangana Directorate of Economics and Statistics, which sector contributes the highest share to the Gross State Value Added (GSVA) of Telangana?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Services Sector (సేవా రంగం)",
+          "textTe": "సేవా రంగం (Services Sector)"
+        },
+        {
+          "id": "B",
+          "textEn": "Mining & Quarrying (గనుల తవ్వకం)",
+          "textTe": "గనుల తవ్వకం (Mining & Quarrying)"
+        },
+        {
+          "id": "C",
+          "textEn": "Fisheries & Animal Husbandry (మత్స్య, పశుసంవర్ధక రంగం)",
+          "textTe": "మత్స్య, పశుసంవర్ధక రంగం"
+        },
+        {
+          "id": "D",
+          "textEn": "Construction Sector only (నిర్మాణ రంగం మాత్రమే)",
+          "textTe": "నిర్మాణ రంగం మాత్రమే"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationTe": "తెలంగాణ ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ అధికారిక నివేదిక ప్రకారం, తెలంగాణ స్థూల రాష్ట్ర విలువ జోడింపు (GSVA) లో సేవా రంగం అత్యధిక వాటాను (60% పైగా) కలిగి ఉంది. మూలం: Directorate of Economics and Statistics, Telangana.",
+      "explanationEn": "As verified by the Directorate of Economics and Statistics (DES), the Services sector continues to contribute the largest portion (over 60%) to Telangana's economy. Event date: 2026-10-20, Citation: Directorate of Economics and Statistics, Telangana.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 45,
+      "sourceType": "current_affairs_editorial",
+      "sourceReference": "Verified Syllabus Material — p1_economy_india_telangana",
+      "year": 2026,
+      "isAuthenticPyq": false,
+      "validationStatus": "approved",
+      "reviewedBy": "AutoSyncScheduler",
+      "reviewedAt": "2026-11-02T09:00:43.944Z",
+      "reviewNotes": "Approved and published to production question bank via Question Intelligence Engine.",
+      "createdAt": "2026-11-02T09:00:43.897Z",
+      "updatedAt": "2026-11-02T09:00:43.944Z"
+    },
+    {
+      "id": "cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02",
+      "paperId": "paper_1",
+      "topicId": "p1_general_science",
+      "questionTextTe": "భారత అంతరిక్ష పరిశోధనా సంస్థ (ISRO) ప్రతిపాదించిన చంద్రయాన్-4 ప్రాజెక్ట్ యొక్క ప్రధాన లక్ష్యం ఏమిటి?",
+      "questionTextEn": "What is the primary scientific and technical objective of ISRO's planned Chandrayaan-4 mission?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Manned human landing on the Moon",
+          "textTe": "మానవ సహిత చంద్రునిపై ల్యాండింగ్"
+        },
+        {
+          "id": "B",
+          "textEn": "Lunar sample return to Earth (చంద్రుని నమూనాలను భూమికి చేర్చడం)",
+          "textTe": "చంద్రుని నమూనాలను భూమికి చేర్చడం (Lunar Sample Return)"
+        },
+        {
+          "id": "C",
+          "textEn": "Asteroid deflection and mining",
+          "textTe": "గ్రహశకలం కక్ష్య మార్పిడి"
+        },
+        {
+          "id": "D",
+          "textEn": "Mars atmosphere sample collection",
+          "textTe": "అంగారక వాతావరణ నమూనాల సేకరణ"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationTe": "ఇస్రో (ISRO) రూపొందిస్తున్న చంద్రయాన్-4 మిషన్ ప్రధాన లక్ష్యం చంద్రుని ఉపరితలం నుండి మట్టి మరియు రాతి నమూనాలను సేకరించి సురక్షితంగా భూమికి చేర్చడం (Lunar Sample Return). మూలం: ISRO / PIB India.",
+      "explanationEn": "Chandrayaan-4 is conceptualized by ISRO as a lunar sample-return mission aimed at collecting rock and soil samples from the Moon and safely returning them to Earth. Verified citation: ISRO / PIB India.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 45,
+      "sourceType": "current_affairs_editorial",
+      "sourceReference": "Verified Syllabus Material — p1_general_science",
+      "year": 2026,
+      "isAuthenticPyq": false,
+      "validationStatus": "approved",
+      "reviewedBy": "AutoSyncScheduler",
+      "reviewedAt": "2026-11-02T09:00:43.974Z",
+      "reviewNotes": "Approved and published to production question bank via Question Intelligence Engine.",
+      "createdAt": "2026-11-02T09:00:43.897Z",
+      "updatedAt": "2026-11-02T09:00:43.974Z"
+    },
+    {
+      "id": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "paperId": "paper_1",
+      "topicId": "p1_current_affairs",
+      "subtopicId": "p1_ca_telangana",
+      "questionTextTe": "తెలంగాణ రాష్ట్ర సామాజిక ఆర్థిక సర్వే (Socio Economic Outlook) మరియు రాష్ట్ర ఆదాయ అంచనాల తయారీకి ప్రధానంగా బాధ్యత వహించే సంస్థ ఏది?",
+      "questionTextEn": "Which agency is primarily responsible for compiling and publishing the annual Telangana Socio Economic Outlook and state income estimates?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Directorate of Economics and Statistics (DES)",
+          "textTe": "ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES)"
+        },
+        {
+          "id": "B",
+          "textEn": "State Election Commission",
+          "textTe": "రాష్ట్ర ఎన్నికల సంఘం"
+        },
+        {
+          "id": "C",
+          "textEn": "Tribal Welfare Department",
+          "textTe": "గిరిజన సంక్షేమ శాఖ"
+        },
+        {
+          "id": "D",
+          "textEn": "Telangana State Council of Higher Education",
+          "textTe": "తెలంగాణ ఉన్నత విద్యా మండలి"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationTe": "తెలంగాణ ప్రభుత్వ ప్రణాళికా శాఖ పరిధిలోని ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES) ప్రతి సంవత్సరం అధికారిక సామాజిక ఆర్థిక దృక్పథం (Socio Economic Outlook) మరియు స్థూల రాష్ట్ర దేశీయోత్పత్తి (GSDP) గణాంకాలను ప్రచురిస్తుంది.",
+      "explanationEn": "The Directorate of Economics and Statistics (DES), Planning Department, Government of Telangana, compiles and releases the official Socio Economic Outlook and state macroeconomic indicators annually.",
+      "difficulty": "easy",
+      "estimatedSolveSeconds": 45,
+      "sourceType": "current_affairs_editorial",
+      "sourceReference": "Verified Syllabus Material — p1_current_affairs",
+      "year": 2026,
+      "isAuthenticPyq": false,
+      "validationStatus": "approved",
+      "reviewedBy": "AutoSyncScheduler",
+      "reviewedAt": "2026-11-02T09:00:44.001Z",
+      "reviewNotes": "Approved and published to production question bank via Question Intelligence Engine.",
+      "createdAt": "2026-11-02T09:00:43.898Z",
+      "updatedAt": "2026-11-02T09:00:44.001Z"
     }
   ],
   "practiceSessions": {},
@@ -10264,6 +10441,50 @@
   "tutorConversations": {},
   "auditLogs": [
     {
+      "id": "log_1793610044009",
+      "action": "QUESTION_PUBLISHED",
+      "timestamp": "2026-11-02T09:00:44.009Z",
+      "details": {
+        "questionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+        "topicId": "p1_current_affairs",
+        "paperId": "paper_1",
+        "isAuthenticPyq": false
+      }
+    },
+    {
+      "id": "log_1793610043982",
+      "action": "QUESTION_PUBLISHED",
+      "timestamp": "2026-11-02T09:00:43.982Z",
+      "details": {
+        "questionId": "cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02",
+        "topicId": "p1_general_science",
+        "paperId": "paper_1",
+        "isAuthenticPyq": false
+      }
+    },
+    {
+      "id": "log_1793610043952",
+      "action": "QUESTION_PUBLISHED",
+      "timestamp": "2026-11-02T09:00:43.952Z",
+      "details": {
+        "questionId": "cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02",
+        "topicId": "p1_economy_india_telangana",
+        "paperId": "paper_1",
+        "isAuthenticPyq": false
+      }
+    },
+    {
+      "id": "log_1793610043924",
+      "action": "QUESTION_PUBLISHED",
+      "timestamp": "2026-11-02T09:00:43.924Z",
+      "details": {
+        "questionId": "cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02",
+        "topicId": "p1_telangana_policies",
+        "paperId": "paper_1",
+        "isAuthenticPyq": false
+      }
+    },
+    {
       "id": "log_1793598654708",
       "action": "EXAM_CONFIG_UPDATED",
       "timestamp": "2026-11-02T05:50:54.708Z",
@@ -10281,5 +10502,1957 @@
         "version": "1.0.0"
       }
     }
-  ]
+  ],
+  "contentSources": {
+    "src_tgpsc_official": {
+      "id": "src_tgpsc_official",
+      "name": "TGPSC Official Portal (websitenew.tgpsc.gov.in)",
+      "url": "https://websitenew.tgpsc.gov.in/",
+      "sourceCategory": "official_commission",
+      "trustTier": 1,
+      "licenseType": "official_tgpsc_public_notice",
+      "reusePermissions": "full_question_reproduction",
+      "crawlingAllowed": true,
+      "scanFrequency": "daily",
+      "isActive": true,
+      "notes": "Primary authoritative source for Notifications, Syllabus, Question Papers, and Final Answer Keys.",
+      "lastCheckedAt": "2026-11-02T09:06:49.195Z",
+      "lastModifiedAt": "2026-11-02T09:00:43.752Z",
+      "contentHash": "e8428b02cde37bfb6653866e852f5f6ac77c6e27abd277a37804c0e1a6327bf9",
+      "updatedAt": "2026-11-02T09:06:49.195Z"
+    },
+    "src_tgpsc_archives": {
+      "id": "src_tgpsc_archives",
+      "name": "TGPSC / TSPSC Question Paper & Web Notes Archive",
+      "url": "https://websitenew.tgpsc.gov.in/previous-question-papers",
+      "sourceCategory": "official_commission",
+      "trustTier": 1,
+      "licenseType": "official_tgpsc_public_notice",
+      "reusePermissions": "full_question_reproduction",
+      "crawlingAllowed": true,
+      "scanFrequency": "daily",
+      "isActive": true,
+      "notes": "Official preliminary and final answer keys, revised keys, and web notes.",
+      "lastCheckedAt": "2026-11-02T09:06:49.199Z",
+      "lastModifiedAt": "2026-11-02T09:00:43.846Z",
+      "contentHash": "e8428b02cde37bfb6653866e852f5f6ac77c6e27abd277a37804c0e1a6327bf9",
+      "updatedAt": "2026-11-02T09:06:49.199Z"
+    },
+    "src_ts_des": {
+      "id": "src_ts_des",
+      "name": "Telangana Directorate of Economics & Statistics (DES)",
+      "url": "https://ecostat.telangana.gov.in/",
+      "sourceCategory": "state_government",
+      "trustTier": 2,
+      "licenseType": "government_open_data",
+      "reusePermissions": "original_derivation_permitted",
+      "crawlingAllowed": true,
+      "scanFrequency": "daily",
+      "isActive": true,
+      "notes": "Key source for state statistical data, GSDP, price indices, and agriculture census.",
+      "lastCheckedAt": "2026-11-02T09:06:49.202Z",
+      "lastModifiedAt": "2026-11-02T09:00:43.853Z",
+      "contentHash": "bf4fa25125ed693d72875fd2f890e31804730ae3a4e9b4145f7b0e9ac338078d",
+      "updatedAt": "2026-11-02T09:06:49.202Z"
+    },
+    "src_ts_socio_economic_outlook": {
+      "id": "src_ts_socio_economic_outlook",
+      "name": "Telangana Socio Economic Outlook & Planning Dept",
+      "url": "https://planning.telangana.gov.in/",
+      "sourceCategory": "state_government",
+      "trustTier": 2,
+      "licenseType": "government_open_data",
+      "reusePermissions": "original_derivation_permitted",
+      "crawlingAllowed": true,
+      "scanFrequency": "weekly",
+      "isActive": true,
+      "notes": "Annual state survey, government welfare policies, and economic indicators.",
+      "lastCheckedAt": "2026-11-02T09:06:49.206Z",
+      "lastModifiedAt": "2026-11-02T09:00:43.860Z",
+      "contentHash": "bf4fa25125ed693d72875fd2f890e31804730ae3a4e9b4145f7b0e9ac338078d",
+      "updatedAt": "2026-11-02T09:06:49.206Z"
+    },
+    "src_mospi_goi": {
+      "id": "src_mospi_goi",
+      "name": "MoSPI — Ministry of Statistics and Programme Implementation",
+      "url": "https://www.mospi.gov.in/",
+      "sourceCategory": "state_government",
+      "trustTier": 2,
+      "licenseType": "government_open_data",
+      "reusePermissions": "original_derivation_permitted",
+      "crawlingAllowed": true,
+      "scanFrequency": "weekly",
+      "isActive": true,
+      "notes": "National accounts, CPI, IIP, national statistical systems, and NSSO guidelines.",
+      "lastCheckedAt": "2026-11-02T09:06:49.210Z",
+      "lastModifiedAt": "2026-11-02T09:00:43.868Z",
+      "contentHash": "09d3a8a155c22fe98b14d6d017f90f3d636a73cf58d1f30626f5f1a87266255b",
+      "updatedAt": "2026-11-02T09:06:49.210Z"
+    },
+    "src_oer_statistics": {
+      "id": "src_oer_statistics",
+      "name": "Open Educational Degree Statistics Textbooks (OER / OpenStax)",
+      "url": "https://openstax.org/details/books/introductory-statistics",
+      "sourceCategory": "academic_oer",
+      "trustTier": 3,
+      "licenseType": "creative_commons_by_sa",
+      "reusePermissions": "full_question_reproduction",
+      "crawlingAllowed": true,
+      "scanFrequency": "weekly",
+      "isActive": true,
+      "notes": "Standard degree-level statistics problems, probability theorems, and hypothesis tests.",
+      "lastCheckedAt": "2026-11-02T09:06:49.214Z",
+      "lastModifiedAt": "2026-11-02T09:00:43.876Z",
+      "contentHash": "a5fc40cb19b94311fbfb2e2797b895de0104c249610a066effff4659005ef035",
+      "updatedAt": "2026-11-02T09:06:49.214Z"
+    },
+    "src_tgpsc_related_exams": {
+      "id": "src_tgpsc_related_exams",
+      "name": "TGPSC / TSPSC Related Statistics Examinations Archive",
+      "url": "https://websitenew.tgpsc.gov.in/archives-statistical-services",
+      "sourceCategory": "related_government_exam",
+      "trustTier": 4,
+      "licenseType": "official_tgpsc_public_notice",
+      "reusePermissions": "full_question_reproduction",
+      "crawlingAllowed": true,
+      "scanFrequency": "weekly",
+      "isActive": true,
+      "notes": "Junior Statistical Officer, Statistical Officer, Divisional Accounts Officer papers. Strict provenance recorded; never mislabeled as MPSO PYQ.",
+      "lastCheckedAt": "2026-11-02T09:06:49.218Z",
+      "lastModifiedAt": "2026-11-02T09:00:43.883Z",
+      "contentHash": "3a4e5f29eec00f7f3435bf2ea51183d905fe7aef97de69050b2eac092fa7d789",
+      "updatedAt": "2026-11-02T09:06:49.218Z"
+    },
+    "src_telangana_today_ca": {
+      "id": "src_telangana_today_ca",
+      "name": "Telangana Development & Governance Reference Feed",
+      "url": "https://telanganatoday.com/",
+      "sourceCategory": "third_party_reference",
+      "trustTier": 5,
+      "licenseType": "restricted_metadata_only",
+      "reusePermissions": "metadata_and_citation_only",
+      "crawlingAllowed": true,
+      "scanFrequency": "daily",
+      "isActive": true,
+      "notes": "Educational current affairs reference only. Metadata and source citations stored, no bulk copyrighted content.",
+      "lastCheckedAt": "2026-11-02T09:06:49.222Z",
+      "lastModifiedAt": "2026-11-02T09:00:43.890Z",
+      "contentHash": "6d81220255dc9cd48a302262c4134f8d8b2779d638e679f005d7a8107a3179ec",
+      "updatedAt": "2026-11-02T09:06:49.222Z"
+    }
+  },
+  "ingestionJobs": {
+    "job_sync_2026-11-02_1793610043838": {
+      "id": "job_sync_2026-11-02_1793610043838",
+      "triggerType": "manual_admin",
+      "startedAt": "2026-11-02T09:00:43.838Z",
+      "status": "completed",
+      "sourcesChecked": 8,
+      "documentsDiscovered": 7,
+      "candidatesExtracted": 7,
+      "verifiedCount": 4,
+      "publishedCount": 4,
+      "reviewRequiredCount": 0,
+      "rejectedCount": 0,
+      "duplicatesDetected": 3,
+      "errors": [],
+      "reportSummary": "Daily Sync Completed: 8 sources checked, 4 questions published, 0 pending review, 3 duplicates excluded. Duration: 0s.",
+      "finishedAt": "2026-11-02T09:00:44.029Z"
+    },
+    "job_sync_2026-11-02_1793610177136": {
+      "id": "job_sync_2026-11-02_1793610177136",
+      "triggerType": "manual_admin",
+      "startedAt": "2026-11-02T09:02:57.136Z",
+      "status": "completed",
+      "sourcesChecked": 8,
+      "documentsDiscovered": 0,
+      "candidatesExtracted": 5,
+      "verifiedCount": 0,
+      "publishedCount": 0,
+      "reviewRequiredCount": 0,
+      "rejectedCount": 0,
+      "duplicatesDetected": 5,
+      "errors": [],
+      "reportSummary": "Daily Sync Completed: 8 sources checked, 0 questions published, 0 pending review, 5 duplicates excluded. Duration: 0s.",
+      "finishedAt": "2026-11-02T09:02:57.212Z"
+    },
+    "job_sync_2026-11-02_1793610253258": {
+      "id": "job_sync_2026-11-02_1793610253258",
+      "triggerType": "manual_admin",
+      "startedAt": "2026-11-02T09:04:13.258Z",
+      "status": "completed",
+      "sourcesChecked": 8,
+      "documentsDiscovered": 0,
+      "candidatesExtracted": 5,
+      "verifiedCount": 0,
+      "publishedCount": 0,
+      "reviewRequiredCount": 0,
+      "rejectedCount": 0,
+      "duplicatesDetected": 5,
+      "errors": [],
+      "reportSummary": "Daily Sync Completed: 8 sources checked, 0 questions published, 0 pending review, 5 duplicates excluded. Duration: 0s.",
+      "finishedAt": "2026-11-02T09:04:13.324Z"
+    },
+    "job_sync_2026-11-02_1793610409191": {
+      "id": "job_sync_2026-11-02_1793610409191",
+      "triggerType": "manual_admin",
+      "startedAt": "2026-11-02T09:06:49.191Z",
+      "status": "completed",
+      "sourcesChecked": 8,
+      "documentsDiscovered": 0,
+      "candidatesExtracted": 5,
+      "verifiedCount": 0,
+      "publishedCount": 0,
+      "reviewRequiredCount": 0,
+      "rejectedCount": 0,
+      "duplicatesDetected": 5,
+      "errors": [],
+      "reportSummary": "Daily Sync Completed: 8 sources checked, 0 questions published, 0 pending review, 5 duplicates excluded. Duration: 0s.",
+      "finishedAt": "2026-11-02T09:06:49.255Z"
+    }
+  },
+  "sourceDocuments": {
+    "doc_src_tgpsc_official_2026-11-02": {
+      "id": "doc_src_tgpsc_official_2026-11-02",
+      "sourceId": "src_tgpsc_official",
+      "originalUrl": "https://websitenew.tgpsc.gov.in/",
+      "title": "TGPSC MPSO / ASO Examination Notification 07/G/ES/2026 Question & Key Archive",
+      "publicationDate": "2026-10-28",
+      "retrievedAt": "2026-11-02T09:00:43.752Z",
+      "contentHash": "e8428b02cde37bfb6653866e852f5f6ac77c6e27abd277a37804c0e1a6327bf9",
+      "fileType": "html",
+      "licenseStatus": "official_tgpsc_public_notice",
+      "extractionStatus": "pending",
+      "documentVersion": 1,
+      "rawSnippet": "TGPSC Notification 07/G/ES/2026: Mandal Planning and Statistical Officer / Assistant Statistical Officer in Economics and Statistics Sub-Service.\nSyllabus: Paper-I General Studies and General Abilities; Paper-II Statistics (Degree Level).\nAnswer Key Policy: Preliminary key subject to objections; Final revised key supersedes all previous series mappings.",
+      "metadata": {
+        "permission": "full_question_reproduction",
+        "attribution": "TGPSC / TSPSC Official Public Examination Archive (TGPSC Official Portal (websitenew.tgpsc.gov.in)). For candidate preparation under Fair Educational Use.",
+        "fullTextPermitted": true
+      }
+    },
+    "doc_src_tgpsc_archives_2026-11-02": {
+      "id": "doc_src_tgpsc_archives_2026-11-02",
+      "sourceId": "src_tgpsc_archives",
+      "originalUrl": "https://websitenew.tgpsc.gov.in/previous-question-papers",
+      "title": "TGPSC MPSO / ASO Examination Notification 07/G/ES/2026 Question & Key Archive",
+      "publicationDate": "2026-10-28",
+      "retrievedAt": "2026-11-02T09:00:43.846Z",
+      "contentHash": "e8428b02cde37bfb6653866e852f5f6ac77c6e27abd277a37804c0e1a6327bf9",
+      "fileType": "html",
+      "licenseStatus": "official_tgpsc_public_notice",
+      "extractionStatus": "pending",
+      "documentVersion": 1,
+      "rawSnippet": "TGPSC Notification 07/G/ES/2026: Mandal Planning and Statistical Officer / Assistant Statistical Officer in Economics and Statistics Sub-Service.\nSyllabus: Paper-I General Studies and General Abilities; Paper-II Statistics (Degree Level).\nAnswer Key Policy: Preliminary key subject to objections; Final revised key supersedes all previous series mappings.",
+      "metadata": {
+        "permission": "full_question_reproduction",
+        "attribution": "TGPSC / TSPSC Official Public Examination Archive (TGPSC / TSPSC Question Paper & Web Notes Archive). For candidate preparation under Fair Educational Use.",
+        "fullTextPermitted": true
+      }
+    },
+    "doc_src_ts_des_2026-11-02": {
+      "id": "doc_src_ts_des_2026-11-02",
+      "sourceId": "src_ts_des",
+      "originalUrl": "https://ecostat.telangana.gov.in/",
+      "title": "Telangana Socio Economic Outlook 2026: Statistical Indicators & Growth Overview",
+      "publicationDate": "2026-11-02",
+      "retrievedAt": "2026-11-02T09:00:43.853Z",
+      "contentHash": "bf4fa25125ed693d72875fd2f890e31804730ae3a4e9b4145f7b0e9ac338078d",
+      "fileType": "html",
+      "licenseStatus": "government_open_data",
+      "extractionStatus": "pending",
+      "documentVersion": 1,
+      "rawSnippet": "Telangana Directorate of Economics & Statistics: Gross State Domestic Product (GSDP), Per Capita Income, Rythu Bandhu / Rythu Bharosa, Mission Bhagiratha, and Industrial Development Indicators.\nState statistical reporting conforms to standard national index number standards.",
+      "metadata": {
+        "permission": "original_derivation_permitted",
+        "attribution": "Official Open Government Data (Telangana Directorate of Economics & Statistics (DES), Telangana Socio Economic Outlook 2026: Statistical Indicators & Growth Overview).",
+        "fullTextPermitted": false
+      }
+    },
+    "doc_src_ts_socio_economic_outlook_2026-11-02": {
+      "id": "doc_src_ts_socio_economic_outlook_2026-11-02",
+      "sourceId": "src_ts_socio_economic_outlook",
+      "originalUrl": "https://planning.telangana.gov.in/",
+      "title": "Telangana Socio Economic Outlook 2026: Statistical Indicators & Growth Overview",
+      "publicationDate": "2026-11-02",
+      "retrievedAt": "2026-11-02T09:00:43.860Z",
+      "contentHash": "bf4fa25125ed693d72875fd2f890e31804730ae3a4e9b4145f7b0e9ac338078d",
+      "fileType": "html",
+      "licenseStatus": "government_open_data",
+      "extractionStatus": "pending",
+      "documentVersion": 1,
+      "rawSnippet": "Telangana Directorate of Economics & Statistics: Gross State Domestic Product (GSDP), Per Capita Income, Rythu Bandhu / Rythu Bharosa, Mission Bhagiratha, and Industrial Development Indicators.\nState statistical reporting conforms to standard national index number standards.",
+      "metadata": {
+        "permission": "original_derivation_permitted",
+        "attribution": "Official Open Government Data (Telangana Socio Economic Outlook & Planning Dept, Telangana Socio Economic Outlook 2026: Statistical Indicators & Growth Overview).",
+        "fullTextPermitted": false
+      }
+    },
+    "doc_src_mospi_goi_2026-11-02": {
+      "id": "doc_src_mospi_goi_2026-11-02",
+      "sourceId": "src_mospi_goi",
+      "originalUrl": "https://www.mospi.gov.in/",
+      "title": "MoSPI — Ministry of Statistics and Programme Implementation Official Public Release",
+      "publicationDate": "2026-11-02",
+      "retrievedAt": "2026-11-02T09:00:43.868Z",
+      "contentHash": "09d3a8a155c22fe98b14d6d017f90f3d636a73cf58d1f30626f5f1a87266255b",
+      "fileType": "text",
+      "licenseStatus": "government_open_data",
+      "extractionStatus": "pending",
+      "documentVersion": 1,
+      "rawSnippet": "Standard reference syllabus document for TGPSC MPSO/ASO preparation (MoSPI — Ministry of Statistics and Programme Implementation).",
+      "metadata": {
+        "permission": "original_derivation_permitted",
+        "attribution": "Official Open Government Data (MoSPI — Ministry of Statistics and Programme Implementation, MoSPI — Ministry of Statistics and Programme Implementation Official Public Release).",
+        "fullTextPermitted": false
+      }
+    },
+    "doc_src_oer_statistics_2026-11-02": {
+      "id": "doc_src_oer_statistics_2026-11-02",
+      "sourceId": "src_oer_statistics",
+      "originalUrl": "https://openstax.org/details/books/introductory-statistics",
+      "title": "Standard Degree Statistics Problem Set: Probability Distributions & Central Tendency",
+      "publicationDate": "2026-01-15",
+      "retrievedAt": "2026-11-02T09:00:43.876Z",
+      "contentHash": "a5fc40cb19b94311fbfb2e2797b895de0104c249610a066effff4659005ef035",
+      "fileType": "markdown",
+      "licenseStatus": "creative_commons_by_sa",
+      "extractionStatus": "pending",
+      "documentVersion": 1,
+      "rawSnippet": "Degree Statistics Practice Problems:\n1. Arithmetic Mean, Median, Mode, Variance, and Standard Deviation.\n2. Binomial and Poisson probability distributions with mathematical step verification.\n3. Simple random sampling without replacement (SRSWOR).",
+      "metadata": {
+        "permission": "full_question_reproduction",
+        "attribution": "Open Educational Resource licensed under CREATIVE-COMMONS-BY-SA (Open Educational Degree Statistics Textbooks (OER / OpenStax)).",
+        "fullTextPermitted": true
+      }
+    },
+    "doc_src_tgpsc_related_exams_2026-11-02": {
+      "id": "doc_src_tgpsc_related_exams_2026-11-02",
+      "sourceId": "src_tgpsc_related_exams",
+      "originalUrl": "https://websitenew.tgpsc.gov.in/archives-statistical-services",
+      "title": "TGPSC / TSPSC Related Statistics Examinations Archive Official Public Release",
+      "publicationDate": "2026-11-02",
+      "retrievedAt": "2026-11-02T09:00:43.883Z",
+      "contentHash": "3a4e5f29eec00f7f3435bf2ea51183d905fe7aef97de69050b2eac092fa7d789",
+      "fileType": "text",
+      "licenseStatus": "official_tgpsc_public_notice",
+      "extractionStatus": "pending",
+      "documentVersion": 1,
+      "rawSnippet": "Standard reference syllabus document for TGPSC MPSO/ASO preparation (TGPSC / TSPSC Related Statistics Examinations Archive).",
+      "metadata": {
+        "permission": "full_question_reproduction",
+        "attribution": "TGPSC / TSPSC Official Public Examination Archive (TGPSC / TSPSC Related Statistics Examinations Archive). For candidate preparation under Fair Educational Use.",
+        "fullTextPermitted": true
+      }
+    },
+    "doc_src_telangana_today_ca_2026-11-02": {
+      "id": "doc_src_telangana_today_ca_2026-11-02",
+      "sourceId": "src_telangana_today_ca",
+      "originalUrl": "https://telanganatoday.com/",
+      "title": "Telangana Development & Governance Reference Feed Official Public Release",
+      "publicationDate": "2026-11-02",
+      "retrievedAt": "2026-11-02T09:00:43.890Z",
+      "contentHash": "6d81220255dc9cd48a302262c4134f8d8b2779d638e679f005d7a8107a3179ec",
+      "fileType": "text",
+      "licenseStatus": "restricted_metadata_only",
+      "extractionStatus": "pending",
+      "documentVersion": 1,
+      "rawSnippet": "Standard reference syllabus document for TGPSC MPSO/ASO preparation (Telangana Development & Governance Reference Feed).",
+      "metadata": {
+        "permission": "metadata_and_citation_only",
+        "attribution": "Citation reference: Telangana Development & Governance Reference Feed (https://telanganatoday.com/). Full text not reproduced.",
+        "fullTextPermitted": false
+      }
+    }
+  },
+  "questionCandidates": {
+    "cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02": {
+      "id": "cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02",
+      "jobId": "job_sync_2026-11-02_1793610409191",
+      "paperId": "paper_1",
+      "topicId": "p1_telangana_policies",
+      "questionTextEn": "In Telangana state agricultural policy, what is the primary delivery mechanism used to disburse financial support under the Rythu welfare schemes?",
+      "questionTextTe": "తెలంగాణ రాష్ట్ర వ్యవసాయ విధానంలో, రైతు సంక్షేమ పథకాల క్రింద ఆర్థిక సహాయాన్ని అందించడానికి ఉపయోగించే ప్రధాన పంపిణీ విధానం ఏది?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Direct Benefit Transfer (DBT)",
+          "textTe": "ప్రత్యక్ష నగదు బదిలీ (DBT)"
+        },
+        {
+          "id": "B",
+          "textEn": "Distribution of paper bonds",
+          "textTe": "కాగితపు బాండ్ల పంపిణీ"
+        },
+        {
+          "id": "C",
+          "textEn": "Crop insurance coupon issuance",
+          "textTe": "భీమా కూపన్ల జారీ"
+        },
+        {
+          "id": "D",
+          "textEn": "Subsidized equipment credit voucher",
+          "textTe": "పరికరాల రాయితీ వోచర్"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationEn": "Direct Benefit Transfer (DBT) directly into verified bank accounts is the official delivery mechanism. Verified source: Government of Telangana Agriculture Department.",
+      "explanationTe": "రైతుల బ్యాంకు ఖాతాల్లోకి నేరుగా నగదు జమ చేసే ప్రత్యక్ష నగదు బదిలీ (DBT) అధికారిక పద్ధతి. మూలం: Government of Telangana Agriculture Department.",
+      "difficulty": "easy",
+      "sourceCategory": "state_government",
+      "authenticity": {
+        "isAuthenticPyq": false,
+        "examinationName": "MISSION MPSO Current Affairs Editorial",
+        "examYear": 2026
+      },
+      "validationStatus": "rejected",
+      "createdAt": "2026-11-02T09:06:49.225Z",
+      "updatedAt": "2026-11-02T09:06:49.226Z",
+      "duplicateOfQuestionId": "cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02",
+      "rejectionReason": "Exact match detected with existing published question: cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02"
+    },
+    "cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02": {
+      "id": "cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02",
+      "jobId": "job_sync_2026-11-02_1793610409191",
+      "paperId": "paper_1",
+      "topicId": "p1_economy_india_telangana",
+      "questionTextEn": "According to the official estimates released by the Telangana Directorate of Economics and Statistics, which sector contributes the highest share to the Gross State Value Added (GSVA) of Telangana?",
+      "questionTextTe": "తెలంగాణ అర్థ మరియు గణాంకాల డైరెక్టరేట్ (DES) నివేదిక ప్రకారం, రాష్ట్ర స్థూల విలువ జోడింపు (GSVA) లో అత్యధిక వాటాను సమకూరుస్తున్న రంగం ఏది?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Services Sector (సేవా రంగం)",
+          "textTe": "సేవా రంగం (Services Sector)"
+        },
+        {
+          "id": "B",
+          "textEn": "Mining & Quarrying (గనుల తవ్వకం)",
+          "textTe": "గనుల తవ్వకం (Mining & Quarrying)"
+        },
+        {
+          "id": "C",
+          "textEn": "Fisheries & Animal Husbandry (మత్స్య, పశుసంవర్ధక రంగం)",
+          "textTe": "మత్స్య, పశుసంవర్ధక రంగం"
+        },
+        {
+          "id": "D",
+          "textEn": "Construction Sector only (నిర్మాణ రంగం మాత్రమే)",
+          "textTe": "నిర్మాణ రంగం మాత్రమే"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationEn": "As verified by the Directorate of Economics and Statistics (DES), the Services sector continues to contribute the largest portion (over 60%) to Telangana's economy. Event date: 2026-10-20, Citation: Directorate of Economics and Statistics, Telangana.",
+      "explanationTe": "తెలంగాణ ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ అధికారిక నివేదిక ప్రకారం, తెలంగాణ స్థూల రాష్ట్ర విలువ జోడింపు (GSVA) లో సేవా రంగం అత్యధిక వాటాను (60% పైగా) కలిగి ఉంది. మూలం: Directorate of Economics and Statistics, Telangana.",
+      "difficulty": "easy",
+      "sourceCategory": "state_government",
+      "authenticity": {
+        "isAuthenticPyq": false,
+        "examinationName": "MISSION MPSO Current Affairs Editorial",
+        "examYear": 2026
+      },
+      "validationStatus": "rejected",
+      "createdAt": "2026-11-02T09:06:49.225Z",
+      "updatedAt": "2026-11-02T09:06:49.231Z",
+      "duplicateOfQuestionId": "cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02",
+      "rejectionReason": "Exact match detected with existing published question: cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02"
+    },
+    "cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02": {
+      "id": "cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02",
+      "jobId": "job_sync_2026-11-02_1793610409191",
+      "paperId": "paper_1",
+      "topicId": "p1_general_science",
+      "questionTextEn": "What is the primary scientific and technical objective of ISRO's planned Chandrayaan-4 mission?",
+      "questionTextTe": "భారత అంతరిక్ష పరిశోధనా సంస్థ (ISRO) ప్రతిపాదించిన చంద్రయాన్-4 ప్రాజెక్ట్ యొక్క ప్రధాన లక్ష్యం ఏమిటి?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Manned human landing on the Moon",
+          "textTe": "మానవ సహిత చంద్రునిపై ల్యాండింగ్"
+        },
+        {
+          "id": "B",
+          "textEn": "Lunar sample return to Earth (చంద్రుని నమూనాలను భూమికి చేర్చడం)",
+          "textTe": "చంద్రుని నమూనాలను భూమికి చేర్చడం (Lunar Sample Return)"
+        },
+        {
+          "id": "C",
+          "textEn": "Asteroid deflection and mining",
+          "textTe": "గ్రహశకలం కక్ష్య మార్పిడి"
+        },
+        {
+          "id": "D",
+          "textEn": "Mars atmosphere sample collection",
+          "textTe": "అంగారక వాతావరణ నమూనాల సేకరణ"
+        }
+      ],
+      "correctOptionId": "B",
+      "explanationEn": "Chandrayaan-4 is conceptualized by ISRO as a lunar sample-return mission aimed at collecting rock and soil samples from the Moon and safely returning them to Earth. Verified citation: ISRO / PIB India.",
+      "explanationTe": "ఇస్రో (ISRO) రూపొందిస్తున్న చంద్రయాన్-4 మిషన్ ప్రధాన లక్ష్యం చంద్రుని ఉపరితలం నుండి మట్టి మరియు రాతి నమూనాలను సేకరించి సురక్షితంగా భూమికి చేర్చడం (Lunar Sample Return). మూలం: ISRO / PIB India.",
+      "difficulty": "easy",
+      "sourceCategory": "state_government",
+      "authenticity": {
+        "isAuthenticPyq": false,
+        "examinationName": "MISSION MPSO Current Affairs Editorial",
+        "examYear": 2026
+      },
+      "validationStatus": "rejected",
+      "createdAt": "2026-11-02T09:06:49.226Z",
+      "updatedAt": "2026-11-02T09:06:49.235Z",
+      "duplicateOfQuestionId": "cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02",
+      "rejectionReason": "Exact match detected with existing published question: cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02"
+    },
+    "cand_gen_p1_current_affairs_1793610043898_azyj5": {
+      "id": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "jobId": "job_sync_2026-11-02_1793610043838",
+      "paperId": "paper_1",
+      "topicId": "p1_current_affairs",
+      "subtopicId": "p1_ca_telangana",
+      "questionTextEn": "Which agency is primarily responsible for compiling and publishing the annual Telangana Socio Economic Outlook and state income estimates?",
+      "questionTextTe": "తెలంగాణ రాష్ట్ర సామాజిక ఆర్థిక సర్వే (Socio Economic Outlook) మరియు రాష్ట్ర ఆదాయ అంచనాల తయారీకి ప్రధానంగా బాధ్యత వహించే సంస్థ ఏది?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Directorate of Economics and Statistics (DES)",
+          "textTe": "ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES)"
+        },
+        {
+          "id": "B",
+          "textEn": "State Election Commission",
+          "textTe": "రాష్ట్ర ఎన్నికల సంఘం"
+        },
+        {
+          "id": "C",
+          "textEn": "Tribal Welfare Department",
+          "textTe": "గిరిజన సంక్షేమ శాఖ"
+        },
+        {
+          "id": "D",
+          "textEn": "Telangana State Council of Higher Education",
+          "textTe": "తెలంగాణ ఉన్నత విద్యా మండలి"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationEn": "The Directorate of Economics and Statistics (DES), Planning Department, Government of Telangana, compiles and releases the official Socio Economic Outlook and state macroeconomic indicators annually.",
+      "explanationTe": "తెలంగాణ ప్రభుత్వ ప్రణాళికా శాఖ పరిధిలోని ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES) ప్రతి సంవత్సరం అధికారిక సామాజిక ఆర్థిక దృక్పథం (Socio Economic Outlook) మరియు స్థూల రాష్ట్ర దేశీయోత్పత్తి (GSDP) గణాంకాలను ప్రచురిస్తుంది.",
+      "difficulty": "easy",
+      "sourceCategory": "state_government",
+      "authenticity": {
+        "isAuthenticPyq": false,
+        "examinationName": "MISSION MPSO Standard Syllabus Model",
+        "examYear": 2026
+      },
+      "validationStatus": "published",
+      "createdAt": "2026-11-02T09:00:43.898Z",
+      "updatedAt": "2026-11-02T09:00:44.004Z"
+    },
+    "cand_gen_p1_current_affairs_1793610043898_dk0i7": {
+      "id": "cand_gen_p1_current_affairs_1793610043898_dk0i7",
+      "jobId": "job_sync_2026-11-02_1793610043838",
+      "paperId": "paper_1",
+      "topicId": "p1_current_affairs",
+      "subtopicId": "p1_ca_telangana",
+      "questionTextEn": "Which agency is primarily responsible for compiling and publishing the annual Telangana Socio Economic Outlook and state income estimates?",
+      "questionTextTe": "తెలంగాణ రాష్ట్ర సామాజిక ఆర్థిక సర్వే (Socio Economic Outlook) మరియు రాష్ట్ర ఆదాయ అంచనాల తయారీకి ప్రధానంగా బాధ్యత వహించే సంస్థ ఏది?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Directorate of Economics and Statistics (DES)",
+          "textTe": "ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES)"
+        },
+        {
+          "id": "B",
+          "textEn": "State Election Commission",
+          "textTe": "రాష్ట్ర ఎన్నికల సంఘం"
+        },
+        {
+          "id": "C",
+          "textEn": "Tribal Welfare Department",
+          "textTe": "గిరిజన సంక్షేమ శాఖ"
+        },
+        {
+          "id": "D",
+          "textEn": "Telangana State Council of Higher Education",
+          "textTe": "తెలంగాణ ఉన్నత విద్యా మండలి"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationEn": "The Directorate of Economics and Statistics (DES), Planning Department, Government of Telangana, compiles and releases the official Socio Economic Outlook and state macroeconomic indicators annually.",
+      "explanationTe": "తెలంగాణ ప్రభుత్వ ప్రణాళికా శాఖ పరిధిలోని ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES) ప్రతి సంవత్సరం అధికారిక సామాజిక ఆర్థిక దృక్పథం (Socio Economic Outlook) మరియు స్థూల రాష్ట్ర దేశీయోత్పత్తి (GSDP) గణాంకాలను ప్రచురిస్తుంది.",
+      "difficulty": "easy",
+      "sourceCategory": "state_government",
+      "authenticity": {
+        "isAuthenticPyq": false,
+        "examinationName": "MISSION MPSO Standard Syllabus Model",
+        "examYear": 2026
+      },
+      "validationStatus": "rejected",
+      "createdAt": "2026-11-02T09:00:43.898Z",
+      "updatedAt": "2026-11-02T09:00:44.009Z",
+      "duplicateOfQuestionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "rejectionReason": "Exact match detected with existing published question: cand_gen_p1_current_affairs_1793610043898_azyj5"
+    },
+    "cand_gen_p1_international_relations_1793610043898_u98rz": {
+      "id": "cand_gen_p1_international_relations_1793610043898_u98rz",
+      "jobId": "job_sync_2026-11-02_1793610043838",
+      "paperId": "paper_1",
+      "topicId": "p1_international_relations",
+      "subtopicId": "p1_ca_telangana",
+      "questionTextEn": "Which agency is primarily responsible for compiling and publishing the annual Telangana Socio Economic Outlook and state income estimates?",
+      "questionTextTe": "తెలంగాణ రాష్ట్ర సామాజిక ఆర్థిక సర్వే (Socio Economic Outlook) మరియు రాష్ట్ర ఆదాయ అంచనాల తయారీకి ప్రధానంగా బాధ్యత వహించే సంస్థ ఏది?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Directorate of Economics and Statistics (DES)",
+          "textTe": "ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES)"
+        },
+        {
+          "id": "B",
+          "textEn": "State Election Commission",
+          "textTe": "రాష్ట్ర ఎన్నికల సంఘం"
+        },
+        {
+          "id": "C",
+          "textEn": "Tribal Welfare Department",
+          "textTe": "గిరిజన సంక్షేమ శాఖ"
+        },
+        {
+          "id": "D",
+          "textEn": "Telangana State Council of Higher Education",
+          "textTe": "తెలంగాణ ఉన్నత విద్యా మండలి"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationEn": "The Directorate of Economics and Statistics (DES), Planning Department, Government of Telangana, compiles and releases the official Socio Economic Outlook and state macroeconomic indicators annually.",
+      "explanationTe": "తెలంగాణ ప్రభుత్వ ప్రణాళికా శాఖ పరిధిలోని ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES) ప్రతి సంవత్సరం అధికారిక సామాజిక ఆర్థిక దృక్పథం (Socio Economic Outlook) మరియు స్థూల రాష్ట్ర దేశీయోత్పత్తి (GSDP) గణాంకాలను ప్రచురిస్తుంది.",
+      "difficulty": "easy",
+      "sourceCategory": "state_government",
+      "authenticity": {
+        "isAuthenticPyq": false,
+        "examinationName": "MISSION MPSO Standard Syllabus Model",
+        "examYear": 2026
+      },
+      "validationStatus": "rejected",
+      "createdAt": "2026-11-02T09:00:43.898Z",
+      "updatedAt": "2026-11-02T09:00:44.013Z",
+      "duplicateOfQuestionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "rejectionReason": "Exact match detected with existing published question: cand_gen_p1_current_affairs_1793610043898_azyj5"
+    },
+    "cand_gen_p1_international_relations_1793610043898_g3320": {
+      "id": "cand_gen_p1_international_relations_1793610043898_g3320",
+      "jobId": "job_sync_2026-11-02_1793610043838",
+      "paperId": "paper_1",
+      "topicId": "p1_international_relations",
+      "subtopicId": "p1_ca_telangana",
+      "questionTextEn": "Which agency is primarily responsible for compiling and publishing the annual Telangana Socio Economic Outlook and state income estimates?",
+      "questionTextTe": "తెలంగాణ రాష్ట్ర సామాజిక ఆర్థిక సర్వే (Socio Economic Outlook) మరియు రాష్ట్ర ఆదాయ అంచనాల తయారీకి ప్రధానంగా బాధ్యత వహించే సంస్థ ఏది?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Directorate of Economics and Statistics (DES)",
+          "textTe": "ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES)"
+        },
+        {
+          "id": "B",
+          "textEn": "State Election Commission",
+          "textTe": "రాష్ట్ర ఎన్నికల సంఘం"
+        },
+        {
+          "id": "C",
+          "textEn": "Tribal Welfare Department",
+          "textTe": "గిరిజన సంక్షేమ శాఖ"
+        },
+        {
+          "id": "D",
+          "textEn": "Telangana State Council of Higher Education",
+          "textTe": "తెలంగాణ ఉన్నత విద్యా మండలి"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationEn": "The Directorate of Economics and Statistics (DES), Planning Department, Government of Telangana, compiles and releases the official Socio Economic Outlook and state macroeconomic indicators annually.",
+      "explanationTe": "తెలంగాణ ప్రభుత్వ ప్రణాళికా శాఖ పరిధిలోని ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES) ప్రతి సంవత్సరం అధికారిక సామాజిక ఆర్థిక దృక్పథం (Socio Economic Outlook) మరియు స్థూల రాష్ట్ర దేశీయోత్పత్తి (GSDP) గణాంకాలను ప్రచురిస్తుంది.",
+      "difficulty": "easy",
+      "sourceCategory": "state_government",
+      "authenticity": {
+        "isAuthenticPyq": false,
+        "examinationName": "MISSION MPSO Standard Syllabus Model",
+        "examYear": 2026
+      },
+      "validationStatus": "rejected",
+      "createdAt": "2026-11-02T09:00:43.898Z",
+      "updatedAt": "2026-11-02T09:00:44.017Z",
+      "duplicateOfQuestionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "rejectionReason": "Exact match detected with existing published question: cand_gen_p1_current_affairs_1793610043898_azyj5"
+    },
+    "cand_gen_p1_international_relations_1793610177177_geizx": {
+      "id": "cand_gen_p1_international_relations_1793610177177_geizx",
+      "jobId": "job_sync_2026-11-02_1793610177136",
+      "paperId": "paper_1",
+      "topicId": "p1_international_relations",
+      "subtopicId": "p1_ca_telangana",
+      "questionTextEn": "Which agency is primarily responsible for compiling and publishing the annual Telangana Socio Economic Outlook and state income estimates?",
+      "questionTextTe": "తెలంగాణ రాష్ట్ర సామాజిక ఆర్థిక సర్వే (Socio Economic Outlook) మరియు రాష్ట్ర ఆదాయ అంచనాల తయారీకి ప్రధానంగా బాధ్యత వహించే సంస్థ ఏది?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Directorate of Economics and Statistics (DES)",
+          "textTe": "ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES)"
+        },
+        {
+          "id": "B",
+          "textEn": "State Election Commission",
+          "textTe": "రాష్ట్ర ఎన్నికల సంఘం"
+        },
+        {
+          "id": "C",
+          "textEn": "Tribal Welfare Department",
+          "textTe": "గిరిజన సంక్షేమ శాఖ"
+        },
+        {
+          "id": "D",
+          "textEn": "Telangana State Council of Higher Education",
+          "textTe": "తెలంగాణ ఉన్నత విద్యా మండలి"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationEn": "The Directorate of Economics and Statistics (DES), Planning Department, Government of Telangana, compiles and releases the official Socio Economic Outlook and state macroeconomic indicators annually.",
+      "explanationTe": "తెలంగాణ ప్రభుత్వ ప్రణాళికా శాఖ పరిధిలోని ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES) ప్రతి సంవత్సరం అధికారిక సామాజిక ఆర్థిక దృక్పథం (Socio Economic Outlook) మరియు స్థూల రాష్ట్ర దేశీయోత్పత్తి (GSDP) గణాంకాలను ప్రచురిస్తుంది.",
+      "difficulty": "easy",
+      "sourceCategory": "state_government",
+      "authenticity": {
+        "isAuthenticPyq": false,
+        "examinationName": "MISSION MPSO Standard Syllabus Model",
+        "examYear": 2026
+      },
+      "validationStatus": "rejected",
+      "createdAt": "2026-11-02T09:02:57.177Z",
+      "updatedAt": "2026-11-02T09:02:57.193Z",
+      "duplicateOfQuestionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "rejectionReason": "Exact match detected with existing published question: cand_gen_p1_current_affairs_1793610043898_azyj5"
+    },
+    "cand_gen_p1_international_relations_1793610177177_uc1rd": {
+      "id": "cand_gen_p1_international_relations_1793610177177_uc1rd",
+      "jobId": "job_sync_2026-11-02_1793610177136",
+      "paperId": "paper_1",
+      "topicId": "p1_international_relations",
+      "subtopicId": "p1_ca_telangana",
+      "questionTextEn": "Which agency is primarily responsible for compiling and publishing the annual Telangana Socio Economic Outlook and state income estimates?",
+      "questionTextTe": "తెలంగాణ రాష్ట్ర సామాజిక ఆర్థిక సర్వే (Socio Economic Outlook) మరియు రాష్ట్ర ఆదాయ అంచనాల తయారీకి ప్రధానంగా బాధ్యత వహించే సంస్థ ఏది?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Directorate of Economics and Statistics (DES)",
+          "textTe": "ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES)"
+        },
+        {
+          "id": "B",
+          "textEn": "State Election Commission",
+          "textTe": "రాష్ట్ర ఎన్నికల సంఘం"
+        },
+        {
+          "id": "C",
+          "textEn": "Tribal Welfare Department",
+          "textTe": "గిరిజన సంక్షేమ శాఖ"
+        },
+        {
+          "id": "D",
+          "textEn": "Telangana State Council of Higher Education",
+          "textTe": "తెలంగాణ ఉన్నత విద్యా మండలి"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationEn": "The Directorate of Economics and Statistics (DES), Planning Department, Government of Telangana, compiles and releases the official Socio Economic Outlook and state macroeconomic indicators annually.",
+      "explanationTe": "తెలంగాణ ప్రభుత్వ ప్రణాళికా శాఖ పరిధిలోని ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES) ప్రతి సంవత్సరం అధికారిక సామాజిక ఆర్థిక దృక్పథం (Socio Economic Outlook) మరియు స్థూల రాష్ట్ర దేశీయోత్పత్తి (GSDP) గణాంకాలను ప్రచురిస్తుంది.",
+      "difficulty": "easy",
+      "sourceCategory": "state_government",
+      "authenticity": {
+        "isAuthenticPyq": false,
+        "examinationName": "MISSION MPSO Standard Syllabus Model",
+        "examYear": 2026
+      },
+      "validationStatus": "rejected",
+      "createdAt": "2026-11-02T09:02:57.177Z",
+      "updatedAt": "2026-11-02T09:02:57.198Z",
+      "duplicateOfQuestionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "rejectionReason": "Exact match detected with existing published question: cand_gen_p1_current_affairs_1793610043898_azyj5"
+    },
+    "cand_gen_p1_international_relations_1793610253294_fds5w": {
+      "id": "cand_gen_p1_international_relations_1793610253294_fds5w",
+      "jobId": "job_sync_2026-11-02_1793610253258",
+      "paperId": "paper_1",
+      "topicId": "p1_international_relations",
+      "subtopicId": "p1_ca_telangana",
+      "questionTextEn": "Which agency is primarily responsible for compiling and publishing the annual Telangana Socio Economic Outlook and state income estimates?",
+      "questionTextTe": "తెలంగాణ రాష్ట్ర సామాజిక ఆర్థిక సర్వే (Socio Economic Outlook) మరియు రాష్ట్ర ఆదాయ అంచనాల తయారీకి ప్రధానంగా బాధ్యత వహించే సంస్థ ఏది?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Directorate of Economics and Statistics (DES)",
+          "textTe": "ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES)"
+        },
+        {
+          "id": "B",
+          "textEn": "State Election Commission",
+          "textTe": "రాష్ట్ర ఎన్నికల సంఘం"
+        },
+        {
+          "id": "C",
+          "textEn": "Tribal Welfare Department",
+          "textTe": "గిరిజన సంక్షేమ శాఖ"
+        },
+        {
+          "id": "D",
+          "textEn": "Telangana State Council of Higher Education",
+          "textTe": "తెలంగాణ ఉన్నత విద్యా మండలి"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationEn": "The Directorate of Economics and Statistics (DES), Planning Department, Government of Telangana, compiles and releases the official Socio Economic Outlook and state macroeconomic indicators annually.",
+      "explanationTe": "తెలంగాణ ప్రభుత్వ ప్రణాళికా శాఖ పరిధిలోని ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES) ప్రతి సంవత్సరం అధికారిక సామాజిక ఆర్థిక దృక్పథం (Socio Economic Outlook) మరియు స్థూల రాష్ట్ర దేశీయోత్పత్తి (GSDP) గణాంకాలను ప్రచురిస్తుంది.",
+      "difficulty": "easy",
+      "sourceCategory": "state_government",
+      "authenticity": {
+        "isAuthenticPyq": false,
+        "examinationName": "MISSION MPSO Standard Syllabus Model",
+        "examYear": 2026
+      },
+      "validationStatus": "rejected",
+      "createdAt": "2026-11-02T09:04:13.294Z",
+      "updatedAt": "2026-11-02T09:04:13.307Z",
+      "duplicateOfQuestionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "rejectionReason": "Exact match detected with existing published question: cand_gen_p1_current_affairs_1793610043898_azyj5"
+    },
+    "cand_gen_p1_international_relations_1793610253294_g04jf": {
+      "id": "cand_gen_p1_international_relations_1793610253294_g04jf",
+      "jobId": "job_sync_2026-11-02_1793610253258",
+      "paperId": "paper_1",
+      "topicId": "p1_international_relations",
+      "subtopicId": "p1_ca_telangana",
+      "questionTextEn": "Which agency is primarily responsible for compiling and publishing the annual Telangana Socio Economic Outlook and state income estimates?",
+      "questionTextTe": "తెలంగాణ రాష్ట్ర సామాజిక ఆర్థిక సర్వే (Socio Economic Outlook) మరియు రాష్ట్ర ఆదాయ అంచనాల తయారీకి ప్రధానంగా బాధ్యత వహించే సంస్థ ఏది?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Directorate of Economics and Statistics (DES)",
+          "textTe": "ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES)"
+        },
+        {
+          "id": "B",
+          "textEn": "State Election Commission",
+          "textTe": "రాష్ట్ర ఎన్నికల సంఘం"
+        },
+        {
+          "id": "C",
+          "textEn": "Tribal Welfare Department",
+          "textTe": "గిరిజన సంక్షేమ శాఖ"
+        },
+        {
+          "id": "D",
+          "textEn": "Telangana State Council of Higher Education",
+          "textTe": "తెలంగాణ ఉన్నత విద్యా మండలి"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationEn": "The Directorate of Economics and Statistics (DES), Planning Department, Government of Telangana, compiles and releases the official Socio Economic Outlook and state macroeconomic indicators annually.",
+      "explanationTe": "తెలంగాణ ప్రభుత్వ ప్రణాళికా శాఖ పరిధిలోని ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES) ప్రతి సంవత్సరం అధికారిక సామాజిక ఆర్థిక దృక్పథం (Socio Economic Outlook) మరియు స్థూల రాష్ట్ర దేశీయోత్పత్తి (GSDP) గణాంకాలను ప్రచురిస్తుంది.",
+      "difficulty": "easy",
+      "sourceCategory": "state_government",
+      "authenticity": {
+        "isAuthenticPyq": false,
+        "examinationName": "MISSION MPSO Standard Syllabus Model",
+        "examYear": 2026
+      },
+      "validationStatus": "rejected",
+      "createdAt": "2026-11-02T09:04:13.294Z",
+      "updatedAt": "2026-11-02T09:04:13.312Z",
+      "duplicateOfQuestionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "rejectionReason": "Exact match detected with existing published question: cand_gen_p1_current_affairs_1793610043898_azyj5"
+    },
+    "cand_gen_p1_international_relations_1793610409226_wwcwz": {
+      "id": "cand_gen_p1_international_relations_1793610409226_wwcwz",
+      "jobId": "job_sync_2026-11-02_1793610409191",
+      "paperId": "paper_1",
+      "topicId": "p1_international_relations",
+      "subtopicId": "p1_ca_telangana",
+      "questionTextEn": "Which agency is primarily responsible for compiling and publishing the annual Telangana Socio Economic Outlook and state income estimates?",
+      "questionTextTe": "తెలంగాణ రాష్ట్ర సామాజిక ఆర్థిక సర్వే (Socio Economic Outlook) మరియు రాష్ట్ర ఆదాయ అంచనాల తయారీకి ప్రధానంగా బాధ్యత వహించే సంస్థ ఏది?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Directorate of Economics and Statistics (DES)",
+          "textTe": "ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES)"
+        },
+        {
+          "id": "B",
+          "textEn": "State Election Commission",
+          "textTe": "రాష్ట్ర ఎన్నికల సంఘం"
+        },
+        {
+          "id": "C",
+          "textEn": "Tribal Welfare Department",
+          "textTe": "గిరిజన సంక్షేమ శాఖ"
+        },
+        {
+          "id": "D",
+          "textEn": "Telangana State Council of Higher Education",
+          "textTe": "తెలంగాణ ఉన్నత విద్యా మండలి"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationEn": "The Directorate of Economics and Statistics (DES), Planning Department, Government of Telangana, compiles and releases the official Socio Economic Outlook and state macroeconomic indicators annually.",
+      "explanationTe": "తెలంగాణ ప్రభుత్వ ప్రణాళికా శాఖ పరిధిలోని ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES) ప్రతి సంవత్సరం అధికారిక సామాజిక ఆర్థిక దృక్పథం (Socio Economic Outlook) మరియు స్థూల రాష్ట్ర దేశీయోత్పత్తి (GSDP) గణాంకాలను ప్రచురిస్తుంది.",
+      "difficulty": "easy",
+      "sourceCategory": "state_government",
+      "authenticity": {
+        "isAuthenticPyq": false,
+        "examinationName": "MISSION MPSO Standard Syllabus Model",
+        "examYear": 2026
+      },
+      "validationStatus": "rejected",
+      "createdAt": "2026-11-02T09:06:49.226Z",
+      "updatedAt": "2026-11-02T09:06:49.239Z",
+      "duplicateOfQuestionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "rejectionReason": "Exact match detected with existing published question: cand_gen_p1_current_affairs_1793610043898_azyj5"
+    },
+    "cand_gen_p1_international_relations_1793610409226_7gkj8": {
+      "id": "cand_gen_p1_international_relations_1793610409226_7gkj8",
+      "jobId": "job_sync_2026-11-02_1793610409191",
+      "paperId": "paper_1",
+      "topicId": "p1_international_relations",
+      "subtopicId": "p1_ca_telangana",
+      "questionTextEn": "Which agency is primarily responsible for compiling and publishing the annual Telangana Socio Economic Outlook and state income estimates?",
+      "questionTextTe": "తెలంగాణ రాష్ట్ర సామాజిక ఆర్థిక సర్వే (Socio Economic Outlook) మరియు రాష్ట్ర ఆదాయ అంచనాల తయారీకి ప్రధానంగా బాధ్యత వహించే సంస్థ ఏది?",
+      "options": [
+        {
+          "id": "A",
+          "textEn": "Directorate of Economics and Statistics (DES)",
+          "textTe": "ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES)"
+        },
+        {
+          "id": "B",
+          "textEn": "State Election Commission",
+          "textTe": "రాష్ట్ర ఎన్నికల సంఘం"
+        },
+        {
+          "id": "C",
+          "textEn": "Tribal Welfare Department",
+          "textTe": "గిరిజన సంక్షేమ శాఖ"
+        },
+        {
+          "id": "D",
+          "textEn": "Telangana State Council of Higher Education",
+          "textTe": "తెలంగాణ ఉన్నత విద్యా మండలి"
+        }
+      ],
+      "correctOptionId": "A",
+      "explanationEn": "The Directorate of Economics and Statistics (DES), Planning Department, Government of Telangana, compiles and releases the official Socio Economic Outlook and state macroeconomic indicators annually.",
+      "explanationTe": "తెలంగాణ ప్రభుత్వ ప్రణాళికా శాఖ పరిధిలోని ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES) ప్రతి సంవత్సరం అధికారిక సామాజిక ఆర్థిక దృక్పథం (Socio Economic Outlook) మరియు స్థూల రాష్ట్ర దేశీయోత్పత్తి (GSDP) గణాంకాలను ప్రచురిస్తుంది.",
+      "difficulty": "easy",
+      "sourceCategory": "state_government",
+      "authenticity": {
+        "isAuthenticPyq": false,
+        "examinationName": "MISSION MPSO Standard Syllabus Model",
+        "examYear": 2026
+      },
+      "validationStatus": "rejected",
+      "createdAt": "2026-11-02T09:06:49.226Z",
+      "updatedAt": "2026-11-02T09:06:49.243Z",
+      "duplicateOfQuestionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "rejectionReason": "Exact match detected with existing published question: cand_gen_p1_current_affairs_1793610043898_azyj5"
+    }
+  },
+  "questionProvenance": {},
+  "questionValidations": {
+    "val_struct_cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02": {
+      "id": "val_struct_cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02",
+      "questionId": "cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02",
+      "layer": "structural",
+      "passed": true,
+      "validatorName": "StructuralSchemaValidator",
+      "timestamp": "2026-11-02T09:00:43.903Z",
+      "details": {
+        "optionCount": 4,
+        "correctOptionId": "A"
+      }
+    },
+    "val_fact_cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02": {
+      "id": "val_fact_cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02",
+      "questionId": "cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02",
+      "layer": "factual",
+      "passed": true,
+      "validatorName": "FactualEvidenceValidator",
+      "timestamp": "2026-11-02T09:00:43.903Z",
+      "details": {
+        "paper": "paper_1",
+        "topic": "p1_telangana_policies"
+      }
+    },
+    "val_sem_cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02": {
+      "id": "val_sem_cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02",
+      "questionId": "cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02",
+      "layer": "semantic",
+      "passed": true,
+      "validatorName": "SemanticDistractorValidator",
+      "timestamp": "2026-11-02T09:00:43.903Z",
+      "details": {
+        "trivialOptionCount": 0
+      }
+    },
+    "val_struct_cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02": {
+      "id": "val_struct_cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02",
+      "questionId": "cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02",
+      "layer": "structural",
+      "passed": true,
+      "validatorName": "StructuralSchemaValidator",
+      "timestamp": "2026-11-02T09:00:43.928Z",
+      "details": {
+        "optionCount": 4,
+        "correctOptionId": "A"
+      }
+    },
+    "val_fact_cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02": {
+      "id": "val_fact_cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02",
+      "questionId": "cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02",
+      "layer": "factual",
+      "passed": true,
+      "validatorName": "FactualEvidenceValidator",
+      "timestamp": "2026-11-02T09:00:43.929Z",
+      "details": {
+        "paper": "paper_1",
+        "topic": "p1_economy_india_telangana"
+      }
+    },
+    "val_sem_cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02": {
+      "id": "val_sem_cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02",
+      "questionId": "cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02",
+      "layer": "semantic",
+      "passed": true,
+      "validatorName": "SemanticDistractorValidator",
+      "timestamp": "2026-11-02T09:00:43.929Z",
+      "details": {
+        "trivialOptionCount": 0
+      }
+    },
+    "val_struct_cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02": {
+      "id": "val_struct_cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02",
+      "questionId": "cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02",
+      "layer": "structural",
+      "passed": true,
+      "validatorName": "StructuralSchemaValidator",
+      "timestamp": "2026-11-02T09:00:43.956Z",
+      "details": {
+        "optionCount": 4,
+        "correctOptionId": "B"
+      }
+    },
+    "val_fact_cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02": {
+      "id": "val_fact_cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02",
+      "questionId": "cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02",
+      "layer": "factual",
+      "passed": true,
+      "validatorName": "FactualEvidenceValidator",
+      "timestamp": "2026-11-02T09:00:43.956Z",
+      "details": {
+        "paper": "paper_1",
+        "topic": "p1_general_science"
+      }
+    },
+    "val_sem_cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02": {
+      "id": "val_sem_cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02",
+      "questionId": "cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02",
+      "layer": "semantic",
+      "passed": true,
+      "validatorName": "SemanticDistractorValidator",
+      "timestamp": "2026-11-02T09:00:43.956Z",
+      "details": {
+        "trivialOptionCount": 0
+      }
+    },
+    "val_struct_cand_gen_p1_current_affairs_1793610043898_azyj5": {
+      "id": "val_struct_cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "questionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "layer": "structural",
+      "passed": true,
+      "validatorName": "StructuralSchemaValidator",
+      "timestamp": "2026-11-02T09:00:43.986Z",
+      "details": {
+        "optionCount": 4,
+        "correctOptionId": "A"
+      }
+    },
+    "val_fact_cand_gen_p1_current_affairs_1793610043898_azyj5": {
+      "id": "val_fact_cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "questionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "layer": "factual",
+      "passed": true,
+      "validatorName": "FactualEvidenceValidator",
+      "timestamp": "2026-11-02T09:00:43.986Z",
+      "details": {
+        "paper": "paper_1",
+        "topic": "p1_current_affairs"
+      }
+    },
+    "val_sem_cand_gen_p1_current_affairs_1793610043898_azyj5": {
+      "id": "val_sem_cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "questionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "layer": "semantic",
+      "passed": true,
+      "validatorName": "SemanticDistractorValidator",
+      "timestamp": "2026-11-02T09:00:43.986Z",
+      "details": {
+        "trivialOptionCount": 0
+      }
+    }
+  },
+  "questionTranslations": {
+    "trans_cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02_te": {
+      "id": "trans_cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02_te",
+      "questionId": "cand_ca_fact_ts_rythu_bharosa_2026_2026-11-02",
+      "language": "te",
+      "translatedText": "తెలంగాణ రాష్ట్ర వ్యవసాయ విధానంలో, రైతు సంక్షేమ పథకాల క్రింద ఆర్థిక సహాయాన్ని అందించడానికి ఉపయోగించే ప్రధాన పంపిణీ విధానం ఏది?",
+      "translatedExplanation": "రైతుల బ్యాంకు ఖాతాల్లోకి నేరుగా నగదు జమ చేసే ప్రత్యక్ష నగదు బదిలీ (DBT) అధికారిక పద్ధతి. మూలం: Government of Telangana Agriculture Department.",
+      "translatedOptions": [
+        {
+          "id": "A",
+          "textEn": "Direct Benefit Transfer (DBT)",
+          "textTe": "ప్రత్యక్ష నగదు బదిలీ (DBT)"
+        },
+        {
+          "id": "B",
+          "textEn": "Distribution of paper bonds",
+          "textTe": "కాగితపు బాండ్ల పంపిణీ"
+        },
+        {
+          "id": "C",
+          "textEn": "Crop insurance coupon issuance",
+          "textTe": "భీమా కూపన్ల జారీ"
+        },
+        {
+          "id": "D",
+          "textEn": "Subsidized equipment credit voucher",
+          "textTe": "పరికరాల రాయితీ వోచర్"
+        }
+      ],
+      "termsPreserved": [],
+      "mathematicalNotationIntact": true,
+      "numericValuesPreserved": true,
+      "validationStatus": "verified",
+      "validationNotes": "All academic terminology verified.",
+      "reviewedBy": "AcademicTranslationEngine",
+      "createdAt": "2026-11-02T09:00:43.898Z"
+    },
+    "trans_cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02_te": {
+      "id": "trans_cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02_te",
+      "questionId": "cand_ca_fact_ts_socio_economic_growth_2026_2026-11-02",
+      "language": "te",
+      "translatedText": "తెలంగాణ అర్థ మరియు గణాంకాల డైరెక్టరేట్ (DES) నివేదిక ప్రకారం, రాష్ట్ర స్థూల విలువ జోడింపు (GSVA) లో అత్యధిక వాటాను సమకూరుస్తున్న రంగం ఏది?",
+      "translatedExplanation": "తెలంగాణ ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ అధికారిక నివేదిక ప్రకారం, తెలంగాణ స్థూల రాష్ట్ర విలువ జోడింపు (GSVA) లో సేవా రంగం అత్యధిక వాటాను (60% పైగా) కలిగి ఉంది. మూలం: Directorate of Economics and Statistics, Telangana.",
+      "translatedOptions": [
+        {
+          "id": "A",
+          "textEn": "Services Sector (సేవా రంగం)",
+          "textTe": "సేవా రంగం (Services Sector)"
+        },
+        {
+          "id": "B",
+          "textEn": "Mining & Quarrying (గనుల తవ్వకం)",
+          "textTe": "గనుల తవ్వకం (Mining & Quarrying)"
+        },
+        {
+          "id": "C",
+          "textEn": "Fisheries & Animal Husbandry (మత్స్య, పశుసంవర్ధక రంగం)",
+          "textTe": "మత్స్య, పశుసంవర్ధక రంగం"
+        },
+        {
+          "id": "D",
+          "textEn": "Construction Sector only (నిర్మాణ రంగం మాత్రమే)",
+          "textTe": "నిర్మాణ రంగం మాత్రమే"
+        }
+      ],
+      "termsPreserved": [],
+      "mathematicalNotationIntact": true,
+      "numericValuesPreserved": true,
+      "validationStatus": "verified",
+      "validationNotes": "All academic terminology verified.",
+      "reviewedBy": "AcademicTranslationEngine",
+      "createdAt": "2026-11-02T09:00:43.925Z"
+    },
+    "trans_cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02_te": {
+      "id": "trans_cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02_te",
+      "questionId": "cand_ca_fact_india_isro_chandrayaan4_prep_2026-11-02",
+      "language": "te",
+      "translatedText": "భారత అంతరిక్ష పరిశోధనా సంస్థ (ISRO) ప్రతిపాదించిన చంద్రయాన్-4 ప్రాజెక్ట్ యొక్క ప్రధాన లక్ష్యం ఏమిటి?",
+      "translatedExplanation": "ఇస్రో (ISRO) రూపొందిస్తున్న చంద్రయాన్-4 మిషన్ ప్రధాన లక్ష్యం చంద్రుని ఉపరితలం నుండి మట్టి మరియు రాతి నమూనాలను సేకరించి సురక్షితంగా భూమికి చేర్చడం (Lunar Sample Return). మూలం: ISRO / PIB India.",
+      "translatedOptions": [
+        {
+          "id": "A",
+          "textEn": "Manned human landing on the Moon",
+          "textTe": "మానవ సహిత చంద్రునిపై ల్యాండింగ్"
+        },
+        {
+          "id": "B",
+          "textEn": "Lunar sample return to Earth (చంద్రుని నమూనాలను భూమికి చేర్చడం)",
+          "textTe": "చంద్రుని నమూనాలను భూమికి చేర్చడం (Lunar Sample Return)"
+        },
+        {
+          "id": "C",
+          "textEn": "Asteroid deflection and mining",
+          "textTe": "గ్రహశకలం కక్ష్య మార్పిడి"
+        },
+        {
+          "id": "D",
+          "textEn": "Mars atmosphere sample collection",
+          "textTe": "అంగారక వాతావరణ నమూనాల సేకరణ"
+        }
+      ],
+      "termsPreserved": [],
+      "mathematicalNotationIntact": true,
+      "numericValuesPreserved": true,
+      "validationStatus": "verified",
+      "validationNotes": "All academic terminology verified.",
+      "reviewedBy": "AcademicTranslationEngine",
+      "createdAt": "2026-11-02T09:00:43.952Z"
+    },
+    "trans_cand_gen_p1_current_affairs_1793610043898_azyj5_te": {
+      "id": "trans_cand_gen_p1_current_affairs_1793610043898_azyj5_te",
+      "questionId": "cand_gen_p1_current_affairs_1793610043898_azyj5",
+      "language": "te",
+      "translatedText": "తెలంగాణ రాష్ట్ర సామాజిక ఆర్థిక సర్వే (Socio Economic Outlook) మరియు రాష్ట్ర ఆదాయ అంచనాల తయారీకి ప్రధానంగా బాధ్యత వహించే సంస్థ ఏది?",
+      "translatedExplanation": "తెలంగాణ ప్రభుత్వ ప్రణాళికా శాఖ పరిధిలోని ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES) ప్రతి సంవత్సరం అధికారిక సామాజిక ఆర్థిక దృక్పథం (Socio Economic Outlook) మరియు స్థూల రాష్ట్ర దేశీయోత్పత్తి (GSDP) గణాంకాలను ప్రచురిస్తుంది.",
+      "translatedOptions": [
+        {
+          "id": "A",
+          "textEn": "Directorate of Economics and Statistics (DES)",
+          "textTe": "ఆర్థిక మరియు గణాంకాల డైరెక్టరేట్ (DES)"
+        },
+        {
+          "id": "B",
+          "textEn": "State Election Commission",
+          "textTe": "రాష్ట్ర ఎన్నికల సంఘం"
+        },
+        {
+          "id": "C",
+          "textEn": "Tribal Welfare Department",
+          "textTe": "గిరిజన సంక్షేమ శాఖ"
+        },
+        {
+          "id": "D",
+          "textEn": "Telangana State Council of Higher Education",
+          "textTe": "తెలంగాణ ఉన్నత విద్యా మండలి"
+        }
+      ],
+      "termsPreserved": [],
+      "mathematicalNotationIntact": true,
+      "numericValuesPreserved": true,
+      "validationStatus": "verified",
+      "validationNotes": "All academic terminology verified.",
+      "reviewedBy": "AcademicTranslationEngine",
+      "createdAt": "2026-11-02T09:00:43.982Z"
+    }
+  },
+  "ingestionErrors": [],
+  "syllabusCoverage": {
+    "p1_current_affairs": {
+      "topicId": "p1_current_affairs",
+      "paperId": "paper_1",
+      "unitNumber": 1,
+      "unitTitleTe": "యూనిట్ 1: వర్తమాన వ్యవహారాలు",
+      "unitTitleEn": "Unit 1: Current Affairs",
+      "totalPublished": 1,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 0,
+      "originalPracticeCount": 1,
+      "easyCount": 1,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 1,
+      "pendingReviewCount": 0,
+      "coverageScore": 7,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p1_international_relations": {
+      "topicId": "p1_international_relations",
+      "paperId": "paper_1",
+      "unitNumber": 2,
+      "unitTitleTe": "యూనిట్ 2: అంతర్జాతీయ సంబంధాలు",
+      "unitTitleEn": "Unit 2: International Relations",
+      "totalPublished": 0,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 0,
+      "originalPracticeCount": 0,
+      "easyCount": 0,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 0,
+      "pendingReviewCount": 0,
+      "coverageScore": 0,
+      "coverageHealth": "critical_gap",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p1_general_science": {
+      "topicId": "p1_general_science",
+      "paperId": "paper_1",
+      "unitNumber": 3,
+      "unitTitleTe": "యూనిట్ 3: సామాన్య శాస్త్రం & సాంకేతికత",
+      "unitTitleEn": "Unit 3: General Science & Technology",
+      "totalPublished": 2,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 0,
+      "originalPracticeCount": 2,
+      "easyCount": 2,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 2,
+      "pendingReviewCount": 0,
+      "coverageScore": 17,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p1_environment_disaster": {
+      "topicId": "p1_environment_disaster",
+      "paperId": "paper_1",
+      "unitNumber": 4,
+      "unitTitleTe": "యూనిట్ 4: పర్యావరణం & విపత్తు నిర్వహణ",
+      "unitTitleEn": "Unit 4: Environment & Disaster Management",
+      "totalPublished": 1,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 1,
+      "originalPracticeCount": 0,
+      "easyCount": 1,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 1,
+      "pendingReviewCount": 0,
+      "coverageScore": 10,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p1_economy_india_telangana": {
+      "topicId": "p1_economy_india_telangana",
+      "paperId": "paper_1",
+      "unitNumber": 5,
+      "unitTitleTe": "యూనిట్ 5: భారత & తెలంగాణ ఆర్థిక వ్యవస్థ",
+      "unitTitleEn": "Unit 5: Economy of India and Telangana",
+      "totalPublished": 2,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 1,
+      "originalPracticeCount": 1,
+      "easyCount": 2,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 2,
+      "pendingReviewCount": 0,
+      "coverageScore": 13,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p1_geography_india_telangana": {
+      "topicId": "p1_geography_india_telangana",
+      "paperId": "paper_1",
+      "unitNumber": 6,
+      "unitTitleTe": "యూనిట్ 6: భౌగోళిక శాస్త్రం (భారతదేశం & తెలంగాణ)",
+      "unitTitleEn": "Unit 6: Geography of India with focus on Telangana",
+      "totalPublished": 1,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 1,
+      "originalPracticeCount": 0,
+      "easyCount": 1,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 1,
+      "pendingReviewCount": 0,
+      "coverageScore": 8,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p1_polity_local_governance": {
+      "topicId": "p1_polity_local_governance",
+      "paperId": "paper_1",
+      "unitNumber": 7,
+      "unitTitleTe": "యూనిట్ 7: భారత రాజ్యాంగం & స్థానిక పాలన",
+      "unitTitleEn": "Unit 7: Indian Constitution & Local Governance",
+      "totalPublished": 1,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 1,
+      "originalPracticeCount": 0,
+      "easyCount": 1,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 1,
+      "pendingReviewCount": 0,
+      "coverageScore": 7,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p1_telangana_society_culture": {
+      "topicId": "p1_telangana_society_culture",
+      "paperId": "paper_1",
+      "unitNumber": 8,
+      "unitTitleTe": "యూనిట్ 8: తెలంగాణ సమాజం, సంస్కృతి & సాహిత్యం",
+      "unitTitleEn": "Unit 8: Society, Culture, Heritage & Literature of Telangana",
+      "totalPublished": 2,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 2,
+      "originalPracticeCount": 0,
+      "easyCount": 2,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 2,
+      "pendingReviewCount": 0,
+      "coverageScore": 17,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p1_telangana_policies": {
+      "topicId": "p1_telangana_policies",
+      "paperId": "paper_1",
+      "unitNumber": 9,
+      "unitTitleTe": "యూనిట్ 9: తెలంగాణ ప్రభుత్వ విధానాలు",
+      "unitTitleEn": "Unit 9: Policies of Telangana State",
+      "totalPublished": 2,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 0,
+      "originalPracticeCount": 2,
+      "easyCount": 2,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 2,
+      "pendingReviewCount": 0,
+      "coverageScore": 17,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p1_history_modern_india": {
+      "topicId": "p1_history_modern_india",
+      "paperId": "paper_1",
+      "unitNumber": 10,
+      "unitTitleTe": "యూనిట్ 10: ఆధునిక భారతదేశ చరిత్ర",
+      "unitTitleEn": "Unit 10: History of Modern India",
+      "totalPublished": 1,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 1,
+      "originalPracticeCount": 0,
+      "easyCount": 1,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 1,
+      "pendingReviewCount": 0,
+      "coverageScore": 10,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p1_history_telangana_statehood": {
+      "topicId": "p1_history_telangana_statehood",
+      "paperId": "paper_1",
+      "unitNumber": 11,
+      "unitTitleTe": "యూనిట్ 11: తెలంగాణ చరిత్ర & ప్రత్యేక రాష్ట్ర ఉద్యమం",
+      "unitTitleEn": "Unit 11: History of Telangana & Statehood Movement",
+      "totalPublished": 1,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 1,
+      "originalPracticeCount": 0,
+      "easyCount": 0,
+      "mediumCount": 1,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 1,
+      "pendingReviewCount": 0,
+      "coverageScore": 7,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p1_logical_reasoning_data_interpretation": {
+      "topicId": "p1_logical_reasoning_data_interpretation",
+      "paperId": "paper_1",
+      "unitNumber": 12,
+      "unitTitleTe": "యూనిట్ 12: లాజికల్ రీజనింగ్ & డేటా విశ్లేషణ",
+      "unitTitleEn": "Unit 12: Logical Reasoning, Analytical Ability and Data Interpretation",
+      "totalPublished": 1,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 1,
+      "originalPracticeCount": 0,
+      "easyCount": 1,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 1,
+      "teluguVerifiedCount": 1,
+      "pendingReviewCount": 0,
+      "coverageScore": 8,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p1_basic_english": {
+      "topicId": "p1_basic_english",
+      "paperId": "paper_1",
+      "unitNumber": 13,
+      "unitTitleTe": "యూనిట్ 13: ప్రాథమిక ఆంగ్ల భాష",
+      "unitTitleEn": "Unit 13: Basic English",
+      "totalPublished": 1,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 1,
+      "originalPracticeCount": 0,
+      "easyCount": 1,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 1,
+      "pendingReviewCount": 0,
+      "coverageScore": 10,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p2_intro_statistics": {
+      "topicId": "p2_intro_statistics",
+      "paperId": "paper_2",
+      "unitNumber": 1,
+      "unitTitleTe": "యూనిట్ I: సాంఖ్యకశాస్త్ర పరిచయం",
+      "unitTitleEn": "Unit I: Introduction to Statistics",
+      "totalPublished": 1,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 1,
+      "originalPracticeCount": 0,
+      "easyCount": 1,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 1,
+      "pendingReviewCount": 0,
+      "coverageScore": 7,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p2_central_tendency_dispersion": {
+      "topicId": "p2_central_tendency_dispersion",
+      "paperId": "paper_2",
+      "unitNumber": 2,
+      "unitTitleTe": "యూనిట్ II: కేంద్రీయ ప్రవృత్తి, విస్తరణ, అసౌష్ఠవత & కకుదత",
+      "unitTitleEn": "Unit II: Measures of Central Tendency, Dispersion, Skewness & Kurtosis",
+      "totalPublished": 6,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 3,
+      "originalPracticeCount": 3,
+      "easyCount": 6,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 3,
+      "teluguVerifiedCount": 6,
+      "pendingReviewCount": 0,
+      "coverageScore": 27,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p2_probability": {
+      "topicId": "p2_probability",
+      "paperId": "paper_2",
+      "unitNumber": 3,
+      "unitTitleTe": "యూనిట్ III: సంభావ్యత",
+      "unitTitleEn": "Unit III: Probability",
+      "totalPublished": 2,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 0,
+      "originalPracticeCount": 2,
+      "easyCount": 1,
+      "mediumCount": 1,
+      "hardCount": 0,
+      "numericalCount": 1,
+      "teluguVerifiedCount": 2,
+      "pendingReviewCount": 0,
+      "coverageScore": 10,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p2_random_variables_distributions": {
+      "topicId": "p2_random_variables_distributions",
+      "paperId": "paper_2",
+      "unitNumber": 4,
+      "unitTitleTe": "యూనిట్ IV: యాదృచ్ఛిక చలరాశులు & విభాజనాలు",
+      "unitTitleEn": "Unit IV: Concept of Random Variable & Distributions",
+      "totalPublished": 2,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 1,
+      "originalPracticeCount": 1,
+      "easyCount": 1,
+      "mediumCount": 1,
+      "hardCount": 0,
+      "numericalCount": 1,
+      "teluguVerifiedCount": 2,
+      "pendingReviewCount": 0,
+      "coverageScore": 8,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p2_correlation_regression": {
+      "topicId": "p2_correlation_regression",
+      "paperId": "paper_2",
+      "unitNumber": 5,
+      "unitTitleTe": "యూనిట్ V: సహసంబంధం & ప్రతిగమనం",
+      "unitTitleEn": "Unit V: Correlation and Regression",
+      "totalPublished": 2,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 1,
+      "originalPracticeCount": 1,
+      "easyCount": 0,
+      "mediumCount": 2,
+      "hardCount": 0,
+      "numericalCount": 1,
+      "teluguVerifiedCount": 2,
+      "pendingReviewCount": 0,
+      "coverageScore": 10,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p2_time_series_index_numbers": {
+      "topicId": "p2_time_series_index_numbers",
+      "paperId": "paper_2",
+      "unitNumber": 6,
+      "unitTitleTe": "యూనిట్ VI: కాలశ్రేణులు & సూచీ సంఖ్యలు",
+      "unitTitleEn": "Unit VI: Analysis of Time Series and Index Numbers",
+      "totalPublished": 2,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 1,
+      "originalPracticeCount": 1,
+      "easyCount": 2,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 1,
+      "teluguVerifiedCount": 2,
+      "pendingReviewCount": 0,
+      "coverageScore": 10,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p2_sampling_techniques": {
+      "topicId": "p2_sampling_techniques",
+      "paperId": "paper_2",
+      "unitNumber": 7,
+      "unitTitleTe": "యూనిట్ VII: శాంప్లింగ్ పద్ధతులు",
+      "unitTitleEn": "Unit VII: Sampling Techniques",
+      "totalPublished": 1,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 0,
+      "originalPracticeCount": 1,
+      "easyCount": 0,
+      "mediumCount": 1,
+      "hardCount": 0,
+      "numericalCount": 1,
+      "teluguVerifiedCount": 1,
+      "pendingReviewCount": 0,
+      "coverageScore": 6,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    },
+    "p2_basics_of_computers": {
+      "topicId": "p2_basics_of_computers",
+      "paperId": "paper_2",
+      "unitNumber": 8,
+      "unitTitleTe": "యూనిట్ VIII: కంప్యూటర్ ప్రాథమికాంశాలు",
+      "unitTitleEn": "Unit VIII: Basics of Computers",
+      "totalPublished": 2,
+      "authenticPyqCount": 0,
+      "relatedExamCount": 2,
+      "originalPracticeCount": 0,
+      "easyCount": 2,
+      "mediumCount": 0,
+      "hardCount": 0,
+      "numericalCount": 0,
+      "teluguVerifiedCount": 2,
+      "pendingReviewCount": 0,
+      "coverageScore": 10,
+      "coverageHealth": "needs_questions",
+      "lastUpdated": "2026-11-02T09:06:49.264Z"
+    }
+  },
+  "dailySyncReports": {
+    "report_2026-11-02_1793610044025": {
+      "id": "report_2026-11-02_1793610044025",
+      "reportDate": "2026-11-02",
+      "jobId": "job_sync_2026-11-02_1793610043838",
+      "sourcesCheckedCount": 8,
+      "changedDocumentsCount": 7,
+      "newCandidatesCount": 7,
+      "verifiedCount": 4,
+      "publishedCount": 4,
+      "reviewRequiredCount": 0,
+      "rejectedCount": 0,
+      "duplicatesDetectedCount": 3,
+      "failedSourcesCount": 0,
+      "paper1NewCountByTopic": {
+        "p1_telangana_policies": 1,
+        "p1_economy_india_telangana": 1,
+        "p1_general_science": 1,
+        "p1_current_affairs": 1
+      },
+      "paper2NewCountByTopic": {},
+      "sourceChanges": [
+        {
+          "sourceName": "TGPSC Official Portal (websitenew.tgpsc.gov.in)",
+          "url": "https://websitenew.tgpsc.gov.in/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "TGPSC / TSPSC Question Paper & Web Notes Archive",
+          "url": "https://websitenew.tgpsc.gov.in/previous-question-papers",
+          "changeType": "new_document",
+          "detail": "TGPSC MPSO / ASO Examination Notification 07/G/ES/2026 Question & Key Archive"
+        },
+        {
+          "sourceName": "Telangana Directorate of Economics & Statistics (DES)",
+          "url": "https://ecostat.telangana.gov.in/",
+          "changeType": "new_document",
+          "detail": "Telangana Socio Economic Outlook 2026: Statistical Indicators & Growth Overview"
+        },
+        {
+          "sourceName": "Telangana Socio Economic Outlook & Planning Dept",
+          "url": "https://planning.telangana.gov.in/",
+          "changeType": "new_document",
+          "detail": "Telangana Socio Economic Outlook 2026: Statistical Indicators & Growth Overview"
+        },
+        {
+          "sourceName": "MoSPI — Ministry of Statistics and Programme Implementation",
+          "url": "https://www.mospi.gov.in/",
+          "changeType": "new_document",
+          "detail": "MoSPI — Ministry of Statistics and Programme Implementation Official Public Release"
+        },
+        {
+          "sourceName": "Open Educational Degree Statistics Textbooks (OER / OpenStax)",
+          "url": "https://openstax.org/details/books/introductory-statistics",
+          "changeType": "new_document",
+          "detail": "Standard Degree Statistics Problem Set: Probability Distributions & Central Tendency"
+        },
+        {
+          "sourceName": "TGPSC / TSPSC Related Statistics Examinations Archive",
+          "url": "https://websitenew.tgpsc.gov.in/archives-statistical-services",
+          "changeType": "new_document",
+          "detail": "TGPSC / TSPSC Related Statistics Examinations Archive Official Public Release"
+        },
+        {
+          "sourceName": "Telangana Development & Governance Reference Feed",
+          "url": "https://telanganatoday.com/",
+          "changeType": "new_document",
+          "detail": "Telangana Development & Governance Reference Feed Official Public Release"
+        }
+      ],
+      "validationWarnings": [],
+      "actionsRequired": [],
+      "createdAt": "2026-11-02T09:00:44.025Z"
+    },
+    "report_2026-11-02_1793610177207": {
+      "id": "report_2026-11-02_1793610177207",
+      "reportDate": "2026-11-02",
+      "jobId": "job_sync_2026-11-02_1793610177136",
+      "sourcesCheckedCount": 8,
+      "changedDocumentsCount": 0,
+      "newCandidatesCount": 5,
+      "verifiedCount": 0,
+      "publishedCount": 0,
+      "reviewRequiredCount": 0,
+      "rejectedCount": 0,
+      "duplicatesDetectedCount": 5,
+      "failedSourcesCount": 0,
+      "paper1NewCountByTopic": {},
+      "paper2NewCountByTopic": {},
+      "sourceChanges": [
+        {
+          "sourceName": "TGPSC Official Portal (websitenew.tgpsc.gov.in)",
+          "url": "https://websitenew.tgpsc.gov.in/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "TGPSC / TSPSC Question Paper & Web Notes Archive",
+          "url": "https://websitenew.tgpsc.gov.in/previous-question-papers",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "Telangana Directorate of Economics & Statistics (DES)",
+          "url": "https://ecostat.telangana.gov.in/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "Telangana Socio Economic Outlook & Planning Dept",
+          "url": "https://planning.telangana.gov.in/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "MoSPI — Ministry of Statistics and Programme Implementation",
+          "url": "https://www.mospi.gov.in/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "Open Educational Degree Statistics Textbooks (OER / OpenStax)",
+          "url": "https://openstax.org/details/books/introductory-statistics",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "TGPSC / TSPSC Related Statistics Examinations Archive",
+          "url": "https://websitenew.tgpsc.gov.in/archives-statistical-services",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "Telangana Development & Governance Reference Feed",
+          "url": "https://telanganatoday.com/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        }
+      ],
+      "validationWarnings": [],
+      "actionsRequired": [],
+      "createdAt": "2026-11-02T09:02:57.207Z"
+    },
+    "report_2026-11-02_1793610253320": {
+      "id": "report_2026-11-02_1793610253320",
+      "reportDate": "2026-11-02",
+      "jobId": "job_sync_2026-11-02_1793610253258",
+      "sourcesCheckedCount": 8,
+      "changedDocumentsCount": 0,
+      "newCandidatesCount": 5,
+      "verifiedCount": 0,
+      "publishedCount": 0,
+      "reviewRequiredCount": 0,
+      "rejectedCount": 0,
+      "duplicatesDetectedCount": 5,
+      "failedSourcesCount": 0,
+      "paper1NewCountByTopic": {},
+      "paper2NewCountByTopic": {},
+      "sourceChanges": [
+        {
+          "sourceName": "TGPSC Official Portal (websitenew.tgpsc.gov.in)",
+          "url": "https://websitenew.tgpsc.gov.in/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "TGPSC / TSPSC Question Paper & Web Notes Archive",
+          "url": "https://websitenew.tgpsc.gov.in/previous-question-papers",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "Telangana Directorate of Economics & Statistics (DES)",
+          "url": "https://ecostat.telangana.gov.in/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "Telangana Socio Economic Outlook & Planning Dept",
+          "url": "https://planning.telangana.gov.in/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "MoSPI — Ministry of Statistics and Programme Implementation",
+          "url": "https://www.mospi.gov.in/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "Open Educational Degree Statistics Textbooks (OER / OpenStax)",
+          "url": "https://openstax.org/details/books/introductory-statistics",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "TGPSC / TSPSC Related Statistics Examinations Archive",
+          "url": "https://websitenew.tgpsc.gov.in/archives-statistical-services",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "Telangana Development & Governance Reference Feed",
+          "url": "https://telanganatoday.com/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        }
+      ],
+      "validationWarnings": [],
+      "actionsRequired": [],
+      "createdAt": "2026-11-02T09:04:13.320Z"
+    },
+    "report_2026-11-02_1793610409251": {
+      "id": "report_2026-11-02_1793610409251",
+      "reportDate": "2026-11-02",
+      "jobId": "job_sync_2026-11-02_1793610409191",
+      "sourcesCheckedCount": 8,
+      "changedDocumentsCount": 0,
+      "newCandidatesCount": 5,
+      "verifiedCount": 0,
+      "publishedCount": 0,
+      "reviewRequiredCount": 0,
+      "rejectedCount": 0,
+      "duplicatesDetectedCount": 5,
+      "failedSourcesCount": 0,
+      "paper1NewCountByTopic": {},
+      "paper2NewCountByTopic": {},
+      "sourceChanges": [
+        {
+          "sourceName": "TGPSC Official Portal (websitenew.tgpsc.gov.in)",
+          "url": "https://websitenew.tgpsc.gov.in/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "TGPSC / TSPSC Question Paper & Web Notes Archive",
+          "url": "https://websitenew.tgpsc.gov.in/previous-question-papers",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "Telangana Directorate of Economics & Statistics (DES)",
+          "url": "https://ecostat.telangana.gov.in/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "Telangana Socio Economic Outlook & Planning Dept",
+          "url": "https://planning.telangana.gov.in/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "MoSPI — Ministry of Statistics and Programme Implementation",
+          "url": "https://www.mospi.gov.in/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "Open Educational Degree Statistics Textbooks (OER / OpenStax)",
+          "url": "https://openstax.org/details/books/introductory-statistics",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "TGPSC / TSPSC Related Statistics Examinations Archive",
+          "url": "https://websitenew.tgpsc.gov.in/archives-statistical-services",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        },
+        {
+          "sourceName": "Telangana Development & Governance Reference Feed",
+          "url": "https://telanganatoday.com/",
+          "changeType": "unchanged",
+          "detail": "Content hash and ETag unchanged since last check."
+        }
+      ],
+      "validationWarnings": [],
+      "actionsRequired": [],
+      "createdAt": "2026-11-02T09:06:49.251Z"
+    }
+  }
 }
