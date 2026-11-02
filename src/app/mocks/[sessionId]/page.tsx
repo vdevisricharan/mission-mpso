@@ -72,10 +72,16 @@ export default async function MockExamPage({
     db.saveMockSession(completed);
   }
 
+  async function handleRetakeMock(sessionId: string) {
+    "use server";
+    db.deleteMockSession(sessionId);
+  }
+
   return (
     <MockSimulator
       session={session}
       onSubmitMock={handleMockSubmit}
+      onRetakeMock={handleRetakeMock}
     />
   );
 }

@@ -57,6 +57,21 @@ body {
   min-width: 44px;
 }
 
+/* iOS Safe Area insets */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Utility to hide scrollbars while preserving touch scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  -webkit-overflow-scrolling: touch;
+}
+
 /* Custom scrollbars */
 ::-webkit-scrollbar {
   width: 6px;

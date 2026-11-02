@@ -83,23 +83,23 @@ export function StudentDashboard({
         <div className="absolute right-0 top-0 translate-x-12 -translate-y-8 w-48 h-48 bg-white/5 rounded-full pointer-events-none" />
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-[#BFE2D7] uppercase tracking-wider mb-1">
+            <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs font-semibold text-[#BFE2D7] uppercase tracking-wider mb-1">
               <span>{isEnglish ? `Official Notification ${examConfig.notificationNumber}` : `అధికారిక నోటిఫికేషన్ ${examConfig.notificationNumber}`}</span>
-              <span>•</span>
+              <span className="hidden sm:inline">•</span>
               <span>{isEnglish ? "Telangana Public Service Commission (TGPSC)" : "తెలంగాణ పబ్లిక్ సర్వీస్ కమిషన్ (TGPSC)"}</span>
             </div>
             <h2 className="text-lg sm:text-xl font-bold mb-2">
               {isEnglish ? "Mandal Planning & Statistical Officers (MPSO / ASO)" : "మండల్ ప్లానింగ్ & స్టాటిస్టికల్ ఆఫీసర్స్ (MPSO / ASO)"}
             </h2>
-            <div className="flex flex-wrap items-center gap-4 text-xs text-[#E8F4F0]">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[#E8F4F0]">
               <span className="flex items-center gap-1.5">
-                <Calendar className="w-4 h-4 text-[#BFE2D7]" />
+                <Calendar className="w-4 h-4 text-[#BFE2D7] shrink-0" />
                 <span>
                   {isEnglish ? "Exam Timeline: " : "పరీక్ష సమయం: "}
                   <strong>{examConfig.tentativeExamMonth} {isEnglish ? "(Tentative)" : "(తాత్కాలికం)"}</strong>
                 </span>
               </span>
-              <span>•</span>
+              <span className="hidden sm:inline">•</span>
               <span>
                 {isEnglish
                   ? "Total Questions: 300 (Paper I: 150 + Paper II: 150)"

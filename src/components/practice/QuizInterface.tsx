@@ -196,19 +196,19 @@ export function QuizInterface({
   return (
     <div className="max-w-3xl mx-auto px-4 py-6 md:py-8">
       {/* Top Bar with Question Counter & Timer */}
-      <div className="flex items-center justify-between mb-6 bg-white border border-[#E5EAE5] px-5 py-3 rounded-2xl shadow-xs">
-        <div className="flex items-center gap-2">
-          <span className="text-xs font-bold text-[#176B5B] uppercase tracking-wider">
+      <div className="flex items-center justify-between mb-6 bg-white border border-[#E5EAE5] px-4 sm:px-5 py-3 rounded-2xl shadow-xs">
+        <div className="flex items-center gap-2 min-w-0 flex-1 mr-2">
+          <span className="text-xs font-bold text-[#176B5B] uppercase tracking-wider truncate">
             {mainTitle}
           </span>
-          <span className="text-xs text-[#65716D]">•</span>
-          <span className="text-xs font-semibold text-[#17211E]">
+          <span className="text-xs text-[#65716D] shrink-0">•</span>
+          <span className="text-xs font-semibold text-[#17211E] whitespace-nowrap shrink-0">
             {t("question_counter")} {currentIndex + 1} / {questions.length}
           </span>
         </div>
 
         {isTimed && (
-          <div className="flex items-center gap-1.5 text-xs font-bold text-[#A66A19] bg-[#FEF7ED] px-3 py-1.5 rounded-lg border border-[#F6DCBA]">
+          <div className="flex items-center gap-1.5 text-xs font-bold text-[#A66A19] bg-[#FEF7ED] px-3 py-1.5 rounded-lg border border-[#F6DCBA] shrink-0">
             <Clock className="w-3.5 h-3.5" />
             <span>{formatTime(timeRemaining)}</span>
           </div>

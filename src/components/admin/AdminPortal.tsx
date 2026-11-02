@@ -112,7 +112,7 @@ export function AdminPortal({
       </div>
 
       {/* Tabs Bar */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar border-b border-[#E5EAE5]">
+      <div className="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar border-b border-[#E5EAE5] scroll-smooth overscroll-x-contain">
         {[
           { id: "overview", label: "డ్యాష్‌బోర్డ్" },
           { id: "exam_config", label: "పరీక్ష నిబంధనలు (Exam Config)" },
@@ -124,7 +124,7 @@ export function AdminPortal({
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id as any)}
-            className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-colors touch-target ${
+            className={`shrink-0 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-colors touch-target ${
               activeTab === tab.id
                 ? "bg-[#176B5B] text-white shadow-xs"
                 : "bg-white border border-[#E5EAE5] text-[#65716D] hover:bg-[#F5F6F2] hover:text-[#17211E]"

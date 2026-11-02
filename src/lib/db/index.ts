@@ -248,6 +248,11 @@ class PersistentDatabase {
     return Object.values(this.db.mockSessions).filter((s) => s.userId === userId);
   }
 
+  deleteMockSession(sessionId: string): void {
+    delete this.db.mockSessions[sessionId];
+    this.saveDatabase(this.db);
+  }
+
   // Mistake Book
   getMistakes(userId: string): MistakeBookItem[] {
     return Object.values(this.db.mistakeBook).filter((m) => m.userId === userId);

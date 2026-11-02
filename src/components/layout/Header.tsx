@@ -61,20 +61,24 @@ export function Header({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo & Official Badge */}
-          <div className="flex items-center gap-3">
-            <Link href={currentRole === "admin" ? "/admin" : "/dashboard"} className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-xl bg-[#176B5B] flex items-center justify-center text-white shadow-sm font-bold text-lg">
+          <div className="flex items-center gap-3 min-w-0 mr-2">
+            <Link
+              href={currentRole === "admin" ? "/admin" : "/dashboard"}
+              className="flex items-center gap-2 sm:gap-2.5 min-w-0"
+            >
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#176B5B] flex items-center justify-center text-white shadow-sm font-bold text-base sm:text-lg shrink-0">
                 M
               </div>
-              <div className="flex flex-col">
-                <span className="font-bold text-[#17211E] text-lg leading-tight tracking-tight">
+              <div className="flex flex-col min-w-0">
+                <span className="font-bold text-[#17211E] text-base sm:text-lg leading-tight tracking-tight truncate">
                   MISSION MPSO
                 </span>
-                <span className="text-[11px] text-[#65716D] font-medium flex items-center gap-1.5">
-                  <span>{t("notification_label")}</span>
-                  <span className="w-1 h-1 rounded-full bg-[#176B5B]"></span>
-                  <span className="text-[#176B5B]">{t("exam_tentative_month")}</span>
-                </span>
+                <div className="text-[10px] sm:text-[11px] text-[#65716D] font-medium flex items-center gap-1 sm:gap-1.5 truncate">
+                  <span className="hidden sm:inline truncate">{t("notification_label")}</span>
+                  <span className="sm:hidden font-semibold text-[#176B5B] truncate">07/G/ES/2026</span>
+                  <span className="hidden sm:inline-block w-1 h-1 rounded-full bg-[#176B5B] shrink-0" />
+                  <span className="hidden sm:inline text-[#176B5B] shrink-0">{t("exam_tentative_month")}</span>
+                </div>
               </div>
             </Link>
           </div>
@@ -198,59 +202,55 @@ export function Header({
           </div>
 
           {/* Mobile Right Controls */}
-          <div className="flex md:hidden items-center gap-2">
+          <div className="flex md:hidden items-center gap-1.5 shrink-0">
             {/* Mobile Language Toggle */}
-            <div className="flex items-center rounded-lg bg-[#F5F6F2] p-0.5 border border-[#E5EAE5]">
+            <div
+              className="flex items-center rounded-lg bg-[#F5F6F2] p-0.5 border border-[#E5EAE5]"
+              title={t("language_toggle_tooltip")}
+            >
               <button
                 type="button"
                 onClick={() => setLanguage("te")}
-                className={`px-2 py-1 rounded-md text-[11px] font-bold transition-all ${
+                className={`px-2 py-1 rounded-md text-[11px] font-bold transition-all min-w-[28px] text-center ${
                   language === "te"
-                    ? "bg-[#176B5B] text-white"
-                    : "text-[#65716D]"
+                    ? "bg-[#176B5B] text-white shadow-xs"
+                    : "text-[#65716D] hover:text-[#17211E]"
                 }`}
+                aria-pressed={language === "te"}
               >
                 తె
               </button>
               <button
                 type="button"
                 onClick={() => setLanguage("en")}
-                className={`px-2 py-1 rounded-md text-[11px] font-bold transition-all ${
+                className={`px-2 py-1 rounded-md text-[11px] font-bold transition-all min-w-[28px] text-center ${
                   language === "en"
-                    ? "bg-[#176B5B] text-white"
-                    : "text-[#65716D]"
+                    ? "bg-[#176B5B] text-white shadow-xs"
+                    : "text-[#65716D] hover:text-[#17211E]"
                 }`}
+                aria-pressed={language === "en"}
               >
                 EN
               </button>
             </div>
 
+            {/* Font Size Adjuster */}
             <button
               onClick={cycleTextSize}
-              className="p-2 rounded-lg border border-[#E5EAE5] bg-[#F5F6F2] text-xs font-bold text-[#17211E] touch-target"
-              aria-label="Text Size"
+              className="p-2 rounded-lg border border-[#E5EAE5] bg-[#F5F6F2] hover:bg-[#E5EAE5] text-xs font-bold text-[#17211E] touch-target flex items-center justify-center"
+              aria-label={t("font_size_tooltip")}
+              title={t("font_size_tooltip")}
             >
               <Type className="w-4 h-4 text-[#176B5B]" />
             </button>
 
-            {/* Mobile Quick Logout Icon */}
-            <button
-              type="button"
-              onClick={handleLogout}
-              disabled={isLoggingOut}
-              className="p-2 rounded-lg border border-[#E5EAE5] bg-white text-[#B33D44] hover:bg-[#FDF2F2] touch-target"
-              title={t("logout")}
-              aria-label={t("logout")}
-            >
-              <LogOut className="w-4 h-4" />
-            </button>
-
+            {/* Mobile Menu Toggle */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg border border-[#E5EAE5] bg-white text-[#17211E] touch-target"
+              className="p-2 rounded-lg border border-[#E5EAE5] bg-white hover:bg-[#F5F6F2] text-[#17211E] touch-target flex items-center justify-center"
               aria-label="Open Navigation Menu"
             >
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileMenuOpen ? <X className="w-5 h-5 text-[#176B5B]" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
@@ -271,6 +271,49 @@ export function Header({
                 {currentRole === "admin" ? t("switch_to_student") : t("switch_to_admin")}
               </button>
             )}
+          </div>
+
+          {/* Text Size Accessibility Controls in Drawer */}
+          <div className="flex items-center justify-between py-2 border-b border-[#E5EAE5]">
+            <span className="text-xs font-semibold text-[#65716D] flex items-center gap-1.5">
+              <Type className="w-3.5 h-3.5 text-[#176B5B]" />
+              <span>{isEnglish ? "Text Size" : "అక్షర పరిమాణం"}</span>
+            </span>
+            <div className="flex items-center gap-1 bg-[#F5F6F2] p-1 rounded-xl border border-[#E5EAE5]">
+              <button
+                type="button"
+                onClick={() => setTextSize("normal")}
+                className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all ${
+                  textSize === "normal"
+                    ? "bg-[#176B5B] text-white shadow-xs"
+                    : "text-[#65716D] hover:text-[#17211E]"
+                }`}
+              >
+                A
+              </button>
+              <button
+                type="button"
+                onClick={() => setTextSize("large")}
+                className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all ${
+                  textSize === "large"
+                    ? "bg-[#176B5B] text-white shadow-xs"
+                    : "text-[#65716D] hover:text-[#17211E]"
+                }`}
+              >
+                A+
+              </button>
+              <button
+                type="button"
+                onClick={() => setTextSize("extra-large")}
+                className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all ${
+                  textSize === "extra-large"
+                    ? "bg-[#176B5B] text-white shadow-xs"
+                    : "text-[#65716D] hover:text-[#17211E]"
+                }`}
+              >
+                A++
+              </button>
+            </div>
           </div>
 
           <div className="grid grid-cols-2 gap-2">

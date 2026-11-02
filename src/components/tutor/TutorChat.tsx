@@ -178,48 +178,50 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-4 md:py-6 flex flex-col h-[calc(100vh-5rem)]">
+    <div className="max-w-4xl mx-auto px-3 sm:px-4 py-3 sm:py-6 flex flex-col h-[calc(100dvh-8rem)] md:h-[calc(100vh-6rem)]">
       {/* Top Header: Topic Selector & Mode Badges */}
-      <div className="bg-white border border-[#E5EAE5] rounded-3xl p-4 mb-4 shadow-xs">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-3">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-[#E8F4F0] text-[#176B5B] flex items-center justify-center">
+      <div className="bg-white border border-[#E5EAE5] rounded-2xl sm:rounded-3xl p-3 sm:p-4 mb-3 sm:mb-4 shadow-xs shrink-0">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5 sm:gap-3 mb-2.5 sm:mb-3">
+          <div className="flex items-center gap-2 min-w-0">
+            <div className="w-8 h-8 rounded-xl bg-[#E8F4F0] text-[#176B5B] flex items-center justify-center shrink-0">
               <Sparkles className="w-4 h-4" />
             </div>
-            <div>
-              <h2 className="text-sm font-bold text-[#17211E]">
+            <div className="min-w-0">
+              <h2 className="text-xs sm:text-sm font-bold text-[#17211E] truncate">
                 {t("tutor_header_title")}
               </h2>
-              <span className="text-[11px] text-[#65716D]">
+              <span className="text-[10px] sm:text-[11px] text-[#65716D] block truncate">
                 {t("tutor_header_sub")}
               </span>
             </div>
           </div>
 
           {/* Topic Selector */}
-          <select
-            value={selectedTopicId}
-            onChange={(e) => setSelectedTopicId(e.target.value)}
-            className="w-full sm:w-auto text-xs font-semibold bg-[#F5F6F2] border border-[#E5EAE5] rounded-xl px-3 py-2 text-[#17211E] focus:outline-none focus:ring-2 focus:ring-[#176B5B]"
-          >
-            {topics.map((item) => (
-              <option key={item.id} value={item.id}>
-                {item.paperId === "paper_1" ? "P1" : "P2"}:{" "}
-                {(isEnglish ? item.titleEn : item.titleTe).substring(0, 35)}...
-              </option>
-            ))}
-          </select>
+          <div className="w-full sm:w-auto min-w-0">
+            <select
+              value={selectedTopicId}
+              onChange={(e) => setSelectedTopicId(e.target.value)}
+              className="w-full sm:w-auto max-w-full sm:max-w-xs text-xs font-semibold bg-[#F5F6F2] border border-[#E5EAE5] rounded-xl px-3 py-2 text-[#17211E] focus:outline-none focus:ring-2 focus:ring-[#176B5B] truncate cursor-pointer"
+            >
+              {topics.map((item) => (
+                <option key={item.id} value={item.id}>
+                  {item.paperId === "paper_1" ? "P1" : "P2"}:{" "}
+                  {isEnglish ? item.titleEn : item.titleTe}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
 
         {/* 7 Pedagogical Modes Scrollable Bar */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
+        <div className="flex items-center gap-2 overflow-x-auto py-1 no-scrollbar scroll-smooth overscroll-x-contain">
           {TUTOR_MODES.map((mode) => {
             const isSelected = selectedMode === mode.id;
             return (
               <button
                 key={mode.id}
                 onClick={() => setSelectedMode(mode.id)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all touch-target select-none ${
+                className={`shrink-0 px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all select-none touch-target ${
                   isSelected
                     ? "bg-[#176B5B] text-white shadow-xs"
                     : "bg-[#F5F6F2] text-[#65716D] hover:bg-[#E5EAE5] hover:text-[#17211E]"
