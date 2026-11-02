@@ -19,6 +19,7 @@ import { DailyStudyPlan, DailyStudyTask } from "@/types/mastery";
 import { OfficialExamConfig } from "@/types/exam";
 import { Badge } from "../ui/Badge";
 import { Button } from "../ui/Button";
+import { useTranslation } from "@/lib/i18n";
 
 interface StudentDashboardProps {
   displayName?: string;
@@ -35,6 +36,7 @@ export function StudentDashboard({
   mistakesCount = 3,
   dueRevisionsCount = 2,
 }: StudentDashboardProps) {
+  const { t, pick, isEnglish } = useTranslation();
   const [tasks, setTasks] = useState<DailyStudyTask[]>(studyPlan.tasks);
 
   const toggleTask = (taskId: string) => {
@@ -54,13 +56,15 @@ export function StudentDashboard({
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E8F4F0] text-[#176B5B] text-xs font-bold mb-2">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>మిషన్ MPSO 2026-27</span>
+              <span>{isEnglish ? "MISSION MPSO 2026-27" : "మిషన్ MPSO 2026-27"}</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-[#17211E] mb-2">
-              శుభోదయం, {displayName} గారూ!
+              {isEnglish ? `Good day, ${displayName}!` : `శుభోదయం, ${displayName} గారూ!`}
             </h1>
             <p className="text-sm sm:text-base text-[#65716D] max-w-xl">
-              "ఈరోజు మనం కొంచెం ముందుకు వెళ్దాం." మీ లక్ష్యం కోసం రూపొందించిన నేటి చదువు ప్రణాళిక సిద్ధంగా ఉంది.
+              {isEnglish
+                ? '"Let us make progress today." Your personalized daily study plan is ready.'
+                : '"ఈరోజు మనం కొంచెం ముందుకు వెళ్దాం." మీ లక్ష్యం కోసం రూపొందించిన నేటి చదువు ప్రణాళిక సిద్ధంగా ఉంది.'}
             </p>
           </div>
 
@@ -69,7 +73,7 @@ export function StudentDashboard({
             className="w-full md:w-auto flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-[#176B5B] text-white font-bold text-sm shadow-sm hover:bg-[#13584B] transition-all touch-target"
           >
             <Sparkles className="w-4 h-4" />
-            <span>AI ట్యూటర్‌ని అడగండి</span>
+            <span>{t("ask_ai_tutor")}</span>
           </Link>
         </div>
       </section>
@@ -80,20 +84,27 @@ export function StudentDashboard({
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <div className="flex items-center gap-2 text-xs font-semibold text-[#BFE2D7] uppercase tracking-wider mb-1">
-              <span>అధికారిక నోటిఫికేషన్ {examConfig.notificationNumber}</span>
+              <span>{isEnglish ? `Official Notification ${examConfig.notificationNumber}` : `అధికారిక నోటిఫికేషన్ ${examConfig.notificationNumber}`}</span>
               <span>•</span>
-              <span>తెలంగాణ పబ్లిక్ సర్వీస్ కమిషన్ (TGPSC)</span>
+              <span>{isEnglish ? "Telangana Public Service Commission (TGPSC)" : "తెలంగాణ పబ్లిక్ సర్వీస్ కమిషన్ (TGPSC)"}</span>
             </div>
             <h2 className="text-lg sm:text-xl font-bold mb-2">
-              మండల్ ప్లానింగ్ & స్టాటిస్టికల్ ఆఫీసర్స్ (MPSO / ASO)
+              {isEnglish ? "Mandal Planning & Statistical Officers (MPSO / ASO)" : "మండల్ ప్లానింగ్ & స్టాటిస్టికల్ ఆఫీసర్స్ (MPSO / ASO)"}
             </h2>
             <div className="flex flex-wrap items-center gap-4 text-xs text-[#E8F4F0]">
               <span className="flex items-center gap-1.5">
                 <Calendar className="w-4 h-4 text-[#BFE2D7]" />
-                <span>పరీక్ష సమయం: <strong>{examConfig.tentativeExamMonth} (తాత్కాలికం)</strong></span>
+                <span>
+                  {isEnglish ? "Exam Timeline: " : "పరీక్ష సమయం: "}
+                  <strong>{examConfig.tentativeExamMonth} {isEnglish ? "(Tentative)" : "(తాత్కాలికం)"}</strong>
+                </span>
               </span>
               <span>•</span>
-              <span>మొత్తం ప్రశ్నలు: <strong>300 (పేపర్ I: 150 + పేపర్ II: 150)</strong></span>
+              <span>
+                {isEnglish
+                  ? "Total Questions: 300 (Paper I: 150 + Paper II: 150)"
+                  : "మొత్తం ప్రశ్నలు: 300 (పేపర్ I: 150 + పేపర్ II: 150)"}
+              </span>
             </div>
           </div>
 
@@ -101,7 +112,7 @@ export function StudentDashboard({
             href="/mocks"
             className="px-4 py-2.5 rounded-xl bg-white text-[#104E43] font-bold text-xs sm:text-sm hover:bg-[#E8F4F0] transition-colors whitespace-nowrap shadow-xs touch-target"
           >
-            మాక్ టెస్ట్ రాయండి
+            {t("take_mock_test")}
           </Link>
         </div>
       </div>
@@ -110,24 +121,24 @@ export function StudentDashboard({
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         <div className="bg-white border border-[#E5EAE5] rounded-2xl p-4 sm:p-5 shadow-xs">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-semibold text-[#65716D]">లక్ష్య సమయం</span>
+            <span className="text-xs font-semibold text-[#65716D]">{t("metric_target_time")}</span>
             <Clock className="w-4 h-4 text-[#176B5B]" />
           </div>
           <div className="text-xl sm:text-2xl font-bold text-[#17211E]">
-            {studyPlan.totalTargetMinutes} <span className="text-xs font-normal text-[#65716D]">నిమిషాలు</span>
+            {studyPlan.totalTargetMinutes} <span className="text-xs font-normal text-[#65716D]">{t("minutes_unit")}</span>
           </div>
-          <div className="text-[11px] text-[#176B5B] mt-1 font-medium">రోజూ క్రమం తప్పకుండా</div>
+          <div className="text-[11px] text-[#176B5B] mt-1 font-medium">{t("daily_consistency")}</div>
         </div>
 
         <div className="bg-white border border-[#E5EAE5] rounded-2xl p-4 sm:p-5 shadow-xs">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-semibold text-[#65716D]">పూర్తయిన పనులు</span>
+            <span className="text-xs font-semibold text-[#65716D]">{t("metric_completed_tasks")}</span>
             <CheckCircle2 className="w-4 h-4 text-[#1B8354]" />
           </div>
           <div className="text-xl sm:text-2xl font-bold text-[#17211E]">
             {completedCount} / {tasks.length}
           </div>
-          <div className="text-[11px] text-[#1B8354] mt-1 font-medium">{progressPercent}% పూర్తయింది</div>
+          <div className="text-[11px] text-[#1B8354] mt-1 font-medium">{progressPercent}% {t("completed_percent")}</div>
         </div>
 
         <Link
@@ -135,13 +146,13 @@ export function StudentDashboard({
           className="bg-white border border-[#E5EAE5] rounded-2xl p-4 sm:p-5 shadow-xs hover:border-[#A66A19]/50 transition-colors block"
         >
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-semibold text-[#65716D]">తప్పుల పుస్తకం</span>
+            <span className="text-xs font-semibold text-[#65716D]">{t("metric_mistake_book")}</span>
             <AlertTriangle className="w-4 h-4 text-[#A66A19]" />
           </div>
           <div className="text-xl sm:text-2xl font-bold text-[#17211E]">
-            {mistakesCount} <span className="text-xs font-normal text-[#65716D]">ప్రశ్నలు</span>
+            {mistakesCount} <span className="text-xs font-normal text-[#65716D]">{t("questions_unit")}</span>
           </div>
-          <div className="text-[11px] text-[#A66A19] mt-1 font-medium">సమీక్షించడానికి క్లిక్ చేయండి</div>
+          <div className="text-[11px] text-[#A66A19] mt-1 font-medium">{t("click_to_review")}</div>
         </Link>
 
         <Link
@@ -149,13 +160,13 @@ export function StudentDashboard({
           className="bg-white border border-[#E5EAE5] rounded-2xl p-4 sm:p-5 shadow-xs hover:border-[#356EA0]/50 transition-colors block"
         >
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-semibold text-[#65716D]">నేటి పునశ్చరణ</span>
+            <span className="text-xs font-semibold text-[#65716D]">{t("metric_today_revision")}</span>
             <RotateCcw className="w-4 h-4 text-[#356EA0]" />
           </div>
           <div className="text-xl sm:text-2xl font-bold text-[#17211E]">
-            {dueRevisionsCount} <span className="text-xs font-normal text-[#65716D]">అంశాలు</span>
+            {dueRevisionsCount} <span className="text-xs font-normal text-[#65716D]">{t("items_unit")}</span>
           </div>
-          <div className="text-[11px] text-[#356EA0] mt-1 font-medium">స్పేస్డ్ రివిజన్ క్యూ</div>
+          <div className="text-[11px] text-[#356EA0] mt-1 font-medium">{t("spaced_repetition_queue")}</div>
         </Link>
       </div>
 
@@ -164,14 +175,14 @@ export function StudentDashboard({
         <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#E5EAE5]">
           <div>
             <h3 className="text-lg font-bold text-[#17211E]">
-              నేటి చదువు ప్రణాళిక (Today's Plan)
+              {t("today_plan_title")}
             </h3>
             <p className="text-xs text-[#65716D]">
-              మీ అభ్యాస పురోగతి ఆధారంగా రూపొందించిన టాస్కులు
+              {t("today_plan_sub")}
             </p>
           </div>
           <span className="text-xs font-bold text-[#176B5B] bg-[#E8F4F0] px-3 py-1 rounded-lg">
-            {completedCount} / {tasks.length} పూర్తయ్యాయి
+            {completedCount} / {tasks.length} {t("tasks_completed_count")}
           </span>
         </div>
 
@@ -204,10 +215,10 @@ export function StudentDashboard({
                       task.isCompleted ? "line-through text-[#65716D]" : "text-[#17211E]"
                     }`}
                   >
-                    {task.titleTe}
+                    {pick(task, "title")}
                   </h4>
                   <p className="text-xs text-[#65716D] mt-0.5">
-                    {task.reasonTe} • <span className="font-semibold text-[#176B5B]">~{task.durationMinutes} నిమిషాలు</span>
+                    {pick(task, "reason")} • <span className="font-semibold text-[#176B5B]">~{task.durationMinutes} {t("minutes_unit")}</span>
                   </p>
                 </div>
               </div>
@@ -216,7 +227,7 @@ export function StudentDashboard({
                 href={task.actionUrl}
                 className="self-end sm:self-center px-4 py-2 rounded-xl bg-[#E8F4F0] text-[#176B5B] hover:bg-[#D5ECE5] text-xs font-bold flex items-center gap-1.5 touch-target whitespace-nowrap"
               >
-                <span>ప్రారంభించండి</span>
+                <span>{t("start_task")}</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -234,8 +245,8 @@ export function StudentDashboard({
             <BookOpen className="w-6 h-6" />
           </div>
           <div>
-            <h4 className="font-bold text-sm text-[#17211E]">అధికారిక సిలబస్</h4>
-            <span className="text-xs text-[#65716D]">పేపర్ I & II అంశాలు చదవండి</span>
+            <h4 className="font-bold text-sm text-[#17211E]">{t("official_syllabus_card")}</h4>
+            <span className="text-xs text-[#65716D]">{t("official_syllabus_desc")}</span>
           </div>
         </Link>
 
@@ -247,8 +258,8 @@ export function StudentDashboard({
             <CheckCircle2 className="w-6 h-6" />
           </div>
           <div>
-            <h4 className="font-bold text-sm text-[#17211E]">టాపిక్ వారీ ప్రాక్టీస్</h4>
-            <span className="text-xs text-[#65716D]">ధృవీకరించిన ప్రశ్నలు</span>
+            <h4 className="font-bold text-sm text-[#17211E]">{t("topic_practice_card")}</h4>
+            <span className="text-xs text-[#65716D]">{t("topic_practice_desc")}</span>
           </div>
         </Link>
 
@@ -260,8 +271,8 @@ export function StudentDashboard({
             <TrendingUp className="w-6 h-6" />
           </div>
           <div>
-            <h4 className="font-bold text-sm text-[#17211E]">నా ప్రగతి రిపోర్ట్</h4>
-            <span className="text-xs text-[#65716D]">సామర్థ్య స్థాయిల విశ్లేషణ</span>
+            <h4 className="font-bold text-sm text-[#17211E]">{t("progress_report_card")}</h4>
+            <span className="text-xs text-[#65716D]">{t("progress_report_desc")}</span>
           </div>
         </Link>
       </div>

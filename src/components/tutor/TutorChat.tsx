@@ -20,6 +20,7 @@ import { TeluguAITutorEngine } from "@/lib/ai/tutor-engine";
 import { MathBlock, MathInline } from "../math/MathBlock";
 import { Badge } from "../ui/Badge";
 import { Button } from "../ui/Button";
+import { useTranslation } from "@/lib/i18n";
 
 interface TutorChatProps {
   initialTopicId?: string;
@@ -27,6 +28,7 @@ interface TutorChatProps {
 }
 
 export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
+  const { t, isEnglish } = useTranslation();
   const [selectedTopicId, setSelectedTopicId] = useState<string>(
     initialTopicId || topics[0]?.id || "p2_central_tendency_dispersion"
   );
@@ -61,7 +63,11 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
   // Handle Speech Recognition (Web Speech API)
   const toggleSpeechRecognition = () => {
     if (!("webkitSpeechRecognition" in window || "SpeechRecognition" in window)) {
-      alert("మీ బ్రౌజర్‌లో మైక్రోఫోన్ సౌకర్యం అందుబాటులో లేదు. దయచేసి టైప్ చేయండి.");
+      alert(
+        isEnglish
+          ? "Microphone is not supported in this browser. Please type your query."
+          : "మీ బ్రౌజర్‌లో మైక్రోఫోన్ సౌకర్యం అందుబాటులో లేదు. దయచేసి టైప్ చేయండి."
+      );
       setSpeechSupported(false);
       return;
     }
@@ -70,7 +76,7 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
       const SpeechRecognition =
         (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
       const recognition = new SpeechRecognition();
-      recognition.lang = "te-IN";
+      recognition.lang = isEnglish ? "en-IN" : "te-IN";
       recognition.interimResults = false;
 
       recognition.onstart = () => setIsListening(true);
@@ -90,10 +96,10 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
     }
   };
 
-  // Text-To-Speech (Telugu Audio)
+  // Text-To-Speech (Audio)
   const speakTelugu = (text: string) => {
     if (!("speechSynthesis" in window)) {
-      alert("వాయిస్ సపోర్ట్ అందుబాటులో లేదు.");
+      alert(isEnglish ? "Voice synthesis is not supported." : "వాయిస్ సపోర్ట్ అందుబాటులో లేదు.");
       return;
     }
 
@@ -160,8 +166,9 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
       const errorMsg: ChatMessage = {
         id: "msg_" + Date.now(),
         sender: "tutor",
-        contentTe:
-          "క్షమించండి, సమాధానం రూపొందించడంలో తాత్కాలిక సమస్య ఎదురైంది. దయచేసి మళ్లీ ప్రయత్నించండి.",
+        contentTe: isEnglish
+          ? "Apologies, a temporary issue occurred generating the explanation. Please try asking again."
+          : "క్షమించండి, సమాధానం రూపొందించడంలో తాత్కాలిక సమస్య ఎదురైంది. దయచేసి మళ్లీ ప్రయత్నించండి.",
         timestamp: new Date().toISOString(),
       };
       setMessages((prev) => [...prev, errorMsg]);
@@ -181,10 +188,10 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
             </div>
             <div>
               <h2 className="text-sm font-bold text-[#17211E]">
-                తెలుగు AI ట్యూటర్ (Telugu Learning Companion)
+                {t("tutor_header_title")}
               </h2>
               <span className="text-[11px] text-[#65716D]">
-                సిలబస్ ఆధారిత ధృవీకృత సమాధానాలు • TGPSC 07/G/ES/2026
+                {t("tutor_header_sub")}
               </span>
             </div>
           </div>
@@ -195,9 +202,10 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
             onChange={(e) => setSelectedTopicId(e.target.value)}
             className="w-full sm:w-auto text-xs font-semibold bg-[#F5F6F2] border border-[#E5EAE5] rounded-xl px-3 py-2 text-[#17211E] focus:outline-none focus:ring-2 focus:ring-[#176B5B]"
           >
-            {topics.map((t) => (
-              <option key={t.id} value={t.id}>
-                {t.paperId === "paper_1" ? "P1" : "P2"}: {t.titleTe.substring(0, 35)}...
+            {topics.map((item) => (
+              <option key={item.id} value={item.id}>
+                {item.paperId === "paper_1" ? "P1" : "P2"}:{" "}
+                {(isEnglish ? item.titleEn : item.titleTe).substring(0, 35)}...
               </option>
             ))}
           </select>
@@ -218,7 +226,7 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
                 }`}
                 title={mode.descriptionTe}
               >
-                {mode.titleTe}
+                {isEnglish ? mode.titleEn : mode.titleTe}
               </button>
             );
           })}
@@ -246,12 +254,12 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
                   <div className="flex items-center justify-between gap-2 mb-2 pb-2 border-b border-[#E5EAE5]/60">
                     <span className="text-[11px] font-bold text-[#176B5B] flex items-center gap-1">
                       <Sparkles className="w-3 h-3" />
-                      <span>AI ఉపాధ్యాయుడు</span>
+                      <span>{isEnglish ? "AI Tutor" : "AI ఉపాధ్యాయుడు"}</span>
                     </span>
                     <button
                       onClick={() => speakTelugu(msg.contentTe)}
                       className="p-1 rounded-md text-[#65716D] hover:text-[#176B5B] hover:bg-[#E8F4F0]"
-                      title="తెలుగులో వినండి (Audio)"
+                      title={t("listen_in_telugu")}
                     >
                       {isPlayingAudio ? (
                         <VolumeX className="w-4 h-4 text-[#B33D44]" />
@@ -280,7 +288,9 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
                 {msg.groundingSources && msg.groundingSources.length > 0 && (
                   <div className="mt-3 pt-2 border-t border-[#E5EAE5]/60 flex items-center gap-2">
                     <span className="text-[10px] text-[#176B5B] font-bold bg-[#E8F4F0] px-2 py-0.5 rounded-md">
-                      అధికారిక సిలబస్ ఆధారితం: {msg.groundingSources[0].reference}
+                      {isEnglish
+                        ? `Curriculum Grounded: ${msg.groundingSources[0].reference}`
+                        : `అధికారిక సిలబస్ ఆధారితం: ${msg.groundingSources[0].reference}`}
                     </span>
                   </div>
                 )}
@@ -310,7 +320,7 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
             <div className="w-2 h-2 rounded-full bg-[#176B5B] animate-bounce [animation-delay:0.2s]" />
             <div className="w-2 h-2 rounded-full bg-[#176B5B] animate-bounce [animation-delay:0.4s]" />
             <span className="text-xs text-[#65716D] font-medium ml-2">
-              సమాధానం రచిస్తున్నాను...
+              {isEnglish ? "Crafting response..." : "సమాధానం రచిస్తున్నాను..."}
             </span>
           </div>
         )}
@@ -326,7 +336,7 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
               ? "bg-[#B33D44] text-white animate-pulse"
               : "bg-[#F5F6F2] text-[#65716D] hover:text-[#176B5B] hover:bg-[#E8F4F0]"
           }`}
-          title="తెలుగులో మాట్లాడండి"
+          title={isEnglish ? "Speak via voice" : "తెలుగులో మాట్లాడండి"}
         >
           {isListening ? <MicOff className="w-5 h-5" /> : <Mic className="w-5 h-5" />}
         </button>
@@ -336,7 +346,7 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleSendMessage()}
-          placeholder="ఈ అంశంలో మీ సందేహాన్ని తెలుగులో అడగండి..."
+          placeholder={t("tutor_input_placeholder")}
           className="flex-1 bg-transparent px-3 py-2 text-sm sm:text-base text-[#17211E] placeholder:text-[#9AA5A1] focus:outline-none"
         />
 

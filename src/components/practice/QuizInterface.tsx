@@ -19,10 +19,12 @@ import { MathBlock, MathInline } from "../math/MathBlock";
 import { Button } from "../ui/Button";
 import { Badge } from "../ui/Badge";
 import { formatTime } from "@/lib/utils";
+import { useTranslation } from "@/lib/i18n";
 
 interface QuizInterfaceProps {
   questions: Question[];
   titleTe?: string;
+  titleEn?: string;
   isTimed?: boolean;
   timeLimitSeconds?: number;
   onFinish?: (submissions: Record<string, any>) => void;
@@ -32,11 +34,13 @@ interface QuizInterfaceProps {
 export function QuizInterface({
   questions,
   titleTe = "అభ్యాస క్విజ్",
+  titleEn = "Practice Quiz",
   isTimed = false,
   timeLimitSeconds = 600,
   onFinish,
   onRecordMistake,
 }: QuizInterfaceProps) {
+  const { t, isEnglish } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, QuestionOptionId>>({});
   const [showExplanation, setShowExplanation] = useState<Record<string, boolean>>({});
@@ -129,28 +133,28 @@ export function QuizInterface({
           </div>
 
           <h2 className="text-2xl font-extrabold text-[#17211E] mb-2">
-            క్విజ్ పూర్తయింది!
+            {t("quiz_completed_title")}
           </h2>
           <p className="text-sm text-[#65716D] mb-6">
-            మీ ప్రయత్నం నమోదు చేయబడింది. ఫలితాల సారాంశం క్రింద చూడండి.
+            {t("quiz_completed_desc")}
           </p>
 
           {/* Stats Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
             <div className="p-4 bg-[#F5F6F2] rounded-2xl">
-              <span className="block text-xs text-[#65716D] font-medium mb-1">మొత్తం ప్రశ్నలు</span>
+              <span className="block text-xs text-[#65716D] font-medium mb-1">{t("total_q_label")}</span>
               <span className="text-xl font-bold text-[#17211E]">{total}</span>
             </div>
             <div className="p-4 bg-[#EEF9F2] rounded-2xl">
-              <span className="block text-xs text-[#1B8354] font-medium mb-1">సరైనవి</span>
+              <span className="block text-xs text-[#1B8354] font-medium mb-1">{t("correct_label")}</span>
               <span className="text-xl font-bold text-[#1B8354]">{correctCount}</span>
             </div>
             <div className="p-4 bg-[#FDF2F2] rounded-2xl">
-              <span className="block text-xs text-[#B33D44] font-medium mb-1">తప్పులు</span>
+              <span className="block text-xs text-[#B33D44] font-medium mb-1">{t("incorrect_label")}</span>
               <span className="text-xl font-bold text-[#B33D44]">{wrongCount}</span>
             </div>
             <div className="p-4 bg-[#E8F4F0] rounded-2xl">
-              <span className="block text-xs text-[#176B5B] font-medium mb-1">ఖచ్చితత్వం</span>
+              <span className="block text-xs text-[#176B5B] font-medium mb-1">{t("accuracy_label")}</span>
               <span className="text-xl font-bold text-[#176B5B]">{accuracy}%</span>
             </div>
           </div>
@@ -159,10 +163,10 @@ export function QuizInterface({
             <div className="mb-8 p-4 bg-[#FEF7ED] border border-[#F6DCBA] rounded-2xl text-left">
               <div className="flex items-center gap-2 text-sm font-bold text-[#A66A19] mb-1">
                 <AlertTriangle className="w-4 h-4" />
-                <span>తప్పులు 'తప్పుల పుస్తకం' (Mistake Book) లో భద్రపరచబడ్డాయి</span>
+                <span>{t("mistakes_saved_note")}</span>
               </div>
               <p className="text-xs text-[#65716D] leading-relaxed">
-                మీరు తప్పు చేసిన {wrongCount} ప్రశ్నలు స్పేస్డ్ రివిజన్ షెడ్యూల్‌లోకి జోడించబడ్డాయి. తదుపరి సమీక్ష రేపు నిర్ణయించబడింది.
+                {t("mistakes_saved_desc")}
               </p>
             </div>
           )}
@@ -173,13 +177,13 @@ export function QuizInterface({
               href="/dashboard"
               className="w-full sm:w-auto px-6 py-3 rounded-xl bg-[#176B5B] text-white font-bold hover:bg-[#13584B] transition-colors touch-target"
             >
-              హోమ్‌కి వెళ్లండి
+              {t("go_to_home")}
             </Link>
             <Link
               href="/mistakes"
               className="w-full sm:w-auto px-6 py-3 rounded-xl border border-[#E5EAE5] bg-white text-[#17211E] font-medium hover:bg-[#F5F6F2] transition-colors touch-target"
             >
-              తప్పుల పుస్తకం చూడండి
+              {t("view_mistake_book")}
             </Link>
           </div>
         </div>
@@ -187,17 +191,19 @@ export function QuizInterface({
     );
   }
 
+  const mainTitle = isEnglish ? titleEn : titleTe;
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-6 md:py-8">
       {/* Top Bar with Question Counter & Timer */}
       <div className="flex items-center justify-between mb-6 bg-white border border-[#E5EAE5] px-5 py-3 rounded-2xl shadow-xs">
         <div className="flex items-center gap-2">
           <span className="text-xs font-bold text-[#176B5B] uppercase tracking-wider">
-            {titleTe}
+            {mainTitle}
           </span>
           <span className="text-xs text-[#65716D]">•</span>
           <span className="text-xs font-semibold text-[#17211E]">
-            ప్రశ్న {currentIndex + 1} / {questions.length}
+            {t("question_counter")} {currentIndex + 1} / {questions.length}
           </span>
         </div>
 
@@ -222,10 +228,14 @@ export function QuizInterface({
         {/* Topic Pill */}
         <div className="flex items-center justify-between gap-2 mb-4">
           <Badge variant="primary" size="sm">
-            {currentQ.paperId === "paper_1" ? "పేపర్ I: GS" : "పేపర్ II: Statistics"}
+            {isEnglish
+              ? currentQ.paperId === "paper_1" ? "Paper I: GS" : "Paper II: Statistics"
+              : currentQ.paperId === "paper_1" ? "పేపర్ I: GS" : "పేపర్ II: Statistics"}
           </Badge>
-          <span className="text-xs text-[#65716D] font-medium">
-            {currentQ.difficulty === "easy"
+          <span className="text-xs text-[#65716D] font-medium uppercase">
+            {isEnglish
+              ? currentQ.difficulty
+              : currentQ.difficulty === "easy"
               ? "సులభం"
               : currentQ.difficulty === "medium"
               ? "మధ్యస్థం"
@@ -235,12 +245,18 @@ export function QuizInterface({
 
         {/* Question Text */}
         <h2 className="text-lg sm:text-xl font-bold text-[#17211E] mb-3 leading-relaxed">
-          {currentQ.questionTextTe}
+          {isEnglish && currentQ.questionTextEn ? currentQ.questionTextEn : currentQ.questionTextTe}
         </h2>
-        {currentQ.questionTextEn && (
+        {isEnglish ? (
           <p className="text-xs sm:text-sm text-[#65716D] mb-4">
-            {currentQ.questionTextEn}
+            {currentQ.questionTextTe}
           </p>
+        ) : (
+          currentQ.questionTextEn && (
+            <p className="text-xs sm:text-sm text-[#65716D] mb-4">
+              {currentQ.questionTextEn}
+            </p>
+          )
         )}
         {currentQ.questionMathLatex && (
           <MathBlock math={currentQ.questionMathLatex} />
@@ -265,6 +281,9 @@ export function QuizInterface({
               }
             }
 
+            const primaryText = isEnglish && opt.textEn ? opt.textEn : opt.textTe;
+            const secondaryText = isEnglish ? opt.textTe : opt.textEn;
+
             return (
               <button
                 key={opt.id}
@@ -285,11 +304,11 @@ export function QuizInterface({
                 </div>
                 <div className="flex-1">
                   <div className="text-sm sm:text-base font-medium">
-                    {opt.textTe}
+                    {primaryText}
                   </div>
-                  {opt.textEn && (
+                  {secondaryText && (
                     <div className="text-xs text-[#65716D] mt-0.5">
-                      {opt.textEn}
+                      {secondaryText}
                     </div>
                   )}
                   {opt.mathLatex && <MathBlock math={opt.mathLatex} />}
@@ -314,17 +333,17 @@ export function QuizInterface({
               }`}
             >
               <div className="font-bold text-sm mb-1">
-                {isCorrect ? "✓ అద్భుతం! సరైన సమాధానం." : "✗ మీ సమాధానం తప్పు."}
+                {isCorrect ? t("correct_feedback") : t("incorrect_feedback")}
               </div>
               <div className="text-xs sm:text-sm leading-relaxed text-[#17211E]">
-                {currentQ.explanationTe}
+                {isEnglish && currentQ.explanationEn ? currentQ.explanationEn : currentQ.explanationTe}
               </div>
             </div>
 
             {currentQ.relevantFormulaLatex && (
               <div className="p-3 bg-[#F5F6F2] rounded-xl text-center">
                 <span className="text-xs font-semibold text-[#65716D] block mb-1">
-                  ఉపయోగించిన సూత్రం:
+                  {t("formula_used_label")}
                 </span>
                 <MathBlock math={currentQ.relevantFormulaLatex} />
               </div>
@@ -334,14 +353,14 @@ export function QuizInterface({
             {!isCorrect && (
               <div className="p-4 bg-[#FEF7ED] border border-[#F6DCBA] rounded-2xl">
                 <span className="text-xs font-bold text-[#A66A19] block mb-2">
-                  ఈ తప్పు ఏ కారణం వల్ల జరిగింది? (స్వీయ సమీక్ష):
+                  {t("why_mistake_prompt")}
                 </span>
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   {[
-                    { id: "concept_misunderstanding", label: "భావన అర్థం కాలేదు" },
-                    { id: "formula_confusion", label: "సూత్రం గుర్తురాలేదు" },
-                    { id: "calculation_mistake", label: "లెక్కించడంలో తప్పు" },
-                    { id: "question_reading_mistake", label: "ప్రశ్న సరిగ్గా చదవలేదు" },
+                    { id: "concept_misunderstanding", label: t("mistake_concept") },
+                    { id: "formula_confusion", label: t("mistake_formula") },
+                    { id: "calculation_mistake", label: t("mistake_calc") },
+                    { id: "question_reading_mistake", label: t("mistake_reading") },
                   ].map((cat) => (
                     <button
                       key={cat.id}
@@ -371,7 +390,7 @@ export function QuizInterface({
           className="flex items-center gap-1.5"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span>మునుపటి</span>
+          <span>{t("previous_question")}</span>
         </Button>
 
         {currentIndex < questions.length - 1 ? (
@@ -380,7 +399,7 @@ export function QuizInterface({
             onClick={() => setCurrentIndex((prev) => prev + 1)}
             className="flex items-center gap-1.5"
           >
-            <span>తర్వాతి ప్రశ్న</span>
+            <span>{t("next_question")}</span>
             <ArrowRight className="w-4 h-4" />
           </Button>
         ) : (
@@ -389,7 +408,7 @@ export function QuizInterface({
             onClick={handleSubmitQuiz}
             className="bg-[#1B8354] hover:bg-[#156E46]"
           >
-            క్విజ్ సమర్పించండి (Submit)
+            {t("submit_quiz")}
           </Button>
         )}
       </div>

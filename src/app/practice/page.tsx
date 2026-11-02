@@ -24,12 +24,14 @@ export default async function PracticePage({
 
   const topic = topicId ? db.getTopic(topicId) : null;
   const titleTe = topic ? `${topic.titleTe} — ప్రాక్టీస్ క్విజ్` : "MPSO సమగ్ర అభ్యాస క్విజ్";
+  const titleEn = topic ? `${topic.titleEn} — Practice Quiz` : "MPSO Comprehensive Practice Quiz";
 
   return (
     <AppShell initialRole={user?.role || "student"}>
       <QuizInterface
         questions={questions.length > 0 ? questions : db.getQuestions({ validationStatus: "approved" }).slice(0, 10)}
         titleTe={titleTe}
+        titleEn={titleEn}
         isTimed={false}
       />
     </AppShell>

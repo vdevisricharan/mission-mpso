@@ -36,6 +36,11 @@ export function TextSizeProvider({ children }: { children: React.ReactNode }) {
       const savedLang = localStorage.getItem("mission_mpso_lang") as Language;
       if (savedLang && ["te", "en"].includes(savedLang)) {
         setLanguageState(savedLang);
+        document.documentElement.lang = savedLang;
+        document.documentElement.setAttribute("data-lang", savedLang);
+      } else {
+        document.documentElement.lang = "te";
+        document.documentElement.setAttribute("data-lang", "te");
       }
     } catch {
       // Ignore localStorage read errors
@@ -54,6 +59,8 @@ export function TextSizeProvider({ children }: { children: React.ReactNode }) {
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
     try {
+      document.documentElement.lang = lang;
+      document.documentElement.setAttribute("data-lang", lang);
       localStorage.setItem("mission_mpso_lang", lang);
     } catch {}
   };

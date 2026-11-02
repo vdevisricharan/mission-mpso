@@ -2609,6 +2609,66 @@
       "totalTargetMinutes": 120,
       "completedMinutes": 0,
       "isRecalculated": false
+    },
+    "student_default_2026-11-02": {
+      "id": "plan_student_default_2026-11-02",
+      "userId": "student_default",
+      "date": "2026-11-02",
+      "dayGreetingTe": "శుభోదయం! ఈరోజు మీ లక్ష్య సాధనకు మరో అడుగు వేద్దాం.",
+      "summaryMessageTe": "మీ లక్ష్యం: రోజుకు 120 నిమిషాలు. ఈరోజు 2 ముఖ్యమైన పాఠాలు, ప్రాక్టీస్ మరియు పునశ్చరణ సిద్ధంగా ఉన్నాయి.",
+      "tasks": [
+        {
+          "id": "task_stat_2026-11-02",
+          "taskType": "learn_statistics",
+          "titleTe": "పేపర్ II: కేంద్రీయ ప్రవృత్తి & ప్రామాణిక విచలనం",
+          "titleEn": "Paper-II: Central Tendency & Standard Deviation",
+          "topicId": "p2_central_tendency_dispersion",
+          "paperId": "paper_2",
+          "durationMinutes": 48,
+          "isCompleted": false,
+          "priority": "high",
+          "reasonTe": "డిగ్రీ స్టాటిస్టిక్స్ పేపర్‌లో ఎక్కువ వెయిటేజీ ఉన్న ముఖ్యమైన అంశం.",
+          "actionUrl": "/learn/p2_central_tendency_dispersion"
+        },
+        {
+          "id": "task_gs_2026-11-02",
+          "taskType": "learn_general_studies",
+          "titleTe": "పేపర్ I: తెలంగాణ చరిత్ర & ప్రత్యేక రాష్ట్ర ఉద్యమం",
+          "titleEn": "Paper-I: Telangana History & Movement",
+          "topicId": "p1_history_telangana_statehood",
+          "paperId": "paper_1",
+          "durationMinutes": 36,
+          "isCompleted": false,
+          "priority": "medium",
+          "reasonTe": "తెలంగాణ ఉద్యమ చరిత్రపై 15 ప్రశ్నలు వచ్చే అవకాశం ఉంది.",
+          "actionUrl": "/learn/p1_history_telangana_statehood"
+        },
+        {
+          "id": "task_practice_2026-11-02",
+          "taskType": "practice_questions",
+          "titleTe": "నేటి ప్రాక్టీస్ క్విజ్ (10 ప్రశ్నలు)",
+          "titleEn": "Daily Practice Quiz (10 Questions)",
+          "durationMinutes": 18,
+          "isCompleted": false,
+          "priority": "high",
+          "reasonTe": "నేర్చుకున్న సూత్రాలు మరియు కాన్సెప్టులను పరీక్షించుకోవడానికి.",
+          "actionUrl": "/practice"
+        },
+        {
+          "id": "task_rev_2026-11-02",
+          "taskType": "revision_spaced",
+          "titleTe": "స్పేస్డ్ రివిజన్",
+          "titleEn": "Mistake Book Review & Spaced Repetition",
+          "durationMinutes": 18,
+          "isCompleted": false,
+          "priority": "high",
+          "reasonTe": "గతంలో తప్పు చేసిన ప్రశ్నలను మళ్లీ పరిశీలించి గుర్తుంచుకోండి.",
+          "actionUrl": "/mistakes"
+        }
+      ],
+      "totalTargetMinutes": 120,
+      "completedMinutes": 0,
+      "isRecalculated": false
     }
   },
   "tutorConversations": {},

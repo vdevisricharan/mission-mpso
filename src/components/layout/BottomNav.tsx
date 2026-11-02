@@ -4,9 +4,11 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Home, BookOpen, CheckCircle2, TrendingUp } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 export function BottomNav() {
   const pathname = usePathname();
+  const { isEnglish } = useTranslation();
 
   const navItems = [
     {
@@ -44,6 +46,7 @@ export function BottomNav() {
       <div className="grid grid-cols-4 h-16 max-w-lg mx-auto">
         {navItems.map((item) => {
           const Icon = item.icon;
+          const label = isEnglish ? item.labelEn : item.labelTe;
           return (
             <Link
               key={item.href}
@@ -61,7 +64,7 @@ export function BottomNav() {
               >
                 <Icon className={`w-5 h-5 ${item.isActive ? "stroke-[2.5]" : "stroke-[1.75]"}`} />
               </div>
-              <span className="text-[11px] mt-0.5">{item.labelTe}</span>
+              <span className="text-[11px] mt-0.5">{label}</span>
             </Link>
           );
         })}

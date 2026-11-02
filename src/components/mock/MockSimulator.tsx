@@ -19,6 +19,7 @@ import { MathBlock } from "../math/MathBlock";
 import { Button } from "../ui/Button";
 import { Badge } from "../ui/Badge";
 import { formatTime } from "@/lib/utils";
+import { useTranslation } from "@/lib/i18n";
 
 interface MockSimulatorProps {
   session: MockExamSession;
@@ -26,6 +27,7 @@ interface MockSimulatorProps {
 }
 
 export function MockSimulator({ session: initialSession, onSubmitMock }: MockSimulatorProps) {
+  const { t, isEnglish } = useTranslation();
   const [session, setSession] = useState<MockExamSession>(initialSession);
   const [currentIndex, setCurrentIndex] = useState(session.currentQuestionIndex || 0);
   const [showSubmitModal, setShowSubmitModal] = useState(false);
@@ -153,10 +155,12 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
             </div>
             <div>
               <h1 className="text-sm font-bold text-[#17211E]">
-                {session.titleTe}
+                {isEnglish ? session.titleEn || session.titleTe : session.titleTe}
               </h1>
               <span className="text-[11px] text-[#65716D]">
-                నోటిఫికేషన్ 07/G/ES/2026 • 150 ప్రశ్నలు • 150 నిమిషాలు
+                {isEnglish
+                  ? `Notification 07/G/ES/2026 • ${session.totalQuestions} Questions • ${session.totalDurationMinutes} Minutes`
+                  : `నోటిఫికేషన్ 07/G/ES/2026 • ${session.totalQuestions} ప్రశ్నలు • ${session.totalDurationMinutes} నిమిషాలు`}
               </span>
             </div>
           </div>
@@ -165,7 +169,7 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
             {/* Warning indicator for unconfirmed negative marking */}
             <div className="hidden md:flex items-center gap-1.5 px-3 py-1 rounded-lg bg-[#FEF7ED] border border-[#F6DCBA] text-[11px] font-semibold text-[#A66A19]">
               <AlertTriangle className="w-3.5 h-3.5" />
-              <span>నెగెటివ్ మార్కింగ్: అధికారికంగా ధృవీకరించబడలేదు</span>
+              <span>{t("negative_marking_warning")}</span>
             </div>
 
             {/* Authoritative Timer */}
@@ -180,7 +184,7 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
               onClick={() => setShowSubmitModal(true)}
               className="bg-[#1B8354] hover:bg-[#156E46]"
             >
-              సమర్పించండి
+              {t("submit_exam_btn")}
             </Button>
           </div>
         </div>
@@ -193,14 +197,14 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
           {/* Question Header */}
           <div className="flex items-center justify-between pb-4 border-b border-[#E5EAE5] mb-6">
             <span className="text-sm font-extrabold text-[#176B5B]">
-              ప్రశ్న సంఖ్య: {currentIndex + 1}
+              {t("question_counter")}: {currentIndex + 1}
             </span>
             <div className="flex items-center gap-2">
               <Badge variant="primary" size="sm">
-                +1 మార్కు
+                {isEnglish ? "+1 Mark" : "+1 మార్కు"}
               </Badge>
               <Badge variant="neutral" size="sm">
-                0 పెనాల్టీ (అన్-కన్ఫర్మ్‌డ్)
+                {isEnglish ? "0 Penalty (Unconfirmed)" : "0 పెనాల్టీ (అన్-కన్ఫర్మ్‌డ్)"}
               </Badge>
             </div>
           </div>
@@ -208,12 +212,18 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
           {/* Question Text */}
           <div className="flex-1">
             <h2 className="text-base sm:text-lg font-bold text-[#17211E] mb-3 leading-relaxed">
-              {currentQ.questionTextTe}
+              {isEnglish && currentQ.questionTextEn ? currentQ.questionTextEn : currentQ.questionTextTe}
             </h2>
-            {currentQ.questionTextEn && (
+            {isEnglish ? (
               <p className="text-xs sm:text-sm text-[#65716D] mb-4">
-                {currentQ.questionTextEn}
+                {currentQ.questionTextTe}
               </p>
+            ) : (
+              currentQ.questionTextEn && (
+                <p className="text-xs sm:text-sm text-[#65716D] mb-4">
+                  {currentQ.questionTextEn}
+                </p>
+              )
             )}
             {currentQ.questionMathLatex && (
               <MathBlock math={currentQ.questionMathLatex} />
@@ -223,6 +233,9 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
             <div className="space-y-3 mt-6">
               {currentQ.options.map((opt) => {
                 const isSelected = currentState.selectedOptionId === opt.id;
+                const primaryText = isEnglish && opt.textEn ? opt.textEn : opt.textTe;
+                const secondaryText = isEnglish ? opt.textTe : opt.textEn;
+
                 return (
                   <button
                     key={opt.id}
@@ -243,10 +256,10 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
                       {opt.id}
                     </div>
                     <div className="flex-1">
-                      <div className="text-sm sm:text-base">{opt.textTe}</div>
-                      {opt.textEn && (
+                      <div className="text-sm sm:text-base">{primaryText}</div>
+                      {secondaryText && (
                         <div className="text-xs text-[#65716D] mt-0.5">
-                          {opt.textEn}
+                          {secondaryText}
                         </div>
                       )}
                     </div>
@@ -266,7 +279,7 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
                 className="flex items-center gap-1.5"
               >
                 <Bookmark className="w-4 h-4 text-[#A66A19]" />
-                <span>రివ్యూ కోసం గుర్తించు (Mark for Review)</span>
+                <span>{t("mark_for_review_btn")}</span>
               </Button>
 
               <Button
@@ -277,7 +290,7 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
                 className="text-[#65716D]"
               >
                 <RotateCcw className="w-3.5 h-3.5 mr-1" />
-                <span>సమాధానం తొలగించు</span>
+                <span>{t("clear_response_btn")}</span>
               </Button>
             </div>
 
@@ -289,7 +302,7 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
                 onClick={() => setCurrentIndex((prev) => prev - 1)}
               >
                 <ChevronLeft className="w-4 h-4 mr-1" />
-                <span>మునుపటి</span>
+                <span>{t("previous_question")}</span>
               </Button>
 
               <Button
@@ -298,7 +311,7 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
                 disabled={currentIndex === session.questions.length - 1}
                 onClick={() => setCurrentIndex((prev) => prev + 1)}
               >
-                <span>తర్వాతి</span>
+                <span>{t("next_question")}</span>
                 <ChevronRight className="w-4 h-4 ml-1" />
               </Button>
             </div>
@@ -308,7 +321,7 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
         {/* Right: OMR-Style Question Palette */}
         <aside className="w-full lg:w-80 bg-white border border-[#E5EAE5] rounded-3xl p-5 shadow-xs flex flex-col">
           <h3 className="text-sm font-bold text-[#17211E] mb-3">
-            ప్రశ్నల ప్యాలెట్ (Question Palette)
+            {t("question_palette_title")}
           </h3>
 
           {/* Status Legends */}
@@ -317,25 +330,25 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
               <span className="w-5 h-5 rounded-md bg-[#1B8354] text-white flex items-center justify-center font-bold text-[10px]">
                 {stateCounts["answered"] || 0}
               </span>
-              <span>సమాధానం ఇచ్చినవి</span>
+              <span>{t("status_answered")}</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-5 h-5 rounded-md bg-[#B33D44] text-white flex items-center justify-center font-bold text-[10px]">
                 {stateCounts["unanswered"] || 0}
               </span>
-              <span>సమాధానం ఇవ్వనివి</span>
+              <span>{t("status_unanswered")}</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-5 h-5 rounded-md bg-[#356EA0] text-white flex items-center justify-center font-bold text-[10px]">
                 {stateCounts["marked_for_review"] || 0}
               </span>
-              <span>రివ్యూ కోసం ఉంచినవి</span>
+              <span>{t("status_marked")}</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-5 h-5 rounded-md bg-[#F5F6F2] text-[#65716D] border border-[#E5EAE5] flex items-center justify-center font-bold text-[10px]">
                 {stateCounts["not_visited"] || 0}
               </span>
-              <span>చూడని ప్రశ్నలు</span>
+              <span>{t("status_not_visited")}</span>
             </div>
           </div>
 
@@ -377,7 +390,7 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
               onClick={() => setShowSubmitModal(true)}
               className="w-full bg-[#1B8354] hover:bg-[#156E46]"
             >
-              పరీక్షను పూర్తి చేయండి
+              {t("finish_exam_btn")}
             </Button>
           </div>
         </aside>
@@ -388,21 +401,21 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
         <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4">
           <div className="bg-white rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl border border-[#E5EAE5]">
             <h3 className="text-xl font-extrabold text-[#17211E] mb-2">
-              పరీక్షను సమర్పించాలనుకుంటున్నారా?
+              {t("confirm_submit_title")}
             </h3>
             <p className="text-xs sm:text-sm text-[#65716D] mb-4 leading-relaxed">
-              సమర్పించిన తర్వాత సమాధానాలను మార్చడం సాధ్యం కాదు. మీ పరీక్షా ఫలితాలు మరియు విశ్లేషణ వెంటనే ప్రదర్శించబడతాయి.
+              {t("confirm_submit_desc")}
             </p>
 
             <div className="p-4 bg-[#F5F6F2] rounded-2xl mb-6 space-y-1.5 text-xs text-[#17211E]">
               <div>
-                సమాధానం ఇచ్చినవి: <strong>{stateCounts["answered"] || 0}</strong>
+                {t("status_answered")}: <strong>{stateCounts["answered"] || 0}</strong>
               </div>
               <div>
-                సమాధానం ఇవ్వనివి: <strong>{stateCounts["unanswered"] || 0}</strong>
+                {t("status_unanswered")}: <strong>{stateCounts["unanswered"] || 0}</strong>
               </div>
               <div>
-                రివ్యూ కోసం ఉంచినవి: <strong>{stateCounts["marked_for_review"] || 0}</strong>
+                {t("status_marked")}: <strong>{stateCounts["marked_for_review"] || 0}</strong>
               </div>
             </div>
 
@@ -411,14 +424,14 @@ export function MockSimulator({ session: initialSession, onSubmitMock }: MockSim
                 variant="outline"
                 onClick={() => setShowSubmitModal(false)}
               >
-                తిరిగి రాయండి
+                {t("resume_exam_btn")}
               </Button>
               <Button
                 variant="primary"
                 onClick={() => handleFinalSubmit(false)}
                 className="bg-[#1B8354] hover:bg-[#156E46]"
               >
-                ఖచ్చితంగా సమర్పించు
+                {t("confirm_submit_action")}
               </Button>
             </div>
           </div>

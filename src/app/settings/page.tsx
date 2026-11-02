@@ -5,14 +5,18 @@ import { usePreferences } from "@/components/layout/TextSizeProvider";
 import { AppShell } from "@/components/layout/AppShell";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import { Settings as SettingsIcon, Type, Globe, Clock, Volume2, Shield } from "lucide-react";
+import { Settings as SettingsIcon, Type, Globe, Clock, Volume2, Shield, LogOut } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
+import { logoutAction } from "@/lib/auth/actions";
 
 export default function SettingsPage() {
   const { textSize, setTextSize, language, setLanguage } = usePreferences();
+  const { t, isEnglish } = useTranslation();
   const [displayName, setDisplayName] = useState("రమ్య");
   const [dailyMinutes, setDailyMinutes] = useState(120);
   const [enableVoice, setEnableVoice] = useState(true);
   const [savedSuccess, setSavedSuccess] = useState(false);
+  const [isLoggingOut, setIsLoggingOut] = useState(false);
 
   useEffect(() => {
     try {
@@ -32,24 +36,33 @@ export default function SettingsPage() {
     } catch {}
   };
 
+  const handleLogout = async () => {
+    setIsLoggingOut(true);
+    try {
+      localStorage.removeItem("mission_mpso_role");
+      localStorage.removeItem("mission_mpso_student_name");
+    } catch {}
+    await logoutAction();
+  };
+
   return (
     <AppShell>
       <div className="max-w-2xl mx-auto px-4 sm:px-6 py-6 md:py-8 space-y-6">
         <div className="bg-white border border-[#E5EAE5] rounded-3xl p-6 sm:p-8 shadow-xs">
           <div className="flex items-center gap-2 mb-2">
-            <Badge variant="primary">అనుకూలీకరణ (Preferences)</Badge>
+            <Badge variant="primary">{isEnglish ? "Preferences" : "అనుకూలీకరణ (Preferences)"}</Badge>
           </div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-[#17211E] mb-2">
-            సెట్టింగ్‌లు (Settings)
+            {t("settings_title")}
           </h1>
           <p className="text-xs sm:text-sm text-[#65716D]">
-            మీ అభ్యాస అనుభవాన్ని, ఫాంట్ పరిమాణాన్ని మరియు రోజువారీ సమయాన్ని మీ సౌలభ్యానికి తగినట్లు మార్చుకోండి.
+            {t("settings_desc")}
           </p>
         </div>
 
         {savedSuccess && (
           <div className="p-4 bg-[#EEF9F2] border border-[#BEE7CE] rounded-2xl text-xs sm:text-sm font-bold text-[#1B8354]">
-            ✓ సెట్టింగ్‌లు విజయవంతంగా భద్రపరచబడ్డాయి!
+            {t("saved_success")}
           </div>
         )}
 
@@ -57,7 +70,7 @@ export default function SettingsPage() {
           {/* Display Name */}
           <div>
             <label className="block text-xs font-bold text-[#17211E] uppercase tracking-wider mb-2">
-              విద్యార్థిని పేరు (Display Name)
+              {t("student_name_label")}
             </label>
             <input
               type="text"
@@ -71,13 +84,13 @@ export default function SettingsPage() {
           <div>
             <label className="block text-xs font-bold text-[#17211E] uppercase tracking-wider mb-2 flex items-center gap-1.5">
               <Type className="w-4 h-4 text-[#176B5B]" />
-              <span>అక్షరాల పరిమాణం (Text Size)</span>
+              <span>{t("text_size_label")}</span>
             </label>
             <div className="grid grid-cols-3 gap-2">
               {[
-                { id: "normal", label: "సాధారణ (Normal)" },
-                { id: "large", label: "పెద్దది (Large)" },
-                { id: "extra-large", label: "మరింత పెద్దది (Extra Large)" },
+                { id: "normal", label: isEnglish ? "Normal" : "సాధారణ (Normal)" },
+                { id: "large", label: isEnglish ? "Large" : "పెద్దది (Large)" },
+                { id: "extra-large", label: isEnglish ? "Extra Large" : "మరింత పెద్దది (Extra Large)" },
               ].map((sz) => (
                 <button
                   key={sz.id}
@@ -98,7 +111,7 @@ export default function SettingsPage() {
           <div>
             <label className="block text-xs font-bold text-[#17211E] uppercase tracking-wider mb-2 flex items-center gap-1.5">
               <Globe className="w-4 h-4 text-[#176B5B]" />
-              <span>ప్రాథమిక భాష (Language)</span>
+              <span>{t("language_label")}</span>
             </label>
             <div className="grid grid-cols-2 gap-2">
               <button
@@ -128,7 +141,7 @@ export default function SettingsPage() {
           <div>
             <label className="block text-xs font-bold text-[#17211E] uppercase tracking-wider mb-2 flex items-center gap-1.5">
               <Clock className="w-4 h-4 text-[#176B5B]" />
-              <span>రోజువారీ చదువు సమయం</span>
+              <span>{t("daily_study_time_label")}</span>
             </label>
             <div className="grid grid-cols-4 gap-2">
               {[60, 120, 180, 240].map((mins) => (
@@ -141,7 +154,7 @@ export default function SettingsPage() {
                       : "bg-[#F5F6F2] border-[#E5EAE5] text-[#17211E]"
                   }`}
                 >
-                  {mins / 60} గంటలు
+                  {mins / 60} {isEnglish ? "Hours" : "గంటలు"}
                 </button>
               ))}
             </div>
@@ -153,10 +166,10 @@ export default function SettingsPage() {
               <Volume2 className="w-5 h-5 text-[#176B5B]" />
               <div>
                 <span className="text-xs font-bold text-[#17211E] block">
-                  తెలుగు వాయిస్ ట్యూటర్ (Voice Learning)
+                  {t("voice_learning_label")}
                 </span>
                 <span className="text-[11px] text-[#65716D]">
-                  వివరణలను తెలుగులో చదివి వినిపిస్తుంది
+                  {t("voice_learning_sub")}
                 </span>
               </div>
             </div>
@@ -169,8 +182,30 @@ export default function SettingsPage() {
           </div>
 
           <Button variant="primary" onClick={handleSave} className="w-full">
-            సెట్టింగ్‌లను భద్రపరచండి (Save)
+            {t("save_settings_btn")}
           </Button>
+        </div>
+
+        {/* Account & Session (Logout) Section */}
+        <div className="bg-white border border-[#E5EAE5] rounded-3xl p-6 sm:p-8 shadow-xs space-y-4">
+          <h2 className="text-base font-bold text-[#17211E] flex items-center gap-2">
+            <Shield className="w-4 h-4 text-[#176B5B]" />
+            <span>{isEnglish ? "Account & Session" : "ఖాతా & సెషన్"}</span>
+          </h2>
+          <p className="text-xs text-[#65716D]">
+            {isEnglish
+              ? "Sign out of your active examination preparation session."
+              : "మీ ప్రస్తుత అభ్యాస సెషన్ నుండి సురక్షితంగా లాగ్ అవుట్ అవ్వండి."}
+          </p>
+          <button
+            type="button"
+            onClick={handleLogout}
+            disabled={isLoggingOut}
+            className="flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl border border-[#F9D6D8] bg-[#FDF2F2] text-[#B33D44] text-xs font-bold hover:bg-[#FBE8E9] transition-colors touch-target"
+          >
+            <LogOut className="w-4 h-4 text-[#B33D44]" />
+            <span>{isLoggingOut ? (isEnglish ? "Logging out..." : "నిష్క్రమిస్తున్నది...") : t("logout")}</span>
+          </button>
         </div>
       </div>
     </AppShell>

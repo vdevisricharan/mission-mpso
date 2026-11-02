@@ -13,6 +13,7 @@ import {
 import { LessonContent, SyllabusTopic } from "@/types/curriculum";
 import { MathBlock, MathInline } from "../math/MathBlock";
 import { Badge } from "../ui/Badge";
+import { useTranslation } from "@/lib/i18n";
 
 interface LessonReaderProps {
   lesson: LessonContent;
@@ -20,6 +21,8 @@ interface LessonReaderProps {
 }
 
 export function LessonReader({ lesson, topic }: LessonReaderProps) {
+  const { t, isEnglish } = useTranslation();
+
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 py-6 md:py-8">
       {/* Navigation Breadcrumb */}
@@ -29,7 +32,7 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
           className="inline-flex items-center gap-1.5 text-sm font-medium text-[#176B5B] hover:text-[#13584B] touch-target"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span>సిలబస్ జాబితాకు తిరిగి వెళ్లండి</span>
+          <span>{t("back_to_syllabus")}</span>
         </Link>
         <Badge variant="primary" size="sm">
           {lesson.officialSyllabusMapping}
@@ -39,20 +42,24 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
       {/* Main Header */}
       <header className="bg-white border border-[#E5EAE5] rounded-3xl p-6 md:p-8 mb-8 shadow-xs">
         <div className="flex items-center gap-2 mb-2 text-xs font-semibold text-[#176B5B] uppercase tracking-wider">
-          <span>{topic?.unitTitleTe || "యూనిట్"}</span>
+          <span>{isEnglish ? topic?.unitTitleEn || "Unit" : topic?.unitTitleTe || "యూనిట్"}</span>
           <span>•</span>
-          <span>సుమారు {lesson.estimatedMinutes} నిమిషాల చదువు</span>
+          <span>
+            {isEnglish
+              ? `~${lesson.estimatedMinutes} ${t("study_duration")}`
+              : `సుమారు ${lesson.estimatedMinutes} ${t("study_duration")}`}
+          </span>
         </div>
         <h1 className="text-2xl sm:text-3xl font-extrabold text-[#17211E] mb-2 leading-snug">
-          {lesson.titleTe}
+          {isEnglish ? lesson.titleEn || lesson.titleTe : lesson.titleTe}
         </h1>
         {lesson.titleEn && (
           <p className="text-sm sm:text-base text-[#65716D] font-medium mb-4">
-            {lesson.titleEn}
+            {isEnglish ? lesson.titleTe : lesson.titleEn}
           </p>
         )}
         <p className="text-sm sm:text-base text-[#17211E] leading-relaxed bg-[#F5F6F2] p-4 rounded-2xl border border-[#E5EAE5]">
-          {lesson.overviewTe}
+          {isEnglish && lesson.overviewEn ? lesson.overviewEn : lesson.overviewTe}
         </p>
       </header>
 
@@ -60,7 +67,7 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
       <section className="mb-8">
         <h2 className="text-lg sm:text-xl font-bold text-[#17211E] mb-4 flex items-center gap-2">
           <Lightbulb className="w-5 h-5 text-[#A66A19]" />
-          <span>కీలక భావనలు (Key Concepts)</span>
+          <span>{t("key_concepts")}</span>
         </h2>
         <div className="grid gap-4">
           {lesson.keyConceptsTe.map((kc, idx) => (
@@ -69,12 +76,16 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
               className="bg-white border border-[#E5EAE5] rounded-2xl p-5 hover:border-[#176B5B]/30 transition-colors"
             >
               <h3 className="font-bold text-base text-[#17211E] mb-1.5">
-                {kc.concept}
-                {kc.englishTerm && (
+                {isEnglish && kc.englishTerm ? kc.englishTerm : kc.concept}
+                {isEnglish ? (
+                  <span className="text-xs font-normal text-[#65716D] ml-2">
+                    ({kc.concept})
+                  </span>
+                ) : kc.englishTerm ? (
                   <span className="text-xs font-normal text-[#65716D] ml-2">
                     ({kc.englishTerm})
                   </span>
-                )}
+                ) : null}
               </h3>
               <p className="text-sm text-[#4A5552] leading-relaxed">
                 {kc.explanation}
@@ -89,7 +100,7 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
         <section className="mb-8">
           <h2 className="text-lg sm:text-xl font-bold text-[#17211E] mb-4 flex items-center gap-2">
             <span className="text-[#176B5B] font-serif italic text-xl">∑</span>
-            <span>ముఖ్యమైన గణిత సూత్రాలు (Formulas)</span>
+            <span>{t("formulas_title")}</span>
           </h2>
           <div className="space-y-4">
             {lesson.formulas.map((form) => (
@@ -99,10 +110,10 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
               >
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-bold text-base text-[#17211E]">
-                    {form.nameTe}
+                    {isEnglish ? form.nameEn || form.nameTe : form.nameTe}
                   </h3>
                   <span className="text-xs text-[#65716D] font-medium">
-                    {form.nameEn}
+                    {isEnglish ? form.nameTe : form.nameEn}
                   </span>
                 </div>
 
@@ -112,7 +123,7 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
                 {/* Symbols Explanation */}
                 <div className="mt-4 pt-3 border-t border-[#E5EAE5]">
                   <h4 className="text-xs font-bold text-[#65716D] uppercase tracking-wider mb-2">
-                    సూత్రంలోని చిహ్నాల వివరణ:
+                    {t("formula_symbols_desc")}
                   </h4>
                   <ul className="space-y-1.5 text-xs sm:text-sm text-[#4A5552]">
                     {form.symbolExplanationsTe.map((sym, sIdx) => (
@@ -128,7 +139,7 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
 
                 {form.sampleCalculationTe && (
                   <div className="mt-3 p-3 bg-[#E8F4F0] rounded-xl text-xs sm:text-sm text-[#104E43]">
-                    <strong>ఉదాహరణ లెక్క:</strong> {form.sampleCalculationTe}
+                    <strong>{t("sample_calculation")}</strong> {form.sampleCalculationTe}
                   </div>
                 )}
               </div>
@@ -142,7 +153,7 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
         <section className="mb-8">
           <h2 className="text-lg sm:text-xl font-bold text-[#17211E] mb-4 flex items-center gap-2">
             <CheckCircle2 className="w-5 h-5 text-[#1B8354]" />
-            <span>దశలవారీగా సాధించిన ఉదాహరణలు (Worked Examples)</span>
+            <span>{t("worked_examples_title")}</span>
           </h2>
           <div className="space-y-5">
             {lesson.workedExamples.map((we) => (
@@ -151,15 +162,15 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
                 className="bg-white border border-[#E5EAE5] rounded-2xl p-6"
               >
                 <h3 className="text-base font-bold text-[#17211E] mb-2">
-                  {we.titleTe}
+                  {isEnglish ? we.titleEn || we.titleTe : we.titleTe}
                 </h3>
                 <div className="p-4 bg-[#F5F6F2] rounded-xl mb-4 text-sm font-medium text-[#17211E]">
-                  <strong>సమస్య:</strong> {we.problemTe}
+                  <strong>{t("problem_label")}</strong> {isEnglish && we.problemEn ? we.problemEn : we.problemTe}
                 </div>
 
                 {/* Given Data */}
                 <div className="mb-4 text-xs sm:text-sm text-[#65716D]">
-                  <span className="font-bold text-[#17211E]">ఇచ్చిన దత్తాంశం: </span>
+                  <span className="font-bold text-[#17211E]">{t("given_data_label")} </span>
                   {we.givenDataTe.join(" | ")}
                 </div>
 
@@ -171,7 +182,7 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
                       className="p-3.5 bg-white border border-[#E5EAE5] rounded-xl"
                     >
                       <div className="text-xs font-bold text-[#176B5B] mb-1">
-                        దశ {step.stepNumber}
+                        {t("step_label")} {step.stepNumber}
                       </div>
                       <p className="text-sm text-[#17211E] mb-1">
                         {step.description}
@@ -183,10 +194,10 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
 
                 {/* Final Answer */}
                 <div className="p-4 bg-[#EEF9F2] border border-[#BEE7CE] rounded-xl text-sm font-bold text-[#1B8354] mb-2">
-                  {we.finalAnswerTe}
+                  <strong>{t("final_answer_label")}</strong> {we.finalAnswerTe}
                 </div>
                 <p className="text-xs text-[#65716D]">
-                  <strong>ముఖ్యాంశం:</strong> {we.keyTakeawayTe}
+                  <strong>{t("key_takeaway_label")}</strong> {we.keyTakeawayTe}
                 </p>
               </div>
             ))}
@@ -200,19 +211,19 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
           <div className="bg-[#FEF7ED] border border-[#F6DCBA] rounded-2xl p-6">
             <h2 className="text-base sm:text-lg font-bold text-[#A66A19] mb-4 flex items-center gap-2">
               <AlertTriangle className="w-5 h-5 text-[#A66A19]" />
-              <span>విద్యార్థులు సాధారణంగా చేసే తప్పులు & జాగ్రత్తలు</span>
+              <span>{t("common_mistakes_title")}</span>
             </h2>
             <div className="space-y-4">
               {lesson.commonMistakesTe.map((cm, idx) => (
                 <div key={idx} className="bg-white/90 p-4 rounded-xl border border-[#F6DCBA]">
                   <div className="text-sm font-bold text-[#B33D44] mb-1">
-                    ❌ తప్పు: {cm.mistake}
+                    {t("mistake_label")} {cm.mistake}
                   </div>
                   <div className="text-sm font-semibold text-[#1B8354] mb-1">
-                    ✓ సరైన విధానం: {cm.correction}
+                    {t("correction_label")} {cm.correction}
                   </div>
                   <p className="text-xs text-[#65716D]">
-                    <strong>కారణం:</strong> {cm.why}
+                    <strong>{t("reason_label")}</strong> {cm.why}
                   </p>
                 </div>
               ))}
@@ -225,7 +236,7 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
       <section className="mb-10">
         <div className="bg-white border border-[#E5EAE5] rounded-2xl p-6">
           <h2 className="text-base sm:text-lg font-bold text-[#17211E] mb-3">
-            🎯 సారాంశ ముఖ్యాంశాలు (Quick Summary)
+            {t("quick_summary_title")}
           </h2>
           <ul className="space-y-2 text-sm text-[#4A5552]">
             {lesson.summaryPointsTe.map((point, idx) => (
@@ -241,7 +252,7 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
       {/* Bottom Sticky Action Bar */}
       <div className="sticky bottom-20 md:bottom-6 bg-white/95 backdrop-blur border border-[#E5EAE5] p-4 rounded-2xl shadow-lg flex flex-col sm:flex-row items-center justify-between gap-3">
         <div className="text-xs text-[#65716D] text-center sm:text-left">
-          ఈ పాఠం పూర్తయిందా? మీ అవగాహనను తక్షణమే పరీక్షించుకోండి.
+          {t("lesson_finished_prompt")}
         </div>
         <div className="flex items-center gap-2 w-full sm:w-auto">
           <Link
@@ -249,7 +260,7 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
             className="flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#E8F4F0] text-[#176B5B] hover:bg-[#D5ECE5] text-sm font-bold touch-target"
           >
             <Sparkles className="w-4 h-4" />
-            <span>AI ట్యూటర్‌ని అడగండి</span>
+            <span>{t("ask_ai_tutor")}</span>
           </Link>
 
           <Link
@@ -257,7 +268,7 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
             className="flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#176B5B] text-white hover:bg-[#13584B] text-sm font-bold touch-target shadow-sm"
           >
             <CheckCircle2 className="w-4 h-4" />
-            <span>ప్రాక్టీస్ క్విజ్ ప్రారంభించండి</span>
+            <span>{t("start_practice_quiz")}</span>
           </Link>
         </div>
       </div>
