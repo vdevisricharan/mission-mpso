@@ -20,7 +20,7 @@ export function MistakesView({ mistakes }: MistakesViewProps) {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6 md:py-8 space-y-6">
       {/* Header */}
       <div className="bg-white border border-[#E5EAE5] rounded-3xl p-6 sm:p-8 shadow-xs">
-        <div className="flex items-center gap-2 mb-2">
+        <div className="flex flex-wrap items-center gap-2 mb-2">
           <Badge variant="warning">
             {isEnglish ? "Self-Correction Tool" : "స్వీయ దిద్దుబాటు సాధనం"}
           </Badge>
@@ -56,7 +56,7 @@ export function MistakesView({ mistakes }: MistakesViewProps) {
             }`}
           >
             <div className="flex items-center justify-between gap-2 mb-3">
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 <Badge variant="primary" size="sm">
                   {item.question.paperId === "paper_1"
                     ? isEnglish ? "Paper I: GS" : "పేపర్ I: GS"
@@ -73,7 +73,7 @@ export function MistakesView({ mistakes }: MistakesViewProps) {
                 </span>
               </div>
 
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 <span className="text-xs text-[#65716D]">
                   {isEnglish ? `Reviews: ${item.reviewCount} times` : `సమీక్షలు: ${item.reviewCount} సార్లు`}
                 </span>

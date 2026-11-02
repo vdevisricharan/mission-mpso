@@ -31,7 +31,7 @@ export function Badge({
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1.5 whitespace-nowrap",
+        "inline-flex items-center gap-1.5 max-w-full text-left leading-snug break-words",
         variantStyles[variant],
         sizeStyles[size],
         className

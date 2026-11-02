@@ -30,7 +30,7 @@ interface StudentDashboardProps {
 }
 
 export function StudentDashboard({
-  displayName = "రమ్య",
+  displayName = "భాగ్య",
   examConfig,
   studyPlan,
   mistakesCount = 3,

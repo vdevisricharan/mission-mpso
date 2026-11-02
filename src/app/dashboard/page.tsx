@@ -17,7 +17,7 @@ export default async function DashboardPage() {
   return (
     <AppShell initialRole={user?.role || "student"}>
       <StudentDashboard
-        displayName={user?.studentPreferences?.displayName || "రమ్య"}
+        displayName={user?.studentPreferences?.displayName || "భాగ్య"}
         examConfig={examConfig}
         studyPlan={studyPlan}
         mistakesCount={mistakes.length}

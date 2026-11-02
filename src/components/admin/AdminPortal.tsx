@@ -77,7 +77,7 @@ export function AdminPortal({
             <Shield className="w-6 h-6" />
           </div>
           <div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <h1 className="text-xl sm:text-2xl font-extrabold text-[#17211E]">
                 అడ్మినిస్ట్రేషన్ కంటెంట్ మేనేజర్ (CMS)
               </h1>

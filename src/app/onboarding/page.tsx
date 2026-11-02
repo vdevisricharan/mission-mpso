@@ -11,7 +11,7 @@ export default function OnboardingPage() {
   const [step, setStep] = useState<"preferences" | "diagnostic">("preferences");
 
   // State
-  const [displayName, setDisplayName] = useState("రమ్య");
+  const [displayName, setDisplayName] = useState("భాగ్య");
   const [educationBackground, setEducationBackground] = useState("B.Sc. (Statistics)");
   const [statisticsFamiliarity, setStatisticsFamiliarity] = useState<"beginner" | "intermediate" | "comfortable">("intermediate");
   const [dailyMinutes, setDailyMinutes] = useState(120);
@@ -62,7 +62,7 @@ export default function OnboardingPage() {
               type="text"
               value={displayName}
               onChange={(e) => setDisplayName(e.target.value)}
-              placeholder="ఉదా: రమ్య"
+              placeholder="ఉదా: భాగ్య"
               className="w-full bg-[#F5F6F2] border border-[#E5EAE5] rounded-xl px-4 py-3 text-sm text-[#17211E] focus:outline-none focus:ring-2 focus:ring-[#176B5B]"
             />
           </div>

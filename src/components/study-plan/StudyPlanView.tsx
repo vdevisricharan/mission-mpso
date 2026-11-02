@@ -18,7 +18,7 @@ export function StudyPlanView({ plan }: StudyPlanViewProps) {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6 md:py-8 space-y-6">
       {/* Header */}
       <div className="bg-white border border-[#E5EAE5] rounded-3xl p-6 sm:p-8 shadow-xs">
-        <div className="flex items-center gap-2 mb-2">
+        <div className="flex flex-wrap items-center gap-2 mb-2">
           <Badge variant="primary">
             {isEnglish ? "Adaptive Study Plan" : "అనుకూల ప్రణాళిక (Adaptive Planner)"}
           </Badge>
@@ -55,7 +55,7 @@ export function StudyPlanView({ plan }: StudyPlanViewProps) {
               className="p-4 rounded-2xl bg-[#F5F6F2] border border-[#E5EAE5] flex flex-col sm:flex-row sm:items-center justify-between gap-3"
             >
               <div>
-                <div className="flex items-center gap-2 mb-1">
+                <div className="flex flex-wrap items-center gap-2 mb-1">
                   <span className="text-xs font-bold text-[#176B5B]">
                     {task.taskType === "learn_statistics"
                       ? isEnglish ? "Paper II: Statistics" : "పేపర్ II: స్టాటిస్టిక్స్"

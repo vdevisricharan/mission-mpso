@@ -489,7 +489,11 @@ export function MockSimulator({
             </div>
 
             {/* Authoritative Timer */}
-            <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-[#17211E] text-white font-mono text-sm sm:text-base font-bold">
+            <div
+              role="timer"
+              aria-label={isEnglish ? `Remaining exam time: ${formatTime(secondsRemaining)}` : `మిగిలి ఉన్న పరీక్ష సమయం: ${formatTime(secondsRemaining)}`}
+              className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-[#17211E] text-white font-mono text-sm sm:text-base font-bold"
+            >
               <Clock className="w-4 h-4 text-[#176B5B]" />
               <span>{formatTime(secondsRemaining)}</span>
             </div>
@@ -685,10 +689,22 @@ export function MockSimulator({
                 bg = "bg-[#356EA0] text-white border-[#1B8354] ring-2 ring-[#1B8354]";
               }
 
+              const statusAria =
+                state?.status === "answered"
+                  ? isEnglish ? "Answered" : "సమాధానం ఇచ్చినది"
+                  : state?.status === "unanswered"
+                  ? isEnglish ? "Not Answered" : "సమాధానం ఇవ్వనిది"
+                  : state?.status === "marked_for_review"
+                  ? isEnglish ? "Marked for Review" : "రివ్యూ కొరకు మార్క్ చేయబడినది"
+                  : state?.status === "answered_and_marked"
+                  ? isEnglish ? "Answered & Marked for Review" : "సమాధానం ఇచ్చి రివ్యూ కొరకు మార్క్ చేయబడినది"
+                  : isEnglish ? "Not Visited" : "చూడని ప్రశ్న";
+
               return (
                 <button
                   key={q.id}
                   onClick={() => setCurrentIndex(idx)}
+                  aria-label={`${isEnglish ? "Question" : "ప్రశ్న"} ${idx + 1}: ${statusAria}`}
                   className={`h-9 rounded-xl font-bold text-xs border flex items-center justify-center transition-all touch-target select-none ${bg} ${
                     isSelectedQ ? "scale-105 shadow-md font-extrabold ring-2 ring-[#176B5B]" : ""
                   }`}

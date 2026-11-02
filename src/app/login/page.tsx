@@ -20,7 +20,7 @@ export default function LoginPage() {
       localStorage.setItem("mission_mpso_role", role);
       localStorage.setItem(
         "mission_mpso_student_name",
-        role === "admin" ? "అడ్మిన్" : "రమ్య"
+        role === "admin" ? "అడ్మిన్" : "భాగ్య"
       );
     } catch {}
 
@@ -66,7 +66,7 @@ export default function LoginPage() {
                   <User className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="font-bold text-sm">రమ్య (విద్యార్థిని / Student)</div>
+                  <div className="font-bold text-sm">భాగ్య (విద్యార్థిని / Student)</div>
                   <div className="text-xs text-[#176B5B]">MPSO పరీక్షకు సన్నద్ధమవుతున్న అభ్యర్థి</div>
                 </div>
               </div>

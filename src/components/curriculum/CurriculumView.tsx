@@ -29,7 +29,7 @@ export function CurriculumView({
       <div className="bg-white border border-[#E5EAE5] rounded-3xl p-6 sm:p-8 shadow-xs">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
-            <div className="flex items-center gap-2 mb-2">
+            <div className="flex flex-wrap items-center gap-2 mb-2">
               <Badge variant="primary">
                 {isEnglish ? "Official Syllabus 07/G/ES/2026" : "అధికారిక సిలబస్ 07/G/ES/2026"}
               </Badge>

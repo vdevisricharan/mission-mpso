@@ -45,7 +45,7 @@ function getInitialDatabase(): DatabaseSchema {
     role: "student",
     createdAt: new Date().toISOString(),
     studentPreferences: {
-      displayName: "రమ్య",
+      displayName: "భాగ్య",
       language: "te",
       educationBackground: "B.Sc. (Statistics)",
       statisticsFamiliarity: "intermediate",

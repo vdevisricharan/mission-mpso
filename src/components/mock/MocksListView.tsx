@@ -29,7 +29,7 @@ export function MocksListView({ mockTests }: MocksListViewProps) {
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 md:py-8 space-y-6">
       {/* Header */}
       <div className="bg-white border border-[#E5EAE5] rounded-3xl p-6 sm:p-8 shadow-xs">
-        <div className="flex items-center gap-2 mb-2">
+        <div className="flex flex-wrap items-center gap-2 mb-2">
           <Badge variant="primary">
             {isEnglish ? "TGPSC Notification 07/G/ES/2026" : "TGPSC నోటిఫికేషన్ 07/G/ES/2026"}
           </Badge>
@@ -61,7 +61,7 @@ export function MocksListView({ mockTests }: MocksListViewProps) {
             className="bg-white border border-[#E5EAE5] rounded-3xl p-6 hover:border-[#176B5B]/50 transition-all shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
           >
             <div className="flex-1">
-              <div className="flex items-center gap-2 mb-2">
+              <div className="flex flex-wrap items-center gap-2 mb-2">
                 <span className="text-xs font-bold text-[#176B5B] uppercase tracking-wider">
                   {mock.paperId === "paper_1"
                     ? isEnglish ? "Paper I" : "పేపర్ I"

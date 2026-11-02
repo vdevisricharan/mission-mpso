@@ -32,7 +32,7 @@ interface HeaderProps {
 
 export function Header({
   currentRole = "student",
-  userName = "రమ్య",
+  userName = "భాగ్య",
 }: HeaderProps) {
   const pathname = usePathname();
   const router = useRouter();
@@ -203,30 +203,32 @@ export function Header({
           <div className="flex md:hidden items-center gap-1.5 shrink-0">
             {/* Mobile Language Toggle */}
             <div
-              className="flex items-center rounded-lg bg-[#F5F6F2] p-0.5 border border-[#E5EAE5]"
+              className="flex items-center rounded-xl bg-[#F5F6F2] p-0.5 border border-[#E5EAE5]"
               title={t("language_toggle_tooltip")}
             >
               <button
                 type="button"
                 onClick={() => setLanguage("te")}
-                className={`px-2 py-1 rounded-md text-[11px] font-bold transition-all min-w-[28px] text-center ${
+                className={`min-h-[38px] min-w-[38px] px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all text-center flex items-center justify-center ${
                   language === "te"
                     ? "bg-[#176B5B] text-white shadow-xs"
                     : "text-[#65716D] hover:text-[#17211E]"
                 }`}
                 aria-pressed={language === "te"}
+                aria-label="తెలుగు (Telugu)"
               >
                 తె
               </button>
               <button
                 type="button"
                 onClick={() => setLanguage("en")}
-                className={`px-2 py-1 rounded-md text-[11px] font-bold transition-all min-w-[28px] text-center ${
+                className={`min-h-[38px] min-w-[38px] px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all text-center flex items-center justify-center ${
                   language === "en"
                     ? "bg-[#176B5B] text-white shadow-xs"
                     : "text-[#65716D] hover:text-[#17211E]"
                 }`}
                 aria-pressed={language === "en"}
+                aria-label="English"
               >
                 EN
               </button>

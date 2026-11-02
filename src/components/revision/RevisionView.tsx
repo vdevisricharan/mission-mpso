@@ -18,9 +18,9 @@ export function RevisionView({ dueItems, formulas }: RevisionViewProps) {
   const { t, isEnglish } = useTranslation();
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6 md:py-8 space-y-6">
+    <div className="w-full max-w-4xl mx-auto px-3 sm:px-6 py-4 sm:py-8 space-y-6 overflow-hidden">
       {/* Header */}
-      <div className="bg-white border border-[#E5EAE5] rounded-3xl p-6 sm:p-8 shadow-xs">
+      <div className="bg-white border border-[#E5EAE5] rounded-3xl p-4 sm:p-6 md:p-8 shadow-xs">
         <Badge variant="primary" className="mb-2">
           {isEnglish ? "Spaced Repetition System" : "స్పేస్డ్ రిపీటీషన్ సిస్టమ్ (Spaced Repetition)"}
         </Badge>
@@ -36,7 +36,7 @@ export function RevisionView({ dueItems, formulas }: RevisionViewProps) {
 
       {/* Due Items or Completion Notice */}
       {dueItems.length > 0 ? (
-        <div className="bg-white border border-[#E5EAE5] rounded-3xl p-6 shadow-xs space-y-4">
+        <div className="bg-white border border-[#E5EAE5] rounded-3xl p-4 sm:p-6 shadow-xs space-y-4">
           <h2 className="text-base sm:text-lg font-bold text-[#17211E]">
             {isEnglish ? "Pending Spaced Reviews" : "పెండింగ్ పునశ్చరణ అంశాలు"}
           </h2>
@@ -44,7 +44,7 @@ export function RevisionView({ dueItems, formulas }: RevisionViewProps) {
             {dueItems.map((item) => (
               <div
                 key={item.id}
-                className="p-4 rounded-2xl bg-[#F5F6F2] border border-[#E5EAE5] flex items-center justify-between gap-4"
+                className="p-4 rounded-2xl bg-[#F5F6F2] border border-[#E5EAE5] flex flex-col sm:flex-row sm:items-center justify-between gap-3"
               >
                 <div>
                   <div className="text-xs font-bold text-[#176B5B] uppercase mb-1">
@@ -76,8 +76,8 @@ export function RevisionView({ dueItems, formulas }: RevisionViewProps) {
       )}
 
       {/* Quick Formula Flashcards */}
-      <div className="bg-white border border-[#E5EAE5] rounded-3xl p-6 shadow-xs space-y-4">
-        <div className="flex items-center justify-between pb-3 border-b border-[#E5EAE5]">
+      <div className="bg-white border border-[#E5EAE5] rounded-3xl p-4 sm:p-6 shadow-xs space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-[#E5EAE5]">
           <h2 className="text-base sm:text-lg font-bold text-[#17211E]">
             {isEnglish ? "Essential Formula Flashcards" : "కీలక సూత్రాల ఫ్లాష్‌కార్డులు (Quick Formulas)"}
           </h2>
@@ -88,9 +88,9 @@ export function RevisionView({ dueItems, formulas }: RevisionViewProps) {
           {formulas.slice(0, 4).map((form) => (
             <div
               key={form.id}
-              className="p-5 rounded-2xl bg-[#F5F6F2] border border-[#E5EAE5] space-y-2"
+              className="p-3.5 sm:p-5 rounded-2xl bg-[#F5F6F2] border border-[#E5EAE5] space-y-2 max-w-full overflow-hidden"
             >
-              <div className="flex items-center justify-between">
+              <div className="flex flex-wrap items-center justify-between gap-1.5">
                 <h3 className="font-bold text-sm text-[#17211E]">
                   {isEnglish ? form.nameEn || form.nameTe : form.nameTe}
                 </h3>

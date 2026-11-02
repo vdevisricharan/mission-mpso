@@ -1,0 +1,261 @@
+{
+  "testedAt": "2026-11-02T05:59:49.181Z",
+  "routes": [
+    {
+      "name": "01_landing",
+      "path": "/",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "One Student. One Mission. One Intelligent Learning Companion.",
+      "overflow": {
+        "docWidth": 360,
+        "viewWidth": 360,
+        "hasOverflow": false,
+        "overflowAmount": 0
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\01_landing_mobile_360.png"
+    },
+    {
+      "name": "02_login",
+      "path": "/login",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "",
+      "overflow": {
+        "docWidth": 360,
+        "viewWidth": 360,
+        "hasOverflow": false,
+        "overflowAmount": 0
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\02_login_mobile_360.png"
+    },
+    {
+      "name": "03_onboarding",
+      "path": "/onboarding",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "స్వాగతం! (Welcome)",
+      "overflow": {
+        "docWidth": 360,
+        "viewWidth": 360,
+        "hasOverflow": false,
+        "overflowAmount": 0
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\03_onboarding_mobile_360.png"
+    },
+    {
+      "name": "04_dashboard",
+      "path": "/dashboard",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "శుభోదయం, భాగ్య గారూ!",
+      "overflow": {
+        "docWidth": 360,
+        "viewWidth": 360,
+        "hasOverflow": false,
+        "overflowAmount": 0
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\04_dashboard_mobile_360.png"
+    },
+    {
+      "name": "05_learn",
+      "path": "/learn",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "నేర్చుకోండి — అధికారిక సిలబస్ & పాఠాలు",
+      "overflow": {
+        "docWidth": 360,
+        "viewWidth": 360,
+        "hasOverflow": false,
+        "overflowAmount": 0
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\05_learn_mobile_360.png"
+    },
+    {
+      "name": "06_learn_topic",
+      "path": "/learn/prob-basics",
+      "status": 404,
+      "title": "404: This page could not be found.",
+      "h1Text": "404",
+      "overflow": {
+        "docWidth": 360,
+        "viewWidth": 360,
+        "hasOverflow": false,
+        "overflowAmount": 0
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\06_learn_topic_mobile_360.png"
+    },
+    {
+      "name": "07_practice",
+      "path": "/practice",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "",
+      "overflow": {
+        "docWidth": 360,
+        "viewWidth": 360,
+        "hasOverflow": false,
+        "overflowAmount": 0
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\07_practice_mobile_360.png"
+    },
+    {
+      "name": "08_tutor",
+      "path": "/tutor",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "",
+      "overflow": {
+        "docWidth": 360,
+        "viewWidth": 360,
+        "hasOverflow": false,
+        "overflowAmount": 0
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\08_tutor_mobile_360.png"
+    },
+    {
+      "name": "09_mocks",
+      "path": "/mocks",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "పూర్తి స్థాయి మాక్ పరీక్షలు (Mock Examinations)",
+      "overflow": {
+        "docWidth": 414,
+        "viewWidth": 360,
+        "hasOverflow": true,
+        "overflowAmount": 54
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\09_mocks_mobile_360.png"
+    },
+    {
+      "name": "10_revision",
+      "path": "/revision",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "నేటి పునశ్చరణ (Today's Revision Queue)",
+      "overflow": {
+        "docWidth": 365,
+        "viewWidth": 360,
+        "hasOverflow": true,
+        "overflowAmount": 5
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\10_revision_mobile_360.png"
+    },
+    {
+      "name": "11_mistakes",
+      "path": "/mistakes",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "తప్పుల పుస్తకం (Mistake Book)",
+      "overflow": {
+        "docWidth": 360,
+        "viewWidth": 360,
+        "hasOverflow": false,
+        "overflowAmount": 0
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\11_mistakes_mobile_360.png"
+    },
+    {
+      "name": "12_progress",
+      "path": "/progress",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "నా ప్రగతి విశ్లేషణ (Learning Analytics)",
+      "overflow": {
+        "docWidth": 360,
+        "viewWidth": 360,
+        "hasOverflow": false,
+        "overflowAmount": 0
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\12_progress_mobile_360.png"
+    },
+    {
+      "name": "13_study_plan",
+      "path": "/study-plan",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "వ్యక్తిగత చదువు ప్రణాళిక (Study Plan)",
+      "overflow": {
+        "docWidth": 391,
+        "viewWidth": 360,
+        "hasOverflow": true,
+        "overflowAmount": 31
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\13_study_plan_mobile_360.png"
+    },
+    {
+      "name": "14_current_affairs",
+      "path": "/current-affairs",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "తెలంగాణ & జాతీయ వర్తమాన వ్యవహారాలు (Current Affairs)",
+      "overflow": {
+        "docWidth": 360,
+        "viewWidth": 360,
+        "hasOverflow": false,
+        "overflowAmount": 0
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\14_current_affairs_mobile_360.png"
+    },
+    {
+      "name": "15_settings",
+      "path": "/settings",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "సెట్టింగ్‌లు (Settings)",
+      "overflow": {
+        "docWidth": 360,
+        "viewWidth": 360,
+        "hasOverflow": false,
+        "overflowAmount": 0
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\15_settings_mobile_360.png"
+    },
+    {
+      "name": "16_admin",
+      "path": "/admin",
+      "status": 200,
+      "title": "MISSION MPSO — TGPSC MPSO / ASO పరీక్షా సాధన",
+      "h1Text": "అడ్మినిస్ట్రేషన్ కంటెంట్ మేనేజర్ (CMS)",
+      "overflow": {
+        "docWidth": 360,
+        "viewWidth": 360,
+        "hasOverflow": false,
+        "overflowAmount": 0
+      },
+      "screenshot": "C:\\Users\\chara\\Documents\\Projects\\mission-mpso\\UX_TEST_SCREENSHOTS\\16_admin_mobile_360.png"
+    }
+  ],
+  "consoleErrors": [
+    {
+      "url": "http://localhost:3000/learn/prob-basics",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "overflows": [
+    {
+      "route": "/mocks",
+      "viewport": "360x800",
+      "docWidth": 414,
+      "viewWidth": 360,
+      "hasOverflow": true,
+      "overflowAmount": 54
+    },
+    {
+      "route": "/revision",
+      "viewport": "360x800",
+      "docWidth": 365,
+      "viewWidth": 360,
+      "hasOverflow": true,
+      "overflowAmount": 5
+    },
+    {
+      "route": "/study-plan",
+      "viewport": "360x800",
+      "docWidth": 391,
+      "viewWidth": 360,
+      "hasOverflow": true,
+      "overflowAmount": 31
+    }
+  ]
+}

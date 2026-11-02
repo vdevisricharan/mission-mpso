@@ -12,7 +12,7 @@ import { logoutAction } from "@/lib/auth/actions";
 export default function SettingsPage() {
   const { textSize, setTextSize, language, setLanguage } = usePreferences();
   const { t, isEnglish } = useTranslation();
-  const [displayName, setDisplayName] = useState("రమ్య");
+  const [displayName, setDisplayName] = useState("భాగ్య");
   const [dailyMinutes, setDailyMinutes] = useState(120);
   const [enableVoice, setEnableVoice] = useState(true);
   const [savedSuccess, setSavedSuccess] = useState(false);

@@ -1,0 +1,84 @@
+[
+  {
+    "id": "01",
+    "name": "First Visit & Login",
+    "status": "PASSED",
+    "details": {
+      "destination": "http://localhost:3000/dashboard"
+    }
+  },
+  {
+    "id": "02",
+    "name": "Onboarding Preferences",
+    "status": "PASSED",
+    "details": {}
+  },
+  {
+    "id": "03",
+    "name": "Diagnostic Assessment",
+    "status": "PASSED",
+    "details": {}
+  },
+  {
+    "id": "04",
+    "name": "Daily Dashboard",
+    "status": "PASSED",
+    "details": {}
+  },
+  {
+    "id": "05",
+    "name": "Learning a Statistics Topic",
+    "status": "PASSED",
+    "details": {
+      "hasMath": true
+    }
+  },
+  {
+    "id": "06",
+    "name": "AI Tutor Interaction",
+    "status": "PASSED",
+    "details": {}
+  },
+  {
+    "id": "07",
+    "name": "Topic-Wise Practice Quiz",
+    "status": "PASSED",
+    "details": {}
+  },
+  {
+    "id": "08",
+    "name": "Mistakes Review",
+    "status": "PASSED",
+    "details": {}
+  },
+  {
+    "id": "09",
+    "name": "Mock Examination Simulator",
+    "status": "PASSED",
+    "details": {}
+  },
+  {
+    "id": "10",
+    "name": "Revision Module",
+    "status": "PASSED",
+    "details": {}
+  },
+  {
+    "id": "11",
+    "name": "Progress Analytics",
+    "status": "PASSED",
+    "details": {}
+  },
+  {
+    "id": "12",
+    "name": "Study Plan & Resuming",
+    "status": "PASSED",
+    "details": {}
+  },
+  {
+    "id": "13",
+    "name": "Admin Portal",
+    "status": "PASSED",
+    "details": {}
+  }
+]

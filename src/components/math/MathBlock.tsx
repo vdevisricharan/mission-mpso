@@ -42,7 +42,7 @@ export function MathBlock({ math, className = "" }: MathProps) {
 
   return (
     <div
-      className={`my-3 p-3 bg-[#F5F6F2] border border-[#E5EAE5] rounded-xl overflow-x-auto text-center ${className}`}
+      className={`my-3 p-3 bg-[#F5F6F2] border border-[#E5EAE5] rounded-xl overflow-x-auto max-w-full text-center ${className}`}
       dangerouslySetInnerHTML={{ __html: html }}
     />
   );

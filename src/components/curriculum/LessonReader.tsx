@@ -26,7 +26,7 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 py-6 md:py-8">
       {/* Navigation Breadcrumb */}
-      <div className="mb-6 flex items-center justify-between">
+      <div className="mb-6 flex flex-wrap items-center justify-between gap-2">
         <Link
           href="/learn"
           className="inline-flex items-center gap-1.5 text-sm font-medium text-[#176B5B] hover:text-[#13584B] touch-target"
@@ -41,7 +41,7 @@ export function LessonReader({ lesson, topic }: LessonReaderProps) {
 
       {/* Main Header */}
       <header className="bg-white border border-[#E5EAE5] rounded-3xl p-6 md:p-8 mb-8 shadow-xs">
-        <div className="flex items-center gap-2 mb-2 text-xs font-semibold text-[#176B5B] uppercase tracking-wider">
+        <div className="flex flex-wrap items-center gap-2 mb-2 text-xs font-semibold text-[#176B5B] uppercase tracking-wider">
           <span>{isEnglish ? topic?.unitTitleEn || "Unit" : topic?.unitTitleTe || "యూనిట్"}</span>
           <span>•</span>
           <span>

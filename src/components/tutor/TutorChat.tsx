@@ -38,7 +38,7 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
     {
       id: "msg_init",
       sender: "tutor",
-      contentTe: `నమస్కారం రమ్య గారూ! నేను మీ **మిషన్ MPSO (07/G/ES/2026)** కృత్రిమ మేధా అభ్యాస సహాయకుడిని.\n\nడిగ్రీ స్టాటిస్టిక్స్ లేదా జనరల్ స్టడీస్‌లో మీకు ఏ కాన్సెప్ట్ అర్థం కాకపోయినా, పైన ఉన్న 7 పద్ధతులలో ఏదైనా ఎంచుకుని అడగండి. మనం వివరంగా మరియు సులభంగా నేర్చుకుందాం!`,
+      contentTe: `నమస్కారం భాగ్య గారూ! నేను మీ **మిషన్ MPSO (07/G/ES/2026)** కృత్రిమ మేధా అభ్యాస సహాయకుడిని.\n\nడిగ్రీ స్టాటిస్టిక్స్ లేదా జనరల్ స్టడీస్‌లో మీకు ఏ కాన్సెప్ట్ అర్థం కాకపోయినా, పైన ఉన్న 7 పద్ధతులలో ఏదైనా ఎంచుకుని అడగండి. మనం వివరంగా మరియు సులభంగా నేర్చుకుందాం!`,
       timestamp: new Date().toISOString(),
       suggestedFollowUpsTe: [
         "కేంద్రీయ ప్రవృత్తి కొలతలను బోధించండి",
@@ -178,10 +178,10 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-3 sm:px-4 py-3 sm:py-6 flex flex-col h-[calc(100dvh-8rem)] md:h-[calc(100vh-6rem)]">
+    <div className="w-full max-w-4xl mx-auto px-3 sm:px-4 py-3 sm:py-6 flex flex-col h-[calc(100dvh-8rem)] md:h-[calc(100vh-6rem)] overflow-hidden">
       {/* Top Header: Topic Selector & Mode Badges */}
-      <div className="bg-white border border-[#E5EAE5] rounded-2xl sm:rounded-3xl p-3 sm:p-4 mb-3 sm:mb-4 shadow-xs shrink-0">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5 sm:gap-3 mb-2.5 sm:mb-3">
+      <div className="bg-white border border-[#E5EAE5] rounded-2xl sm:rounded-3xl p-3 sm:p-4 mb-3 sm:mb-4 shadow-xs shrink-0 max-w-full">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5 sm:gap-3 mb-2.5 sm:mb-3 min-w-0">
           <div className="flex items-center gap-2 min-w-0">
             <div className="w-8 h-8 rounded-xl bg-[#E8F4F0] text-[#176B5B] flex items-center justify-center shrink-0">
               <Sparkles className="w-4 h-4" />
@@ -214,7 +214,7 @@ export function TutorChat({ initialTopicId, topics }: TutorChatProps) {
         </div>
 
         {/* 7 Pedagogical Modes Scrollable Bar */}
-        <div className="flex items-center gap-2 overflow-x-auto py-1 no-scrollbar scroll-smooth overscroll-x-contain">
+        <div className="flex items-center gap-2 overflow-x-auto py-1 no-scrollbar scroll-smooth overscroll-x-contain max-w-full">
           {TUTOR_MODES.map((mode) => {
             const isSelected = selectedMode === mode.id;
             return (

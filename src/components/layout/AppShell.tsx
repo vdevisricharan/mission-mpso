@@ -18,7 +18,7 @@ export function AppShell({
   userName,
 }: AppShellProps) {
   const role = roleProp || initialRole || "student";
-  const displayName = userName || (role === "admin" ? "అడ్మిన్" : "రమ్య");
+  const displayName = userName || (role === "admin" ? "అడ్మిన్" : "భాగ్య");
 
   return (
     <div className="min-h-screen flex flex-col bg-[#FAFAF7]">

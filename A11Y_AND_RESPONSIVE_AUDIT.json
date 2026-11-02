@@ -1,0 +1,429 @@
+{
+  "testedAt": "2026-11-02T06:20:36.761Z",
+  "overflowFindings": [],
+  "touchTargetFindings": [
+    {
+      "path": "/",
+      "count": 1,
+      "samples": [
+        {
+          "tag": "A",
+          "text": "M\nMISSION MPSO\n07/G/ES/2026",
+          "width": 126,
+          "height": 32
+        }
+      ]
+    },
+    {
+      "path": "/login",
+      "count": 2,
+      "samples": [
+        {
+          "tag": "INPUT",
+          "text": "",
+          "width": 278,
+          "height": 42
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "width": 278,
+          "height": 42
+        }
+      ]
+    },
+    {
+      "path": "/onboarding",
+      "count": 1,
+      "samples": [
+        {
+          "tag": "INPUT",
+          "text": "",
+          "width": 20,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "path": "/dashboard",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "A",
+          "text": "M\nMISSION MPSO\n07/G/ES/2026",
+          "width": 138,
+          "height": 36
+        },
+        {
+          "tag": "BUTTON",
+          "text": "తె",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "BUTTON",
+          "text": "EN",
+          "width": 38,
+          "height": 38
+        }
+      ]
+    },
+    {
+      "path": "/learn",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "A",
+          "text": "M\nMISSION MPSO\n07/G/ES/2026",
+          "width": 138,
+          "height": 36
+        },
+        {
+          "tag": "BUTTON",
+          "text": "తె",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "BUTTON",
+          "text": "EN",
+          "width": 38,
+          "height": 38
+        }
+      ]
+    },
+    {
+      "path": "/learn/p2_probability",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "A",
+          "text": "M\nMISSION MPSO\n07/G/ES/2026",
+          "width": 138,
+          "height": 36
+        },
+        {
+          "tag": "BUTTON",
+          "text": "తె",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "BUTTON",
+          "text": "EN",
+          "width": 38,
+          "height": 38
+        }
+      ]
+    },
+    {
+      "path": "/practice",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "A",
+          "text": "M\nMISSION MPSO\n07/G/ES/2026",
+          "width": 138,
+          "height": 36
+        },
+        {
+          "tag": "BUTTON",
+          "text": "తె",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "BUTTON",
+          "text": "EN",
+          "width": 38,
+          "height": 38
+        }
+      ]
+    },
+    {
+      "path": "/tutor",
+      "count": 6,
+      "samples": [
+        {
+          "tag": "A",
+          "text": "M\nMISSION MPSO\n07/G/ES/2026",
+          "width": 138,
+          "height": 36
+        },
+        {
+          "tag": "BUTTON",
+          "text": "తె",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "BUTTON",
+          "text": "EN",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "SELECT",
+          "text": "P1: వర్తమాన వ్యవహారాలు – ప్రాం",
+          "width": 310,
+          "height": 36
+        },
+        {
+          "tag": "BUTTON",
+          "text": "తెలుగులో వినండి (Audio)",
+          "width": 24,
+          "height": 24
+        }
+      ]
+    },
+    {
+      "path": "/mocks",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "A",
+          "text": "M\nMISSION MPSO\n07/G/ES/2026",
+          "width": 138,
+          "height": 36
+        },
+        {
+          "tag": "BUTTON",
+          "text": "తె",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "BUTTON",
+          "text": "EN",
+          "width": 38,
+          "height": 38
+        }
+      ]
+    },
+    {
+      "path": "/revision",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "A",
+          "text": "M\nMISSION MPSO\n07/G/ES/2026",
+          "width": 138,
+          "height": 36
+        },
+        {
+          "tag": "BUTTON",
+          "text": "తె",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "BUTTON",
+          "text": "EN",
+          "width": 38,
+          "height": 38
+        }
+      ]
+    },
+    {
+      "path": "/mistakes",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "A",
+          "text": "M\nMISSION MPSO\n07/G/ES/2026",
+          "width": 138,
+          "height": 36
+        },
+        {
+          "tag": "BUTTON",
+          "text": "తె",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "BUTTON",
+          "text": "EN",
+          "width": 38,
+          "height": 38
+        }
+      ]
+    },
+    {
+      "path": "/progress",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "A",
+          "text": "M\nMISSION MPSO\n07/G/ES/2026",
+          "width": 138,
+          "height": 36
+        },
+        {
+          "tag": "BUTTON",
+          "text": "తె",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "BUTTON",
+          "text": "EN",
+          "width": 38,
+          "height": 38
+        }
+      ]
+    },
+    {
+      "path": "/study-plan",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "A",
+          "text": "M\nMISSION MPSO\n07/G/ES/2026",
+          "width": 138,
+          "height": 36
+        },
+        {
+          "tag": "BUTTON",
+          "text": "తె",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "BUTTON",
+          "text": "EN",
+          "width": 38,
+          "height": 38
+        }
+      ]
+    },
+    {
+      "path": "/settings",
+      "count": 5,
+      "samples": [
+        {
+          "tag": "A",
+          "text": "M\nMISSION MPSO\n07/G/ES/2026",
+          "width": 138,
+          "height": 36
+        },
+        {
+          "tag": "BUTTON",
+          "text": "తె",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "BUTTON",
+          "text": "EN",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "width": 278,
+          "height": 42
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "width": 18,
+          "height": 20
+        }
+      ]
+    },
+    {
+      "path": "/admin",
+      "count": 3,
+      "samples": [
+        {
+          "tag": "A",
+          "text": "M\nMISSION MPSO\n07/G/ES/2026",
+          "width": 138,
+          "height": 36
+        },
+        {
+          "tag": "BUTTON",
+          "text": "తె",
+          "width": 38,
+          "height": 38
+        },
+        {
+          "tag": "BUTTON",
+          "text": "EN",
+          "width": 38,
+          "height": 38
+        }
+      ]
+    }
+  ],
+  "formLabelFindings": [
+    {
+      "path": "/login",
+      "unlabeled": [
+        {
+          "type": "email",
+          "placeholder": "",
+          "name": ""
+        },
+        {
+          "type": "password",
+          "placeholder": "",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "path": "/onboarding",
+      "unlabeled": [
+        {
+          "type": "text",
+          "placeholder": "ఉదా: భాగ్య",
+          "name": ""
+        },
+        {
+          "type": "select-one",
+          "placeholder": "",
+          "name": ""
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "path": "/tutor",
+      "unlabeled": [
+        {
+          "type": "select-one",
+          "placeholder": "",
+          "name": ""
+        },
+        {
+          "type": "text",
+          "placeholder": "ఈ అంశంలో మీ సందేహాన్ని అడగండి...",
+          "name": ""
+        }
+      ]
+    },
+    {
+      "path": "/settings",
+      "unlabeled": [
+        {
+          "type": "text",
+          "placeholder": "",
+          "name": ""
+        },
+        {
+          "type": "checkbox",
+          "placeholder": "",
+          "name": ""
+        }
+      ]
+    }
+  ],
+  "contrastFindings": [],
+  "viewportsTested": 7
+}

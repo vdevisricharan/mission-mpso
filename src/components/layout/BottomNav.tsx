@@ -51,6 +51,8 @@ export function BottomNav() {
             <Link
               key={item.href}
               href={item.href}
+              aria-label={label}
+              aria-current={item.isActive ? "page" : undefined}
               className={`flex flex-col items-center justify-center transition-colors touch-target select-none ${
                 item.isActive
                   ? "text-[#176B5B] font-semibold"
